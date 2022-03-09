@@ -1,3 +1,36 @@
+--Cau 1
+create or replace procedure sp_Cau1_ThuNhapNV_19120261
+as  
+c6 SYS_REFCURSOR;
+begin
+
+  OPEN c6 FOR
+  SELECT e.ename, e.sal* 12 + nvl(comm, 0) as income from emp_19120261 e where e.job != 'PRESIDENT';
+  DBMS_SQL.RETURN_RESULT(c6);
+end;
+
+
+exec sp_cau1_thunhapnv_19120261;
+--Cau 2
+create or replace PROCEDURE sp_CauTrucBangEMP_19120261
+is
+  c1 SYS_REFCURSOR;
+BEGIN 
+OPEN c1 FOR
+
+SELECT
+column_name "Name",
+nullable "Null?",
+concat(concat(concat(data_type,'('),data_length),')') "Type"
+FROM user_tab_columns
+WHERE table_name='EMP_19120261';
+
+DBMS_SQL.RETURN_RESULT(c1);
+END; 
+
+exec sp_CauTrucBangEMP_19120261;
+
+
 --cau 3
 
 create or replace PROCEDURE sp_SalHireDate_19120172
