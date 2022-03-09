@@ -1,3 +1,84 @@
+--cau 3
+
+create or replace PROCEDURE sp_SalHireDate_19120172
+AS
+BEGIN
+    EXECUTE IMMEDIATE 'ALTER TABLE EMP_19120172 RENAME COLUMN SAL TO SALARY';
+    EXECUTE IMMEDIATE 'ALTER TABLE EMP_19120172 RENAME COLUMN HIREDATE TO DATE_HIRED';
+
+END;
+
+--cau 4
+
+create or replace PROCEDURE sp_DanhSachNVLuong_19120172
+AS
+TYPE XX IS RECORD 
+(
+    V_EMPTNO EMP_19120172.EMPTNO%TYPE,
+    V_ENAME EMP_19120172.ENAME%TYPE,
+    V_JOB EMP_19120172.JOB%TYPE,
+    V_MGR EMP_19120172.MGR%TYPE,
+    V_HIREDATE EMP_19120172.HIREDATE%TYPE,
+    V_SAL EMP_19120172.SAL%TYPE,
+    V_COMM EMP_19120172.COMM%TYPE,
+    V_DEPTNO EMP_19120172.DEPTNO%TYPE    
+);
+TYPE VAR IS TABLE OF XX INDEX BY PLS_INTEGER;
+VAR1 VAR;
+BEGIN
+    SELECT EMPTNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO
+    BULK COLLECT INTO VAR1
+    FROM EMP_19120172
+    WHERE SAL >= 1000 AND SAL <= 2000;
+FOR I IN 1..VAR1.COUNT
+LOOP
+ DBMS_OUTPUT.PUT_LINE ( VAR1(I).V_EMPTNO || '  ' ||
+                        VAR1(I).V_ENAME ||  '  ' || 
+                        VAR1 (I).V_MGR ||   '  ' ||
+                        VAR1(I).V_JOB ||     '  '||
+                        VAR1(I).V_HIREDATE || '  ' ||
+                        VAR1(I).V_SAL || '  ' ||
+                        VAR1(I).V_COMM || '  ' ||
+                        VAR1(I).V_DEPTNO);
+END LOOP;
+END;
+
+
+--cau 5
+create or replace PROCEDURE sp_DanhSachNV_THLL_19120172
+AS
+TYPE XX IS RECORD 
+(
+    V_EMPTNO EMP_19120172.EMPTNO%TYPE,
+    V_ENAME EMP_19120172.ENAME%TYPE,
+    V_JOB EMP_19120172.JOB%TYPE,
+    V_MGR EMP_19120172.MGR%TYPE,
+    V_HIREDATE EMP_19120172.HIREDATE%TYPE,
+    V_SAL EMP_19120172.SAL%TYPE,
+    V_COMM EMP_19120172.COMM%TYPE,
+    V_DEPTNO EMP_19120172.DEPTNO%TYPE    
+);
+TYPE VAR IS TABLE OF XX INDEX BY PLS_INTEGER;
+VAR1 VAR;
+BEGIN
+    SELECT EMPTNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO
+    BULK COLLECT INTO VAR1
+    FROM EMP_19120172
+    WHERE ENAME LIKE '%TH%' AND ENAME LIKE '%LL%'; 
+FOR I IN 1..VAR1.COUNT
+LOOP
+ DBMS_OUTPUT.PUT_LINE ( VAR1(I).V_EMPTNO || '  ' ||
+                        VAR1(I).V_ENAME ||  '  ' || 
+                        VAR1 (I).V_MGR ||   '  ' ||
+                        VAR1(I).V_JOB ||     '  '||
+                        VAR1(I).V_HIREDATE || '  ' ||
+                        VAR1(I).V_SAL || '       ' ||
+                        VAR1(I).V_COMM || '        ' ||
+                        VAR1(I).V_DEPTNO);
+END LOOP;
+END;
+
+
 --cau 6
 CREATE OR REPLACE PROCEDURE sp_DanhSachNV_vao1983_19120423 
 (
