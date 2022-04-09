@@ -1,67 +1,78 @@
---Cau 1
-create or replace procedure sp_Cau1_ThuNhapNV_19120261
+/*
+   Lab02 HW2.2
+    -  ATBMCQ-06
+   Document: https://docs.google.com/document/d/1pzWyulV0_Ibj7nCG4PcFci_rV8pTeczsTLt2OhgO-UQ/edit?usp=sharing
+*/
+
+--CAU 1 ---------------------------------------------------
+CREATE OR REPLACE PROCEDURE sp_Cau1_ThuNhapNV_19120261
 as  
-c6 SYS_REFCURSOR;
-begin
+    c6 SYS_REFCURSOR;
+BEGIN
 
   OPEN c6 FOR
-  SELECT e.ename, e.sal* 12 + nvl(comm, 0) as income from emp_19120261 e where e.job != 'PRESIDENT';
+  SELECT e.ename, e.sal* 12 + nvl(comm, 0) as income from EMP_19120114 e where e.job_ != 'PRESIDENT';
   DBMS_SQL.RETURN_RESULT(c6);
-end;
+END;
+/
 
-
+/* Test
 exec sp_cau1_thunhapnv_19120261;
---Cau 2
+*/
+
+-- CAU 2 ---------------------------------------------------
 create or replace PROCEDURE sp_CauTrucBangEMP_19120261
 is
   c1 SYS_REFCURSOR;
 BEGIN 
-OPEN c1 FOR
-
-SELECT
-column_name "Name",
-nullable "Null?",
-concat(concat(concat(data_type,'('),data_length),')') "Type"
-FROM user_tab_columns
-WHERE table_name='EMP_19120261';
-
-DBMS_SQL.RETURN_RESULT(c1);
+    OPEN c1 FOR
+    
+    SELECT
+        column_name "Name",
+        nullable "Null?",
+        concat(concat(concat(data_type,'('),data_length),')') "Type"
+    FROM user_tab_columns
+    WHERE table_name='EMP_19120114';
+    
+    DBMS_SQL.RETURN_RESULT(c1);
 END; 
+/
 
+/* Test
 exec sp_CauTrucBangEMP_19120261;
+*/
 
-
---cau 3
+-- CAU 3 ---------------------------------------------------
 
 create or replace PROCEDURE sp_SalHireDate_19120172
 AS
 BEGIN
-    EXECUTE IMMEDIATE 'ALTER TABLE EMP_19120172 RENAME COLUMN SAL TO SALARY';
-    EXECUTE IMMEDIATE 'ALTER TABLE EMP_19120172 RENAME COLUMN HIREDATE TO DATE_HIRED';
+    EXECUTE IMMEDIATE 'ALTER TABLE EMP_19120114 RENAME COLUMN SAL TO SALARY';
+    EXECUTE IMMEDIATE 'ALTER TABLE EMP_19120114 RENAME COLUMN HIREDATE TO DATE_HIRED';
 
 END;
+/
 
---cau 4
-
+-- CAU 4 ---------------------------------------------------
 create or replace PROCEDURE sp_DanhSachNVLuong_19120172
 AS
 TYPE XX IS RECORD 
 (
-    V_EMPTNO EMP_19120172.EMPTNO%TYPE,
-    V_ENAME EMP_19120172.ENAME%TYPE,
-    V_JOB EMP_19120172.JOB%TYPE,
-    V_MGR EMP_19120172.MGR%TYPE,
-    V_HIREDATE EMP_19120172.HIREDATE%TYPE,
-    V_SAL EMP_19120172.SAL%TYPE,
-    V_COMM EMP_19120172.COMM%TYPE,
-    V_DEPTNO EMP_19120172.DEPTNO%TYPE    
+    V_EMPTNO EMP_19120114.EMPNO%TYPE,
+    V_ENAME EMP_19120114.ENAME%TYPE,
+    V_JOB EMP_19120114.JOB_%TYPE,
+    V_MGR EMP_19120114.MGR%TYPE,
+    V_HIREDATE EMP_19120114.HIREDATE%TYPE,
+    V_SAL EMP_19120114.SAL%TYPE,
+    V_COMM EMP_19120114.COMM%TYPE,
+    V_DEPTNO EMP_19120114.DEPTNO%TYPE    
 );
 TYPE VAR IS TABLE OF XX INDEX BY PLS_INTEGER;
 VAR1 VAR;
 BEGIN
-    SELECT EMPTNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO
+    SELECT EMPNO, ENAME, JOB_, MGR, HIREDATE, SAL, COMM, DEPTNO
     BULK COLLECT INTO VAR1
-    FROM EMP_19120172
+    FROM EMP_19120114
     WHERE SAL >= 1000 AND SAL <= 2000;
 FOR I IN 1..VAR1.COUNT
 LOOP
@@ -75,28 +86,28 @@ LOOP
                         VAR1(I).V_DEPTNO);
 END LOOP;
 END;
+/
 
-
---cau 5
+-- CAU 5 ---------------------------------------------------
 create or replace PROCEDURE sp_DanhSachNV_THLL_19120172
 AS
 TYPE XX IS RECORD 
 (
-    V_EMPTNO EMP_19120172.EMPTNO%TYPE,
-    V_ENAME EMP_19120172.ENAME%TYPE,
-    V_JOB EMP_19120172.JOB%TYPE,
-    V_MGR EMP_19120172.MGR%TYPE,
-    V_HIREDATE EMP_19120172.HIREDATE%TYPE,
-    V_SAL EMP_19120172.SAL%TYPE,
-    V_COMM EMP_19120172.COMM%TYPE,
-    V_DEPTNO EMP_19120172.DEPTNO%TYPE    
+    V_EMPTNO EMP_19120114.EMPNO%TYPE,
+    V_ENAME EMP_19120114.ENAME%TYPE,
+    V_JOB EMP_19120114.JOB_%TYPE,
+    V_MGR EMP_19120114.MGR%TYPE,
+    V_HIREDATE EMP_19120114.HIREDATE%TYPE,
+    V_SAL EMP_19120114.SAL%TYPE,
+    V_COMM EMP_19120114.COMM%TYPE,
+    V_DEPTNO EMP_19120114.DEPTNO%TYPE    
 );
 TYPE VAR IS TABLE OF XX INDEX BY PLS_INTEGER;
 VAR1 VAR;
 BEGIN
-    SELECT EMPTNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO
+    SELECT EMPNO, ENAME, JOB_, MGR, HIREDATE, SAL, COMM, DEPTNO
     BULK COLLECT INTO VAR1
-    FROM EMP_19120172
+    FROM EMP_19120114
     WHERE ENAME LIKE '%TH%' AND ENAME LIKE '%LL%'; 
 FOR I IN 1..VAR1.COUNT
 LOOP
@@ -110,25 +121,25 @@ LOOP
                         VAR1(I).V_DEPTNO);
 END LOOP;
 END;
+/
 
-
---cau 6
+-- CAU 6 ---------------------------------------------------
 CREATE OR REPLACE PROCEDURE sp_DanhSachNV_vao1983_19120423 
 (
-    v_ename OUT EMP_19120423.ename%type,
-    v_deptno OUT EMP_19120423.deptno%type,
-    v_hiredate OUT EMP_19120423.hiredate%type
+    v_ename OUT EMP_19120114.ename%type,
+    v_deptno OUT EMP_19120114.deptno%type,
+    v_hiredate OUT EMP_19120114.hiredate%type
 )
 IS
 BEGIN
     SELECT ename, deptno, hiredate
     INTO v_ename, v_deptno, v_hiredate
-    FROM EMP_19120423
-    WHERE EXTRACT(YEAR FROM hiredate) = 1983;
-    
-    
+    FROM EMP_19120114
+    WHERE EXTRACT(YEAR FROM hiredate) = 1983;   
 END;
+/
 
+/* Test
 SET SERVEROUTPUT ON;
 DECLARE 
         d_ename VARCHAR2(10);
@@ -140,11 +151,12 @@ BEGIN
     DBMS_OUTPUT.put_line ('DEPARTMENT NO:'||d_deptno);
     DBMS_OUTPUT.put_line ('HIRE DATE:'||d_hiredate);
 END;
+*/
 
---cau 7
+-- CAU 7 ---------------------------------------------------
 CREATE OR REPLACE PROCEDURE sp_DanhSachNV_Luongtang15_19120423
 AS
-    CURSOR C3 IS SELECT emp_19120423.ename,emp_19120423.deptno, emp_19120423.sal*1.25 FROM EMP_19120423;
+    CURSOR C3 IS SELECT EMP_19120114.ename, EMP_19120114.deptno, EMP_19120114.sal*1.25 FROM EMP_19120114;
     l_ename VARCHAR2(10);
     l_deptno NUMBER;
     l_sal NUMBER;
@@ -158,13 +170,16 @@ BEGIN
     END LOOP;
     CLOSE C3;
 END;
+/
 
+/* Test
 EXECUTE sp_DanhSachNV_Luongtang15_19120423;
+*/
 
---cau 8
+-- CAU 8 ---------------------------------------------------
 CREATE OR REPLACE PROCEDURE sp_HienThi_19120423
 AS
-    CURSOR C2 IS SELECT emp_19120423.ename, emp_19120423.job FROM EMP_19120423;
+    CURSOR C2 IS SELECT EMP_19120114.ename, EMP_19120114.job_ FROM EMP_19120114;
     t_ename VARCHAR2(10);
     t_job VARCHAR2(9);
 BEGIN
@@ -177,10 +192,13 @@ BEGIN
     END LOOP;
     CLOSE C2;
 END;
+/
 
+/* Test
 EXECUTE sp_HienThi_19120423;
+*/
 
---cau 9
+-- CAU 9 ---------------------------------------------------
 create or replace procedure sp_DanhSachNV20_Hienthi_19120114
 AS
   c1 SYS_REFCURSOR;  
@@ -194,10 +212,13 @@ BEGIN
     DBMS_SQL.RETURN_RESULT(c1);
 
 END;
+/
 
+/* Test
 EXEC sp_DanhSachNV20_Hienthi_19120114;
+*/
 
---cau 10
+-- CAU 10 ---------------------------------------------------
 create or replace procedure sp_DanhSachNhanVienLuong_19120114
 (
     max_SAL out NUMBER,
@@ -212,7 +233,9 @@ BEGIN
     FROM EMP_19120114 e;
     
 END;
+/
 
+/* Test
 DECLARE
     max_SAL NUMBER;
     min_SAL NUMBER;
@@ -223,3 +246,4 @@ BEGIN
     dbms_output.put_line('MIN SAL: ' || min_SAL);
     dbms_output.put_line('AVG SAL: ' || avg_SAL);
 END;
+*/

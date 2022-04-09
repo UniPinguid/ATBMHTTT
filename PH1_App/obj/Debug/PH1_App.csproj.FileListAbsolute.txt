@@ -1,0 +1,11 @@
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\bin\Debug\PH1_App.exe.config
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\bin\Debug\PH1_App.exe
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\bin\Debug\PH1_App.pdb
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.csprojAssemblyReference.cache
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.dashboard.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.Properties.Resources.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.csproj.GenerateResource.cache
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.csproj.CoreCompileInputs.cache
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.exe
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.pdb
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.userInfo.resources
