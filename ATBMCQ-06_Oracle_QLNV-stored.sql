@@ -235,7 +235,12 @@ BEGIN
 END;
 /
 
+<<<<<<< Updated upstream
 /* Test
+=======
+SET SERVEROUTPUT ON
+
+>>>>>>> Stashed changes
 DECLARE
     max_SAL NUMBER;
     min_SAL NUMBER;
