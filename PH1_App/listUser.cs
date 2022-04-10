@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace PH1_App
 {
-    public partial class role : Form
+    public partial class listUser : Form
     {
-        public role()
+        public listUser()
         {
             InitializeComponent();
         }
 
-        private void S1_check(object sender, EventArgs e)
+        private void clickAdd(object sender, EventArgs e)
         {
-            col_privilege col = new col_privilege();
-            col.Show();
+            userInfo user = new userInfo();
+            user.Show();
         }
     }
 }

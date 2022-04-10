@@ -9,3 +9,7 @@ D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.csproj.CoreCompileInputs.cache
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.exe
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.pdb
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.userInfo.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.role.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.col_privilege.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.listRole.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.listUser.resources

@@ -21,5 +21,14 @@ namespace PH1_App
         {
 
         }
+
+        private void S1_click(object sender, EventArgs e)
+        {
+            if (S1.Checked)
+            { 
+                col_privilege col = new col_privilege();
+                col.Show();
+            }
+        }
     }
 }

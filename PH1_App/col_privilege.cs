@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PH1_App
 {
-    public partial class privilege : Form
+    public partial class col_privilege : Form
     {
-        public privilege()
+        public col_privilege()
         {
             InitializeComponent();
         }

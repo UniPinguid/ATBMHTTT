@@ -28,5 +28,17 @@ namespace PH1_App
             userInfo userInfo = new userInfo();
             userInfo.Show();
         }
+
+        private void clickRole(object sender, EventArgs e)
+        {
+            listRole role = new listRole();
+            role.Show();
+        }
+
+        private void clickUser(object sender, EventArgs e)
+        {
+            listUser user = new listUser();
+            user.Show();
+        }
     }
 }
