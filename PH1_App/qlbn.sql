@@ -95,7 +95,7 @@ ALTER TABLE NHANVIEN
 ADD CONSTRAINT FK_CSYT_MACSYT FOREIGN KEY (CSYT) REFERENCES CSYT(MACSYT);
 
 ALTER TABLE NHANVIEN
-ADD CONSTRAINT CHECK_VAITRO CHECK (VAITRO IN ('Y s?/b�c s?', 'Nghi�n c?u','Thanh tra', 'C? s? y t?'));
+ADD CONSTRAINT CHECK_VAITRO CHECK (VAITRO IN (N'Y sĩ/bác sĩ', N'Nghiên cứu',N'Thanh tra', N'Cơ sở y tế'));
 
 
 alter session set "_ORACLE_SCRIPT"=true;
