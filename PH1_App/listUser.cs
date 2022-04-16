@@ -14,7 +14,7 @@ namespace PH1_App
 {
     public partial class listUser : Form
     {
-        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=250317HoangLuc");
+        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = 900004; Password=pstung123");
 
         public listUser()
         {
