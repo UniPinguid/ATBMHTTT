@@ -450,7 +450,7 @@ namespace PH1_App
             this.Controls.Add(this.label1);
             this.Name = "role";
             this.Text = "Thông tin vai trò";
-            this.Load += new System.EventHandler(this.role_Load);
+            this.Load += new System.EventHandler(this.Role_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

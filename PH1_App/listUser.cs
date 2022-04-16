@@ -29,19 +29,37 @@ namespace PH1_App
 
         private void listUser_Load(object sender, EventArgs e)
         {
-            con.Open();
+            string querry = "Select * from all_users";
 
-            using (OracleCommand cmd = new OracleCommand("select * from dba_users", con))
-            {
-                using (OracleDataReader reader = cmd.ExecuteReader())
-                {
-                    DataTable dataTable = new DataTable();
-                    dataTable.Load(reader);
-                    dataGridView1.DataSource = dataTable;
-                }
-            }
-
+            OracleCommand cmd = new OracleCommand(querry, con);
+            cmd.CommandType = CommandType.Text;
+            OracleDataAdapter adapter = new OracleDataAdapter(querry, con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
             con.Close();
+
+            dataGridView1.DataSource = dt;
+            dataGridView1.AutoResizeColumns();
+            dataGridView1.AutoResizeRows();
+
+        }
+
+        private void SearchClick(object sender, EventArgs e)
+        {
+            string username = textBox1.Text;
+            con.Open();
+            string querry = "Select * from all_users where USERNAME like '%" + username + "%'";
+
+            OracleCommand cmd = new OracleCommand(querry, con);
+            cmd.CommandType = CommandType.Text;
+            OracleDataAdapter adapter = new OracleDataAdapter(querry, con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            con.Close();
+
+            dataGridView1.DataSource = dt;
+            dataGridView1.AutoResizeColumns();
+            dataGridView1.AutoResizeRows();
         }
     }
 }

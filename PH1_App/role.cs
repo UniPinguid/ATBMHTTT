@@ -28,7 +28,7 @@ namespace PH1_App
             col.Show();
         }
 
-        private void role_Load(object sender, EventArgs e)
+        private void Role_Load(object sender, EventArgs e)
         {
             //code sth here....
 

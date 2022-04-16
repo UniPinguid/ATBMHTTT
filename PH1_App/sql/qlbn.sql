@@ -98,6 +98,8 @@ ALTER TABLE NHANVIEN
 ADD CONSTRAINT CHECK_VAITRO CHECK (VAITRO IN (N'Y sĩ/bác sĩ', N'Nghiên cứu',N'Thanh tra', N'Cơ sở y tế'));
 
 
+
+
 alter session set "_ORACLE_SCRIPT"=true;
 CREATE ROLE BENHNHAN;
 CREATE ROLE THANHTRA;
