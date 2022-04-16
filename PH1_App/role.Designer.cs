@@ -139,6 +139,7 @@ namespace PH1_App
             this.button2.TabIndex = 27;
             this.button2.Text = "Xóa vai trò";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // checkBox1
             // 
@@ -146,7 +147,7 @@ namespace PH1_App
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.checkBox1.Location = new System.Drawing.Point(514, 411);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(415, 21);
+            this.checkBox1.Size = new System.Drawing.Size(387, 20);
             this.checkBox1.TabIndex = 64;
             this.checkBox1.Text = "Cho phép người dùng phân quyền cho các người dùng khác?";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -371,7 +372,7 @@ namespace PH1_App
             this.checkBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.checkBox2.Location = new System.Drawing.Point(514, 178);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(415, 21);
+            this.checkBox2.Size = new System.Drawing.Size(387, 20);
             this.checkBox2.TabIndex = 64;
             this.checkBox2.Text = "Cho phép người dùng phân quyền cho các người dùng khác?";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -382,7 +383,7 @@ namespace PH1_App
             this.checkBox3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.checkBox3.Location = new System.Drawing.Point(514, 231);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(415, 21);
+            this.checkBox3.Size = new System.Drawing.Size(387, 20);
             this.checkBox3.TabIndex = 64;
             this.checkBox3.Text = "Cho phép người dùng phân quyền cho các người dùng khác?";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -393,7 +394,7 @@ namespace PH1_App
             this.checkBox4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.checkBox4.Location = new System.Drawing.Point(514, 290);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(415, 21);
+            this.checkBox4.Size = new System.Drawing.Size(387, 20);
             this.checkBox4.TabIndex = 64;
             this.checkBox4.Text = "Cho phép người dùng phân quyền cho các người dùng khác?";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -404,7 +405,7 @@ namespace PH1_App
             this.checkBox5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.checkBox5.Location = new System.Drawing.Point(514, 349);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(415, 21);
+            this.checkBox5.Size = new System.Drawing.Size(387, 20);
             this.checkBox5.TabIndex = 64;
             this.checkBox5.Text = "Cho phép người dùng phân quyền cho các người dùng khác?";
             this.checkBox5.UseVisualStyleBackColor = true;

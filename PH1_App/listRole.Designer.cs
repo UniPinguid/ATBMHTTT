@@ -45,7 +45,7 @@ namespace PH1_App
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.label4.Location = new System.Drawing.Point(562, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(293, 17);
+            this.label4.Size = new System.Drawing.Size(268, 16);
             this.label4.TabIndex = 28;
             this.label4.Text = "Gợi ý: Nhấn đúp chuột để xem thêm thông tin";
             // 
@@ -89,6 +89,7 @@ namespace PH1_App
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(824, 423);
             this.dataGridView1.TabIndex = 23;
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // label3
             // 
@@ -125,6 +126,7 @@ namespace PH1_App
             this.Controls.Add(this.label3);
             this.Name = "listRole";
             this.Text = "listRole";
+            this.Load += new System.EventHandler(this.listRole_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

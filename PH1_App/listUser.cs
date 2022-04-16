@@ -14,8 +14,8 @@ namespace PH1_App
 {
     public partial class listUser : Form
     {
-        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = 900004; Password=pstung123");
-
+        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=1");
+        private static string id = null;
         public listUser()
         {
             InitializeComponent();
@@ -60,6 +60,14 @@ namespace PH1_App
             dataGridView1.DataSource = dt;
             dataGridView1.AutoResizeColumns();
             dataGridView1.AutoResizeRows();
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            id = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
+
         }
     }
 }
