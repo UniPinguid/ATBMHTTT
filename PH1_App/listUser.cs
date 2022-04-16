@@ -31,6 +31,17 @@ namespace PH1_App
         {
             con.Open();
 
+            using (OracleCommand cmd = new OracleCommand("select * from dba_users", con))
+            {
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    dataGridView1.DataSource = dataTable;
+                }
+            }
+
+            con.Close();
         }
     }
 }
