@@ -59,6 +59,7 @@ namespace PH1_App
             this.button3.TabIndex = 19;
             this.button3.Text = "Tìm kiếm";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.SearchClick);
             // 
             // textBox1
             // 
