@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.ManagedDataAccess.Client;
+using System.Configuration;
 
 namespace PH1_App
 {
     public partial class listUser : Form
     {
+        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=250317HoangLuc");
+
         public listUser()
         {
             InitializeComponent();
@@ -21,6 +25,12 @@ namespace PH1_App
         {
             userInfo user = new userInfo();
             user.Show();
+        }
+
+        private void listUser_Load(object sender, EventArgs e)
+        {
+            con.Open();
+
         }
     }
 }
