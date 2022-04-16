@@ -35,4 +35,18 @@ begin
 end;
 /
 
+CREATE OR REPLACE PROCEDURE dropRole (role_name IN VARCHAR2)
+IS
+BEGIN
+    EXECUTE IMMEDIATE 'DROP ROLE ' || role_name;         
+END;        
+
+/*declare 
+    rolename varchar2(32) default 'benhnhan';
+begin
+    dropRole(rolename);
+end;
+*/
+/
+
 alter session set "_ORACLE_SCRIPT"=false;

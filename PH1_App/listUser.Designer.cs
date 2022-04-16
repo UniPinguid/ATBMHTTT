@@ -44,9 +44,9 @@ namespace PH1_App
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label4.Location = new System.Drawing.Point(787, 39);
+            this.label4.Location = new System.Drawing.Point(827, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(293, 17);
+            this.label4.Size = new System.Drawing.Size(268, 16);
             this.label4.TabIndex = 20;
             this.label4.Text = "Gợi ý: Nhấn đúp chuột để xem thêm thông tin";
             // 
@@ -102,6 +102,7 @@ namespace PH1_App
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1047, 423);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // label3
             // 
