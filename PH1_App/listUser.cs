@@ -23,8 +23,8 @@ namespace PH1_App
 
         private void clickAdd(object sender, EventArgs e)
         {
-            userInfo user = new userInfo();
-            user.Show();
+            createUser user = new createUser();
+            user.ShowDialog();
         }
 
         private void listUser_Load(object sender, EventArgs e)
