@@ -61,5 +61,11 @@ namespace PH1_App
             dataGridView1.AutoResizeColumns();
             dataGridView1.AutoResizeRows();
         }
+
+        private void listUser_Load(object sender, EventArgs e)
+        {
+            con.Open();
+
+        }
     }
 }
