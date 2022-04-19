@@ -14,7 +14,7 @@ namespace PH1_App
     public partial class listRole : Form
     {
         private static string id = null;
-        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=1");
+        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
         public listRole()
         {
             InitializeComponent();

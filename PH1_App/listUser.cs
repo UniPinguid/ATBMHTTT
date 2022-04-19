@@ -14,8 +14,12 @@ namespace PH1_App
 {
     public partial class listUser : Form
     {
-        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=1");
-        private static string id = null;
+        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=250317HoangLuc");
+
+        public static string username, userID;
+
+        public static DateTime dateCreated;
+
         public listUser()
         {
             InitializeComponent();
@@ -23,8 +27,8 @@ namespace PH1_App
 
         private void clickAdd(object sender, EventArgs e)
         {
-            userInfo user = new userInfo();
-            user.Show();
+            createUser user = new createUser();
+            user.ShowDialog();
         }
 
         private void listUser_Load(object sender, EventArgs e)
@@ -41,7 +45,6 @@ namespace PH1_App
             dataGridView1.DataSource = dt;
             dataGridView1.AutoResizeColumns();
             dataGridView1.AutoResizeRows();
-
         }
 
         private void SearchClick(object sender, EventArgs e)
@@ -64,10 +67,47 @@ namespace PH1_App
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            id = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
+            userInfo info = new userInfo();
+            info.Show();
+        }
 
+        private void clickDelete(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc là xóa người dùng này hay không?", "Xóa tài khoản", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string set_script = "alter session set \"_ORACLE_SCRIPT\" = true";
+                string querry = "drop user \"" + username + "\"";
+
+                OracleCommand set_script_cmd = new OracleCommand(set_script, con);
+                OracleCommand cmd = new OracleCommand(querry, con);
+                cmd.CommandType = CommandType.Text;
+                try
+                {
+                    con.Open();
+                    set_script_cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Xóa tài khoản thành công!");
+
+                    listUser_Load(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Không thể xóa tài khoản!");
+                }
+
+                con.Close();
+            }
+        }
+
+        private void getUserInfo_click(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                username = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                userID = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                dateCreated = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString());
+            }
         }
     }
 }

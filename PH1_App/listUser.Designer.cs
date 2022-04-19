@@ -44,9 +44,9 @@ namespace PH1_App
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label4.Location = new System.Drawing.Point(827, 9);
+            this.label4.Location = new System.Drawing.Point(787, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(268, 16);
+            this.label4.Size = new System.Drawing.Size(293, 17);
             this.label4.TabIndex = 20;
             this.label4.Text = "Gợi ý: Nhấn đúp chuột để xem thêm thông tin";
             // 
@@ -81,6 +81,7 @@ namespace PH1_App
             this.button2.TabIndex = 17;
             this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.clickDelete);
             // 
             // button1
             // 
@@ -95,13 +96,18 @@ namespace PH1_App
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(33, 114);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1047, 423);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.getUserInfo_click);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // label3
@@ -142,6 +148,7 @@ namespace PH1_App
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Name = "listUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "listUser";
             this.Load += new System.EventHandler(this.listUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

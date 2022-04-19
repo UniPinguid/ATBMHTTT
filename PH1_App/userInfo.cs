@@ -16,9 +16,21 @@ namespace PH1_App
     {
         OracleConnection connection;
         string connectionString = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+        string username, userID;
+        DateTime dateCreated;
+
         public userInfo()
         {
             InitializeComponent();
+
+            username = listUser.username;
+            usernameTextBox.Text = username;
+
+            userID = listUser.userID;
+            userIDTextBox.Text = userID;
+
+            dateCreated = listUser.dateCreated;
+            dateCreatedPicker.Value = dateCreated;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -41,7 +53,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "GRANT " + comboBox3.Text + " ON TABLE " + label1.Text + " TO " + name_textBox.Text;
+                string com = "GRANT " + comboBox3.Text + " ON TABLE " + label1.Text + " TO " + usernameTextBox.Text;
                 com += checkBox1.Checked ? "WITH GRANT OPTION;" : ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
@@ -64,7 +76,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "GRANT " + comboBox4.Text + " ON TABLE " + label8.Text + " TO " + name_textBox.Text;
+                string com = "GRANT " + comboBox4.Text + " ON TABLE " + label8.Text + " TO " + usernameTextBox.Text;
                 com += checkBox2.Checked ? "WITH GRANT OPTION;" : ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
@@ -87,7 +99,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "GRANT " + comboBox5.Text + " ON TABLE " + label10.Text + " TO " + name_textBox.Text;
+                string com = "GRANT " + comboBox5.Text + " ON TABLE " + label10.Text + " TO " + usernameTextBox.Text;
                 com += checkBox3.Checked ? "WITH GRANT OPTION;" : ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
@@ -110,7 +122,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "GRANT " + comboBox6.Text + " ON TABLE " + label15.Text + " TO " + name_textBox.Text;
+                string com = "GRANT " + comboBox6.Text + " ON TABLE " + label15.Text + " TO " + usernameTextBox.Text;
                 com += checkBox4.Checked ? "WITH GRANT OPTION;" : ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
@@ -133,7 +145,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "GRANT " + comboBox7.Text + " ON TABLE " + label17.Text + " TO " + name_textBox.Text;
+                string com = "GRANT " + comboBox7.Text + " ON TABLE " + label17.Text + " TO " + usernameTextBox.Text;
                 com += checkBox5.Checked ? "WITH GRANT OPTION;" : ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
@@ -156,7 +168,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "REVOKE " + comboBox3.Text + " ON TABLE " + label1.Text + " FROM " + name_textBox.Text + ";";
+                string com = "REVOKE " + comboBox3.Text + " ON TABLE " + label1.Text + " FROM " + usernameTextBox.Text + ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
                 connection.Close();
@@ -178,7 +190,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "REVOKE " + comboBox4.Text + " ON TABLE " + label8.Text + " FROM " + name_textBox.Text + ";";
+                string com = "REVOKE " + comboBox4.Text + " ON TABLE " + label8.Text + " FROM " + usernameTextBox.Text + ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
                 connection.Close();
@@ -200,7 +212,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "REVOKE " + comboBox5.Text + " ON TABLE " + label10.Text + " FROM " + name_textBox.Text + ";";
+                string com = "REVOKE " + comboBox5.Text + " ON TABLE " + label10.Text + " FROM " + usernameTextBox.Text + ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
                 connection.Close();
@@ -222,7 +234,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "REVOKE " + comboBox6.Text + " ON TABLE " + label15.Text + " FROM " + name_textBox.Text + ";";
+                string com = "REVOKE " + comboBox6.Text + " ON TABLE " + label15.Text + " FROM " + usernameTextBox.Text + ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
                 connection.Close();
@@ -244,7 +256,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "REVOKE " + comboBox7.Text + " ON TABLE " + label17.Text + " FROM " + name_textBox.Text + ";";
+                string com = "REVOKE " + comboBox7.Text + " ON TABLE " + label17.Text + " FROM " + usernameTextBox.Text + ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
                 connection.Close();
@@ -266,7 +278,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "GRANT " + comboBox8.Text + " TO " + name_textBox.Text + ";";
+                string com = "GRANT " + comboBox8.Text + " TO " + usernameTextBox.Text + ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
                 connection.Close();
@@ -288,7 +300,7 @@ namespace PH1_App
             {
                 connection = new OracleConnection(connectionString);
                 connection.Open();
-                string com = "REVOKE " + comboBox8.Text + " FROM " + name_textBox.Text + ";";
+                string com = "REVOKE " + comboBox8.Text + " FROM " + usernameTextBox.Text + ";";
                 OracleCommand command = new OracleCommand(com, connection);
                 command.ExecuteNonQuery();
                 connection.Close();
