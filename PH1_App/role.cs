@@ -268,7 +268,7 @@ namespace PH1_App
 
         private void button2_Click(object sender, EventArgs e)
         { rid = listRole.getid();
-            string querry = "alter session set "_ORACLE_SCRIPT"=true;";
+            string querry = "alter session set \"_ORACLE_SCRIPT\" = true";
 
             OracleCommand cmd = new OracleCommand(querry, con);
             cmd.CommandType = CommandType.Text;

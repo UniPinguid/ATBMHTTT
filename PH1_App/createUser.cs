@@ -1,9 +1,10 @@
-﻿using Oracle.ManagedDataAccess.Client;
+﻿//using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Data.OracleClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,7 @@ namespace PH1_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string set_script = "alter session set \"_ORACLE_SCRIPT\" = true;";
+            string set_script = "alter session set \"_ORACLE_SCRIPT\" = true";
             string querry = "create user \"" + usernameInput.Text + "\" identified by \"" + passwordInput.Text + "\"";
 
             OracleCommand set_script_cmd = new OracleCommand(set_script, con);
@@ -36,6 +37,7 @@ namespace PH1_App
                 set_script_cmd.ExecuteNonQuery();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Tạo tài khoản thành công!");
+                this.Close();
             }
             catch (Exception ex)
             {
@@ -43,28 +45,6 @@ namespace PH1_App
             }
 
             con.Close();
-
-            /*using (OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=250317HoangLuc"))
-            {
-                OracleCommand objCmd = new OracleCommand();
-                objCmd.Connection = con;
-                objCmd.CommandText = "createUser";
-                objCmd.CommandType = CommandType.StoredProcedure;
-                objCmd.Parameters.Add("user_name", OracleType.VarChar).Value = usernameInput.Text;
-                objCmd.Parameters.Add("user_passwd", OracleType.VarChar).Value = passwordInput.Text;
-                try
-                {
-                    con.Open();
-                    objCmd.ExecuteNonQuery();
-                    MessageBox.Show("Tạo tài khoản thành công!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Tạo tài khoản thất bại! Vui lòng xem lại username và password.");
-                }
-                con.Close();
-            }
-            */
         }
     }
 }

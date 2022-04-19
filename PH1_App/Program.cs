@@ -16,7 +16,7 @@ namespace PH1_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new createUser());
+            Application.Run(new dashboard());
         }
     }
 }
