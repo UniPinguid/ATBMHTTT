@@ -119,8 +119,6 @@
     <Compile Include="role.Designer.cs">
       <DependentUpon>role.cs</DependentUpon>
     </Compile>
-    <Compile Include="StatusMatrix.cs" />
-    <Compile Include="StatusOfPriviledge.cs" />
     <Compile Include="userInfo.cs">
       <SubType>Form</SubType>
     </Compile>

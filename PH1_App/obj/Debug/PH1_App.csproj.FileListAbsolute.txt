@@ -140,3 +140,4 @@ E:\WORK\ATBMHTTT\PH1_App\obj\Debug\PH1_App.csproj.CopyComplete
 E:\WORK\ATBMHTTT\PH1_App\obj\Debug\PH1_App.exe
 E:\WORK\ATBMHTTT\PH1_App\obj\Debug\PH1_App.pdb
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.createUser.resources
+D:\Nam3_Ky2\ATBM\Project\Source\PH1_App\obj\Debug\PH1_App.createUser.resources

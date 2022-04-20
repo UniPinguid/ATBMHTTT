@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 using System.Configuration;
 
+
 namespace PH1_App
 {
     public partial class listUser : Form
     {
-        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=250317HoangLuc");
-
+        //OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=250317HoangLuc");
+        string connectionString = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         public static string username, userID;
 
         public static DateTime dateCreated;
@@ -34,6 +35,7 @@ namespace PH1_App
         private void listUser_Load(object sender, EventArgs e)
         {
             string querry = "Select * from all_users";
+            OracleConnection con = new OracleConnection(connectionString);
 
             OracleCommand cmd = new OracleCommand(querry, con);
             cmd.CommandType = CommandType.Text;
@@ -50,6 +52,7 @@ namespace PH1_App
         private void SearchClick(object sender, EventArgs e)
         {
             string username = textBox1.Text;
+            OracleConnection con = new OracleConnection(connectionString);
             con.Open();
             string querry = "Select * from all_users where USERNAME like '%" + username + "%'";
 
@@ -73,6 +76,8 @@ namespace PH1_App
 
         private void clickDelete(object sender, EventArgs e)
         {
+
+            OracleConnection con = new OracleConnection(connectionString); 
             DialogResult dialogResult = MessageBox.Show("Bạn có chắc là xóa người dùng này hay không?", "Xóa tài khoản", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
