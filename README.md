@@ -6,3 +6,8 @@
 # Lab04 - VPD
 * Document: https://drive.google.com/file/d/1qaH6vUV-K7FiERmQKoqJNJ5aqzvRdlNy/view
 * Homework: https://drive.google.com/file/d/1ql2BExM76rqE0goGMD1Re2wbSyZasNp0/view
+  * Viết script tạo db và nhập data: Phát
+  * Tạo user tương ứng: Tùng
+  * a) Viết function trả ra chuỗi: Bão; Viết chính sách: Khôi
+  * b) Viết function trả ra chuỗi: Khôi; Viết chính sách: Tùng
+  * c) Viết function trả ra chuỗi: Phát; Viết chính sách: Bão
