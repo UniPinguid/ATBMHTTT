@@ -19,7 +19,26 @@ INSERT INTO EMPHOLIDAY(EmpNo, EName, Holiday) VALUES (2, 'Annu', TO_DATE('12/5/2
 /
 INSERT INTO EMPHOLIDAY(EmpNo, EName, Holiday) VALUES (3, 'Theota', TO_DATE('26/8/2018', 'dd/mm/yyyy'));
 /
+--Cau 2: tao user
+alter session set "_ORACLE_SCRIPT"=true;
 
+CREATE USER Hann IDENTIFIED BY abc123;
+CREATE USER Annu IDENTIFIED BY abc123;
+CREATE USER Theota IDENTIFIED BY abc123;
+
+ALTER SESSION SET "_ORACLE_SCRIPT"=FALSE;
+
+--Cau 3
+--b
+--add chinh sach:
+BEGIN DBMS_RLS.add_policy
+(
+    object_schema => 'SYS ',
+    object_name => 'EMPHOLIDAY',
+    policy_name => 'Holiday_Control',
+    policy_function => 'ong_Khoi_dien_cho_nay_giup_tui_nha'
+);
+END;
 -- c
 -- Function
 CREATE OR REPLACE FUNCTION upcomingHolidays (
