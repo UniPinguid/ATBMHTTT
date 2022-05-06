@@ -19,3 +19,14 @@ INSERT INTO EMPHOLIDAY(EmpNo, EName, Holiday) VALUES (2, 'Annu', TO_DATE('12/5/2
 /
 INSERT INTO EMPHOLIDAY(EmpNo, EName, Holiday) VALUES (3, 'Theota', TO_DATE('26/8/2018', 'dd/mm/yyyy'));
 /
+
+-- c
+-- Function
+CREATE OR REPLACE FUNCTION upcomingHolidays (
+    p_chema IN VARCHAR2,
+    p_object IN VARCHAR2)
+RETURN VARCHAR2
+AS
+BEGIN
+    RETURN 'Holiday > trunc(sysdate)'
+END;
