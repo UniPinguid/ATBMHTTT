@@ -18,7 +18,7 @@ namespace PH1_App
         OracleConnection connection;
         string connectionString = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=1");
-
+        private static bool conOpen = false; 
         public role()
         {
             InitializeComponent();
@@ -33,6 +33,10 @@ namespace PH1_App
         private void Role_Load(object sender, EventArgs e)
         {
             //code sth here....
+            if (listRole.getAddBtn() == true)
+            {
+                button2.Text = "Thêm vai trò";
+            }
             rid = listRole.getid();
 
             name_textBox.Text = rid;
@@ -273,20 +277,51 @@ namespace PH1_App
         }
 
         private void button2_Click(object sender, EventArgs e)
-        { rid = listRole.getid();
-            string querry = "alter session set \"_ORACLE_SCRIPT\" = true";
-
-            OracleCommand cmd = new OracleCommand(querry, con);
-            cmd.CommandType = CommandType.Text;
-            OracleDataAdapter adapter = new OracleDataAdapter(querry, con);
-            DataTable dt = new DataTable();
-            using (OracleConnection connection = con)
-            using (OracleCommand command = new OracleCommand("dropRole", connection))
+        {   if (button2.Text == "Xoá vai trò")
             {
-                command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.Add("role_name", OracleDbType.Varchar2).Value = rid;
-                connection.Open();
-                command.ExecuteNonQuery();
+                rid = listRole.getid();
+                string querry = "alter session set \"_ORACLE_SCRIPT\" = true";
+
+                OracleCommand cmd = new OracleCommand(querry, con);
+                con.Open();
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+                using (OracleConnection connection = con)
+                using (OracleCommand command = new OracleCommand("dropRole", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.Add("role_name", OracleDbType.Varchar2).Value = rid;
+                    //connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+            else
+            {
+                con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString + "User Id = system; Password=1");
+
+                string querry = "alter session set \"_ORACLE_SCRIPT\" = true";
+                
+                OracleCommand cmd = new OracleCommand(querry, con);
+                /* if (conOpen == false)
+                 {
+                     con.Open();
+                     conOpen = true;
+                 }*/
+                
+                con.Open();
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+                using (OracleConnection connection = con)
+                using (OracleCommand command = new OracleCommand("addRole", connection))
+                {
+                    rid = name_textBox.Text;
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.Add("role_name", OracleDbType.Varchar2).Value = rid;
+                    //connection.Open();
+                    MessageBox.Show(command.CommandText);
+                    //MessageBox.Show(rid);
+                    //command.ExecuteNonQuery();
+                }
             }
         }
     }

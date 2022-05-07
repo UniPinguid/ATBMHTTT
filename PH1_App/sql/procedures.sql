@@ -48,5 +48,10 @@ begin
 end;
 */
 /
-
+CREATE OR REPLACE PROCEDURE addRole (role_name in varchar2)
+is
+begin
+execute immediate 'create role' || role_name;
+end;
+/
 alter session set "_ORACLE_SCRIPT"=false;

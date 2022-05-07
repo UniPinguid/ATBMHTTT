@@ -95,14 +95,7 @@ ALTER TABLE NHANVIEN
 ADD CONSTRAINT FK_CSYT_MACSYT FOREIGN KEY (CSYT) REFERENCES CSYT(MACSYT);
 
 ALTER TABLE NHANVIEN
-<<<<<<< Updated upstream:PH1_App/sql/qlbn.sql
 ADD CONSTRAINT CHECK_VAITRO CHECK (VAITRO IN (N'Y sĩ/bác sĩ', N'Nghiên cứu',N'Thanh tra', N'Cơ sở y tế'));
-
-
-=======
-ADD CONSTRAINT CHECK_VAITRO CHECK (VAITRO IN ('Y sĩ/bác sĩ', 'Nghiên cứu','Thanh tra', 'Cơ sở y tế'));
->>>>>>> Stashed changes:PH1_App/qlbn.sql
-
 
 alter session set "_ORACLE_SCRIPT"=true;
 CREATE ROLE BENHNHAN;
@@ -121,6 +114,9 @@ GRANT DBA TO "900001";
 GRANT DBA TO "900002";
 GRANT DBA TO "900003";
 GRANT DBA TO "900004";
+
+
+
 
 
 

@@ -15,13 +15,18 @@ namespace PH1_App
     {
         private static string id = null;
         OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
+        private static bool addBtnClicked = false;
         public listRole()
         {
             InitializeComponent();
         }
-
+        static public bool getAddBtn()
+        {
+            return addBtnClicked;
+        }
         private void clickAdd(object sender, EventArgs e)
         {
+            addBtnClicked = true;
             role newRole = new role();
             newRole.Show();
         }
