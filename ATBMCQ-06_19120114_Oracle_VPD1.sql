@@ -40,15 +40,36 @@ AS
 BEGIN
     RETURN 'EmpNo = 2';
 END;
-
+/
+--Policy
+BEGIN DBMS_RLS.add_policy
+(
+    object_schema => 'SYS ',
+    object_name => 'EMPHOLIDAY',
+    policy_name => 'Holiday_Control',
+    policy_function => 'Annu_information',
+    statement_type => 'UPDATE',
+    update_check => TRUE
+);
+END;
 --b
+--Function
+CREATE OR REPLACE FUNCTION noTheota (
+    p_schema IN VARCHAR2,
+    p_object IN VARCHAR2)
+RETURN VARCHAR2
+AS
+BEGIN
+    RETURN 'USER != ''Theota''';
+END;
+/
 --add chinh sach:
 BEGIN DBMS_RLS.add_policy
 (
     object_schema => 'SYS ',
     object_name => 'EMPHOLIDAY',
     policy_name => 'Holiday_Control',
-    policy_function => 'ong_Khoi_dien_cho_nay_giup_tui_nha'
+    policy_function => 'noTheota'
 );
 END;
 -- c
@@ -61,7 +82,7 @@ AS
 BEGIN
     RETURN 'Holiday > trunc(sysdate)'
 END;
-
+/
 
 BEGIN DBMS_RLS.add_policy
 (
@@ -73,4 +94,3 @@ BEGIN DBMS_RLS.add_policy
     update_check => TRUE
 );
 END;
-
