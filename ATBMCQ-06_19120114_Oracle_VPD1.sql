@@ -29,6 +29,18 @@ CREATE USER Theota IDENTIFIED BY abc123;
 ALTER SESSION SET "_ORACLE_SCRIPT"=FALSE;
 
 --Cau 3
+--a
+CREATE OR REPLACE FUNCTION Annu_information
+(
+    p_chema IN VARCHAR2,
+    p_object IN VARCHAR2   
+)
+RETURN VARCHAR2
+AS
+BEGIN
+    RETURN 'EmpNo = 2';
+END;
+
 --b
 --add chinh sach:
 BEGIN DBMS_RLS.add_policy
@@ -49,3 +61,16 @@ AS
 BEGIN
     RETURN 'Holiday > trunc(sysdate)'
 END;
+
+
+BEGIN DBMS_RLS.add_policy
+(
+    object_schema => 'SYS ',
+    object_name => 'EMPHOLIDAY',
+    policy_name => 'Holiday_Control',
+    policy_function => 'upcomingHolidays',
+    statement_type => 'INSERT,UPDATE, DELETE',
+    update_check => TRUE
+);
+END;
+
