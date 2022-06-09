@@ -10,40 +10,18 @@ using System.Windows.Forms;
 
 namespace PH1_App
 {
-    public partial class dashboard : Form
+    public partial class homepage : Form
     {
-        public dashboard()
+        public static bool toggle_sidebar = true;
+
+        public homepage()
         {
             InitializeComponent();
         }
 
-        private void clickUser(object sender, DataGridViewCellEventArgs e)
-        {
-            userInfo userInfo = new userInfo();
-            userInfo.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            userInfo userInfo = new userInfo();
-            userInfo.Show();
-        }
-
-        private void clickRole(object sender, EventArgs e)
-        {
-            listRole role = new listRole();
-            role.Show();
-        }
-
-        private void clickUser(object sender, EventArgs e)
-        {
-            listUser user = new listUser();
-            user.Show();
-        }
-
         private void clickToggleSidebar(object sender, EventArgs e)
         {
-            if (homepage.toggle_sidebar == true)
+            if (toggle_sidebar == true)
             {
                 sidebar.Hide();
                 collapsed_sidebar.Show();
@@ -52,7 +30,7 @@ namespace PH1_App
                 toggleSidebarBtn.BringToFront();
                 toggleSidebarBtn.Location = new Point(toggleSidebarBtn.Location.X - 230, toggleSidebarBtn.Location.Y);
                 toggleSidebarBtn.Text = "❯";
-                homepage.toggle_sidebar = false;
+                toggle_sidebar = false;
 
                 collapsed_sidebar.Dock = DockStyle.Left;
             }
@@ -64,16 +42,14 @@ namespace PH1_App
                 sidebar.Show();
                 toggleSidebarBtn.Location = new Point(toggleSidebarBtn.Location.X + 230, toggleSidebarBtn.Location.Y);
                 toggleSidebarBtn.Text = "❮";
-                homepage.toggle_sidebar = true;
+                toggle_sidebar = true;
             }
         }
-
-
-        private void clickHomepage(object sender, EventArgs e)
+        private void clickDashboard(object sender, EventArgs e)
         {
-            this.Close();
-            homepage homepageForm = new homepage();
-            homepageForm.Show();
+            this.Hide();
+            dashboard dashboardForm = new dashboard();
+            dashboardForm.Show();
         }
     }
 }

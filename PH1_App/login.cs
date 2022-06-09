@@ -22,5 +22,12 @@ namespace PH1_App
             register registerForm = new register();
             registerForm.ShowDialog();
         }
+
+        private void clickLogin(object sender, EventArgs e)
+        {
+            this.Hide();
+            homepage homepageForm = new homepage();
+            homepageForm.Show();
+        }
     }
 }

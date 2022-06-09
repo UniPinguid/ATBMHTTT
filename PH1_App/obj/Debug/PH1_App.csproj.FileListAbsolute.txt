@@ -144,3 +144,4 @@ D:\Nam3_Ky2\ATBM\Project\Source\PH1_App\obj\Debug\PH1_App.createUser.resources
 E:\WORK\ATBMHTTT\PH1_App\obj\Debug\PH1_App.createUser.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.login.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.register.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.homepage.resources
