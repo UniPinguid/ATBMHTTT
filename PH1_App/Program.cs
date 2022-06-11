@@ -19,6 +19,7 @@ namespace PH1_App
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new medicalRecord());
             Application.Run(new login());
         }
 

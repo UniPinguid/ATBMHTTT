@@ -1,7 +1,7 @@
 ﻿
 namespace PH1_App
 {
-    partial class homepage
+    partial class listMedicalRecord
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,19 @@ namespace PH1_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listMedicalRecord));
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,15 +55,172 @@ namespace PH1_App
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.toggleSidebarBtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.sidebar.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // toggleSidebarBtn
+            // 
+            this.toggleSidebarBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.toggleSidebarBtn.FlatAppearance.BorderSize = 0;
+            this.toggleSidebarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toggleSidebarBtn.Font = new System.Drawing.Font("Inter Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSidebarBtn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.toggleSidebarBtn.Location = new System.Drawing.Point(232, 12);
+            this.toggleSidebarBtn.Name = "toggleSidebarBtn";
+            this.toggleSidebarBtn.Size = new System.Drawing.Size(48, 45);
+            this.toggleSidebarBtn.TabIndex = 5;
+            this.toggleSidebarBtn.Text = "❮";
+            this.toggleSidebarBtn.UseVisualStyleBackColor = false;
+            this.toggleSidebarBtn.Click += new System.EventHandler(this.clickToggleSidebar);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.button10);
+            this.panel2.Controls.Add(this.button11);
+            this.panel2.Controls.Add(this.button12);
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(280, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1312, 753);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Location = new System.Drawing.Point(157, 129);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(473, 43);
+            this.panel3.TabIndex = 39;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox1.Location = new System.Drawing.Point(46, 12);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(408, 22);
+            this.textBox1.TabIndex = 26;
+            this.textBox1.Text = "Tìm kiếm hồ sơ...";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Location = new System.Drawing.Point(34, 129);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(124, 43);
+            this.panel1.TabIndex = 38;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Tất cả",
+            "Phân hệ 1",
+            "Phân hệ 2",
+            "Phân hệ 3"});
+            this.comboBox1.Location = new System.Drawing.Point(14, 7);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(99, 30);
+            this.comboBox1.TabIndex = 29;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Inter Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label4.Location = new System.Drawing.Point(706, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(326, 19);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Gợi ý: Nhấn đúp chuột để xem thêm thông tin";
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(236)))), ((int)(((byte)(247)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button10.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(630, 129);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(130, 43);
+            this.button10.TabIndex = 36;
+            this.button10.Text = "Tìm kiếm";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(951, 129);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(81, 44);
+            this.button11.TabIndex = 35;
+            this.button11.Text = "Xóa";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(839, 129);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(116, 44);
+            this.button12.TabIndex = 34;
+            this.button12.Text = "Thêm";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(34, 194);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(998, 511);
+            this.dataGridView1.TabIndex = 33;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(29, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 29);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Hồ sơ bệnh án";
             // 
             // sidebar
             // 
             this.sidebar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.sidebar.Controls.Add(this.toggleSidebarBtn);
             this.sidebar.Controls.Add(this.button1);
             this.sidebar.Controls.Add(this.label3);
             this.sidebar.Controls.Add(this.button9);
@@ -66,11 +236,10 @@ namespace PH1_App
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(280, 753);
-            this.sidebar.TabIndex = 0;
+            this.sidebar.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,6 +252,7 @@ namespace PH1_App
             this.button1.Text = "Trang chủ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.clickHomepage);
             // 
             // label3
             // 
@@ -206,10 +376,10 @@ namespace PH1_App
             this.button4.Text = "Admin Dashboard";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.clickDashboard);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -221,78 +391,57 @@ namespace PH1_App
             this.button2.TabIndex = 1;
             this.button2.Text = "Hồ sơ bệnh án";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.clickListMecRed);
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // toggleSidebarBtn
-            // 
-            this.toggleSidebarBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.toggleSidebarBtn.FlatAppearance.BorderSize = 0;
-            this.toggleSidebarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toggleSidebarBtn.Font = new System.Drawing.Font("Inter Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSidebarBtn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.toggleSidebarBtn.Location = new System.Drawing.Point(230, 12);
-            this.toggleSidebarBtn.Name = "toggleSidebarBtn";
-            this.toggleSidebarBtn.Size = new System.Drawing.Size(48, 45);
-            this.toggleSidebarBtn.TabIndex = 1;
-            this.toggleSidebarBtn.Text = "❮";
-            this.toggleSidebarBtn.UseVisualStyleBackColor = false;
-            this.toggleSidebarBtn.Click += new System.EventHandler(this.clickToggleSidebar);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(280, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1312, 753);
-            this.panel2.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "label4";
-            // 
-            // homepage
+            // listMedicalRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1342, 753);
-            this.Controls.Add(this.toggleSidebarBtn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.sidebar);
-            this.Name = "homepage";
+            this.Name = "listMedicalRecord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "homepage";
-            this.sidebar.ResumeLayout(false);
-            this.sidebar.PerformLayout();
+            this.Text = "medicalRecord";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.sidebar.ResumeLayout(false);
+            this.sidebar.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel sidebar;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button toggleSidebarBtn;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

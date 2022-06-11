@@ -52,7 +52,7 @@ namespace PH1_App
             int numrow;
             numrow = e.RowIndex;
             id = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
-            label4.Text = id;
+            // label4.Text = id;
             role roleedit = new role();
             roleedit.Show();
         }

@@ -10,37 +10,19 @@ using System.Windows.Forms;
 
 namespace PH1_App
 {
-    public partial class dashboard : Form
+    public partial class listMedicalRecord : Form
     {
-        public dashboard()
+        public listMedicalRecord()
         {
             InitializeComponent();
         }
 
-        private void clickUser(object sender, DataGridViewCellEventArgs e)
+        private void clickHomepage(object sender, EventArgs e)
         {
-            userInfo userInfo = new userInfo();
-            userInfo.Show();
+            homepage homepageForm = new homepage();
+            homepageForm.Show();
+            this.Close();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            userInfo userInfo = new userInfo();
-            userInfo.Show();
-        }
-
-        private void clickRole(object sender, EventArgs e)
-        {
-            listRole role = new listRole();
-            role.Show();
-        }
-
-        private void clickUser(object sender, EventArgs e)
-        {
-            listUser user = new listUser();
-            user.Show();
-        }
-
         private void clickToggleSidebar(object sender, EventArgs e)
         {
             if (homepage.toggle_sidebar == true)
@@ -51,6 +33,7 @@ namespace PH1_App
                 toggleSidebarBtn.Location = new Point(toggleSidebarBtn.Location.X - 230, toggleSidebarBtn.Location.Y);
                 toggleSidebarBtn.Text = "❯";
                 homepage.toggle_sidebar = false;
+
             }
             else
             {
@@ -60,13 +43,11 @@ namespace PH1_App
                 homepage.toggle_sidebar = true;
             }
         }
-
-
-        private void clickHomepage(object sender, EventArgs e)
+        private void clickDashboard(object sender, EventArgs e)
         {
-            this.Close();
-            homepage homepageForm = new homepage();
-            homepageForm.Show();
+            this.Hide();
+            dashboard dashboardForm = new dashboard();
+            dashboardForm.Show();
         }
     }
 }

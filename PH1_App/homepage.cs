@@ -24,21 +24,15 @@ namespace PH1_App
             if (toggle_sidebar == true)
             {
                 sidebar.Hide();
-                collapsed_sidebar.Show();
-                collapsed_sidebar.BringToFront();
                 toggleSidebarBtn.Show();
                 toggleSidebarBtn.BringToFront();
                 toggleSidebarBtn.Location = new Point(toggleSidebarBtn.Location.X - 230, toggleSidebarBtn.Location.Y);
                 toggleSidebarBtn.Text = "❯";
                 toggle_sidebar = false;
 
-                collapsed_sidebar.Dock = DockStyle.Left;
             }
             else
             {
-                collapsed_sidebar.SendToBack();
-                collapsed_sidebar.Dock = DockStyle.None;
-
                 sidebar.Show();
                 toggleSidebarBtn.Location = new Point(toggleSidebarBtn.Location.X + 230, toggleSidebarBtn.Location.Y);
                 toggleSidebarBtn.Text = "❮";
@@ -50,6 +44,12 @@ namespace PH1_App
             this.Hide();
             dashboard dashboardForm = new dashboard();
             dashboardForm.Show();
+        }
+        private void clickListMecRed(object sender, EventArgs e)
+        {
+            listMedicalRecord listMecRed = new listMedicalRecord();
+            listMecRed.Show();
+            this.Hide();
         }
     }
 }

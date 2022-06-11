@@ -46,7 +46,6 @@ namespace PH1_App
             this.button11 = new System.Windows.Forms.Button();
             this.toggleSidebarBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.collapsed_sidebar = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +84,7 @@ namespace PH1_App
             // 
             // sidebar
             // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.sidebar.BackColor = System.Drawing.SystemColors.ControlLight;
             this.sidebar.Controls.Add(this.label3);
             this.sidebar.Controls.Add(this.label2);
             this.sidebar.Controls.Add(this.button8);
@@ -97,7 +96,6 @@ namespace PH1_App
             this.sidebar.Controls.Add(this.button3);
             this.sidebar.Controls.Add(this.button10);
             this.sidebar.Controls.Add(this.button11);
-            this.sidebar.Controls.Add(this.collapsed_sidebar);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
@@ -108,7 +106,7 @@ namespace PH1_App
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label3.Location = new System.Drawing.Point(23, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 20);
@@ -119,7 +117,7 @@ namespace PH1_App
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label2.Location = new System.Drawing.Point(23, 551);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 20);
@@ -129,11 +127,9 @@ namespace PH1_App
             // button8
             // 
             this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Inter", 11F);
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.button8.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button8.Location = new System.Drawing.Point(0, 581);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
@@ -146,11 +142,9 @@ namespace PH1_App
             // button7
             // 
             this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Inter", 11F);
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.button7.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button7.Location = new System.Drawing.Point(0, 481);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
@@ -163,11 +157,9 @@ namespace PH1_App
             // button6
             // 
             this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Inter", 11F);
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.button6.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button6.Location = new System.Drawing.Point(0, 426);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
@@ -180,11 +172,9 @@ namespace PH1_App
             // button5
             // 
             this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Inter", 11F);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.button5.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button5.Location = new System.Drawing.Point(0, 371);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
@@ -198,7 +188,7 @@ namespace PH1_App
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label4.Location = new System.Drawing.Point(23, 231);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 20);
@@ -207,13 +197,11 @@ namespace PH1_App
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Inter", 11F);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.button2.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button2.Location = new System.Drawing.Point(0, 155);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
@@ -226,11 +214,9 @@ namespace PH1_App
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Inter", 11F);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.button3.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.Location = new System.Drawing.Point(0, 316);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
@@ -244,11 +230,9 @@ namespace PH1_App
             // button10
             // 
             this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Inter", 11F);
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.button10.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button10.Location = new System.Drawing.Point(0, 261);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
@@ -262,11 +246,9 @@ namespace PH1_App
             // button11
             // 
             this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Inter", 11F);
-            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.button11.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button11.Location = new System.Drawing.Point(0, 100);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
@@ -279,13 +261,13 @@ namespace PH1_App
             // 
             // toggleSidebarBtn
             // 
-            this.toggleSidebarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.toggleSidebarBtn.BackColor = System.Drawing.SystemColors.ControlLight;
             this.toggleSidebarBtn.FlatAppearance.BorderSize = 0;
             this.toggleSidebarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(53)))), ((int)(((byte)(67)))));
             this.toggleSidebarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(36)))), ((int)(((byte)(54)))));
             this.toggleSidebarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.toggleSidebarBtn.Font = new System.Drawing.Font("Inter Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSidebarBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.toggleSidebarBtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.toggleSidebarBtn.Location = new System.Drawing.Point(230, 12);
             this.toggleSidebarBtn.Name = "toggleSidebarBtn";
             this.toggleSidebarBtn.Size = new System.Drawing.Size(48, 45);
@@ -305,14 +287,6 @@ namespace PH1_App
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1312, 753);
             this.panel2.TabIndex = 3;
-            // 
-            // collapsed_sidebar
-            // 
-            this.collapsed_sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.collapsed_sidebar.Location = new System.Drawing.Point(0, 0);
-            this.collapsed_sidebar.Name = "collapsed_sidebar";
-            this.collapsed_sidebar.Size = new System.Drawing.Size(48, 800);
-            this.collapsed_sidebar.TabIndex = 12;
             // 
             // dashboard
             // 
@@ -352,7 +326,6 @@ namespace PH1_App
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button toggleSidebarBtn;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel collapsed_sidebar;
     }
 }
 
