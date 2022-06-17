@@ -1,7 +1,7 @@
 ﻿
 namespace PH1_App
 {
-    partial class listMedicalRecord
+    partial class listEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,8 @@ namespace PH1_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listMedicalRecord));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listEmployee));
+            this.toggleSidebarBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -59,7 +60,6 @@ namespace PH1_App
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.toggleSidebarBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -70,6 +70,20 @@ namespace PH1_App
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.sidebar.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // toggleSidebarBtn
+            // 
+            this.toggleSidebarBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.toggleSidebarBtn.FlatAppearance.BorderSize = 0;
+            this.toggleSidebarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toggleSidebarBtn.Font = new System.Drawing.Font("Inter Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSidebarBtn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.toggleSidebarBtn.Location = new System.Drawing.Point(230, 12);
+            this.toggleSidebarBtn.Name = "toggleSidebarBtn";
+            this.toggleSidebarBtn.Size = new System.Drawing.Size(48, 45);
+            this.toggleSidebarBtn.TabIndex = 10;
+            this.toggleSidebarBtn.Text = "❮";
+            this.toggleSidebarBtn.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -91,7 +105,7 @@ namespace PH1_App
             this.panel2.Location = new System.Drawing.Point(280, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1312, 753);
-            this.panel2.TabIndex = 6;
+            this.panel2.TabIndex = 9;
             // 
             // panel4
             // 
@@ -126,7 +140,7 @@ namespace PH1_App
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(873, 211);
+            this.pictureBox4.Location = new System.Drawing.Point(861, 211);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(24, 24);
             this.pictureBox4.TabIndex = 57;
@@ -161,18 +175,17 @@ namespace PH1_App
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(408, 22);
             this.textBox1.TabIndex = 26;
-            this.textBox1.Text = "Tìm kiếm hồ sơ...";
+            this.textBox1.Text = "Tìm kiếm nhân viên...";
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(669, 211);
+            this.pictureBox3.Location = new System.Drawing.Point(640, 211);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 24);
             this.pictureBox3.TabIndex = 56;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.clickAddMedRec);
             // 
             // panel1
             // 
@@ -201,27 +214,26 @@ namespace PH1_App
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(856, 202);
+            this.button12.Location = new System.Drawing.Point(845, 202);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(176, 44);
+            this.button12.Size = new System.Drawing.Size(187, 44);
             this.button12.TabIndex = 55;
-            this.button12.Text = "Xóa hồ sơ";
+            this.button12.Text = "Xóa nhân viên";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(655, 202);
+            this.button11.Location = new System.Drawing.Point(623, 202);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(176, 44);
+            this.button11.Size = new System.Drawing.Size(201, 44);
             this.button11.TabIndex = 54;
-            this.button11.Text = "Thêm hồ sơ";
+            this.button11.Text = "Thêm nhân viên";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.clickAddMedRec);
             // 
             // label4
             // 
@@ -266,9 +278,9 @@ namespace PH1_App
             this.label5.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(29, 52);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 29);
+            this.label5.Size = new System.Drawing.Size(130, 29);
             this.label5.TabIndex = 32;
-            this.label5.Text = "Hồ sơ bệnh án";
+            this.label5.Text = "Nhân viên";
             // 
             // sidebar
             // 
@@ -288,7 +300,7 @@ namespace PH1_App
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(280, 753);
-            this.sidebar.TabIndex = 4;
+            this.sidebar.TabIndex = 8;
             // 
             // button1
             // 
@@ -304,7 +316,6 @@ namespace PH1_App
             this.button1.Text = "Trang chủ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.clickHomepage);
             // 
             // label3
             // 
@@ -360,6 +371,7 @@ namespace PH1_App
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -371,8 +383,7 @@ namespace PH1_App
             this.button7.TabIndex = 7;
             this.button7.Text = "Nhân viên";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.clickListEmployee);
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
@@ -429,11 +440,10 @@ namespace PH1_App
             this.button4.Text = "Admin Dashboard";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.clickDashboard);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -447,23 +457,7 @@ namespace PH1_App
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // toggleSidebarBtn
-            // 
-            this.toggleSidebarBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.toggleSidebarBtn.FlatAppearance.BorderSize = 0;
-            this.toggleSidebarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toggleSidebarBtn.Font = new System.Drawing.Font("Inter Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSidebarBtn.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.toggleSidebarBtn.Location = new System.Drawing.Point(230, 12);
-            this.toggleSidebarBtn.Name = "toggleSidebarBtn";
-            this.toggleSidebarBtn.Size = new System.Drawing.Size(48, 45);
-            this.toggleSidebarBtn.TabIndex = 7;
-            this.toggleSidebarBtn.Text = "❮";
-            this.toggleSidebarBtn.UseVisualStyleBackColor = false;
-            this.toggleSidebarBtn.Click += new System.EventHandler(this.clickToggleSidebar);
-            this.toggleSidebarBtn.Enter += new System.EventHandler(this.clickToggleSidebar);
-            // 
-            // listMedicalRecord
+            // listEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -471,9 +465,9 @@ namespace PH1_App
             this.Controls.Add(this.toggleSidebarBtn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.sidebar);
-            this.Name = "listMedicalRecord";
+            this.Name = "listEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "medicalRecord";
+            this.Text = "listEmployee";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -492,7 +486,24 @@ namespace PH1_App
 
         #endregion
 
+        private System.Windows.Forms.Button toggleSidebarBtn;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel sidebar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
@@ -505,22 +516,5 @@ namespace PH1_App
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button toggleSidebarBtn;
     }
 }

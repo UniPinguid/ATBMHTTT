@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PH1_App
 {
-    public partial class medicalRecord : Form
+    public partial class listPatient : Form
     {
-        public medicalRecord()
+        public listPatient()
         {
             InitializeComponent();
         }
@@ -21,12 +21,6 @@ namespace PH1_App
         {
             homepage homepageForm = new homepage();
             homepageForm.Show();
-            this.Close();
-        }
-        private void clickListMedRec(object sender, EventArgs e)
-        {
-            listMedicalRecord listMecRed = new listMedicalRecord();
-            listMecRed.Show();
             this.Close();
         }
         private void clickToggleSidebar(object sender, EventArgs e)
@@ -43,7 +37,6 @@ namespace PH1_App
             }
             else
             {
-
                 sidebar.Show();
                 toggleSidebarBtn.Location = new Point(toggleSidebarBtn.Location.X + 230, toggleSidebarBtn.Location.Y);
                 toggleSidebarBtn.Text = "❮";
@@ -56,11 +49,19 @@ namespace PH1_App
             dashboard dashboardForm = new dashboard();
             dashboardForm.Show();
         }
-        private void clickListMecRed(object sender, EventArgs e)
+        private void clickMedRec(object sender, EventArgs e)
         {
-            listMedicalRecord listMecRed = new listMedicalRecord();
-            listMecRed.Show();
-            this.Hide();
+            listMedicalRecord mecRed = new listMedicalRecord();
+            mecRed.Show();
+            this.Close();
+        }
+
+        private void clickAddPatient(object sender, EventArgs e)
+        {
+            infoPatient patientAdd = new infoPatient();
+            infoPatient.is_add_form = true;
+            patientAdd.Show();
+            this.Close();
         }
     }
 }

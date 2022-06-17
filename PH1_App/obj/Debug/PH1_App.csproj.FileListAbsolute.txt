@@ -145,5 +145,9 @@ E:\WORK\ATBMHTTT\PH1_App\obj\Debug\PH1_App.createUser.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.login.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.register.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.homepage.resources
-D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.medicalRecord.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.listMedicalRecord.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.listPatient.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.listHealthFacility.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.infoMedicalRecord.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.infoPatient.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.listEmployee.resources

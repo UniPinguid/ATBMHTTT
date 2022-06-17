@@ -23,6 +23,20 @@ namespace PH1_App
             homepageForm.Show();
             this.Close();
         }
+        private void clickDashboard(object sender, EventArgs e)
+        {
+            dashboard dashboardForm = new dashboard();
+            dashboardForm.Show();
+            this.Close();
+        }
+
+        private void clickListEmployee(object sender, EventArgs e)
+        {
+            listEmployee listEmpForm = new listEmployee();
+            listEmpForm.Show();
+            this.Close();
+        }
+
         private void clickToggleSidebar(object sender, EventArgs e)
         {
             if (homepage.toggle_sidebar == true)
@@ -43,11 +57,13 @@ namespace PH1_App
                 homepage.toggle_sidebar = true;
             }
         }
-        private void clickDashboard(object sender, EventArgs e)
+        private void clickAddMedRec(object sender, EventArgs e)
         {
-            this.Hide();
-            dashboard dashboardForm = new dashboard();
-            dashboardForm.Show();
+            infoMedicalRecord infoMedRecAdd = new infoMedicalRecord();
+            infoMedicalRecord.is_add_form = true;
+            infoMedRecAdd.Show();
+            this.Close();
         }
+
     }
 }

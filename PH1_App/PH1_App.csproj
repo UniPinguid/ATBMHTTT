@@ -105,6 +105,30 @@
     <Compile Include="homepage.Designer.cs">
       <DependentUpon>homepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="infoPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoPatient.Designer.cs">
+      <DependentUpon>infoPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listEmployee.Designer.cs">
+      <DependentUpon>listEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listHealthFacility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listHealthFacility.Designer.cs">
+      <DependentUpon>listHealthFacility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listPatient.Designer.cs">
+      <DependentUpon>listPatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="listRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,11 +153,11 @@
     <Compile Include="listMedicalRecord.Designer.cs">
       <DependentUpon>listMedicalRecord.cs</DependentUpon>
     </Compile>
-    <Compile Include="medicalRecord.cs">
+    <Compile Include="infoMedicalRecord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="medicalRecord.Designer.cs">
-      <DependentUpon>medicalRecord.cs</DependentUpon>
+    <Compile Include="infoMedicalRecord.Designer.cs">
+      <DependentUpon>infoMedicalRecord.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -167,6 +191,18 @@
     <EmbeddedResource Include="homepage.resx">
       <DependentUpon>homepage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="infoPatient.resx">
+      <DependentUpon>infoPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listEmployee.resx">
+      <DependentUpon>listEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listHealthFacility.resx">
+      <DependentUpon>listHealthFacility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listPatient.resx">
+      <DependentUpon>listPatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="listRole.resx">
       <DependentUpon>listRole.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,8 +215,8 @@
     <EmbeddedResource Include="listMedicalRecord.resx">
       <DependentUpon>listMedicalRecord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="medicalRecord.resx">
-      <DependentUpon>medicalRecord.cs</DependentUpon>
+    <EmbeddedResource Include="infoMedicalRecord.resx">
+      <DependentUpon>infoMedicalRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

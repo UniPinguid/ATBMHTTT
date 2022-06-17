@@ -19,6 +19,9 @@ namespace PH1_App
             InitializeComponent();
         }
 
+        // Start of
+        // Transitioning
+
         private void clickToggleSidebar(object sender, EventArgs e)
         {
             if (toggle_sidebar == true)
@@ -45,11 +48,35 @@ namespace PH1_App
             dashboard dashboardForm = new dashboard();
             dashboardForm.Show();
         }
+
         private void clickListMecRed(object sender, EventArgs e)
         {
             listMedicalRecord listMecRed = new listMedicalRecord();
             listMecRed.Show();
             this.Hide();
         }
+        private void clickPatient(object sender, EventArgs e)
+        {
+            listPatient patient = new listPatient();
+            patient.Show();
+            this.Hide();
+        }
+        private void clickListHF(object sender, EventArgs e)
+        {
+            listHealthFacility listHF = new listHealthFacility();
+            listHF.Show();
+            this.Hide();
+        }
+        private void clickListEmployee(object sender, EventArgs e)
+        {
+            listEmployee listEmpForm = new listEmployee();
+            listEmpForm.Show();
+            this.Hide();
+        }
+
+
+
+        // End of
+        // Transitioning
     }
 }

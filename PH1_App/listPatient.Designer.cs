@@ -1,7 +1,7 @@
 ﻿
 namespace PH1_App
 {
-    partial class listMedicalRecord
+    partial class listPatient
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace PH1_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listMedicalRecord));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listPatient));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -91,7 +91,7 @@ namespace PH1_App
             this.panel2.Location = new System.Drawing.Point(280, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1312, 753);
-            this.panel2.TabIndex = 6;
+            this.panel2.TabIndex = 8;
             // 
             // panel4
             // 
@@ -126,7 +126,7 @@ namespace PH1_App
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(873, 211);
+            this.pictureBox4.Location = new System.Drawing.Point(856, 212);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(24, 24);
             this.pictureBox4.TabIndex = 57;
@@ -161,18 +161,18 @@ namespace PH1_App
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(408, 22);
             this.textBox1.TabIndex = 26;
-            this.textBox1.Text = "Tìm kiếm hồ sơ...";
+            this.textBox1.Text = "Tìm kiếm bệnh nhân...";
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(669, 211);
+            this.pictureBox3.Location = new System.Drawing.Point(626, 212);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 24);
             this.pictureBox3.TabIndex = 56;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.clickAddMedRec);
+            this.pictureBox3.Click += new System.EventHandler(this.clickAddPatient);
             // 
             // panel1
             // 
@@ -201,27 +201,27 @@ namespace PH1_App
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(856, 202);
+            this.button12.Location = new System.Drawing.Point(837, 202);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(176, 44);
+            this.button12.Size = new System.Drawing.Size(195, 44);
             this.button12.TabIndex = 55;
-            this.button12.Text = "Xóa hồ sơ";
+            this.button12.Text = "Xóa bệnh nhân";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(655, 202);
+            this.button11.Location = new System.Drawing.Point(609, 202);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(176, 44);
+            this.button11.Size = new System.Drawing.Size(211, 44);
             this.button11.TabIndex = 54;
-            this.button11.Text = "Thêm hồ sơ";
+            this.button11.Text = "Thêm bệnh nhân";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.clickAddMedRec);
+            this.button11.Click += new System.EventHandler(this.clickAddPatient);
             // 
             // label4
             // 
@@ -266,9 +266,9 @@ namespace PH1_App
             this.label5.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(29, 52);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 29);
+            this.label5.Size = new System.Drawing.Size(138, 29);
             this.label5.TabIndex = 32;
-            this.label5.Text = "Hồ sơ bệnh án";
+            this.label5.Text = "Bệnh nhân";
             // 
             // sidebar
             // 
@@ -288,7 +288,7 @@ namespace PH1_App
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(280, 753);
-            this.sidebar.TabIndex = 4;
+            this.sidebar.TabIndex = 7;
             // 
             // button1
             // 
@@ -372,7 +372,6 @@ namespace PH1_App
             this.button7.Text = "Nhân viên";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.clickListEmployee);
             // 
             // button6
             // 
@@ -391,6 +390,7 @@ namespace PH1_App
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -402,7 +402,7 @@ namespace PH1_App
             this.button5.TabIndex = 5;
             this.button5.Text = "Bệnh nhân";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -433,7 +433,7 @@ namespace PH1_App
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -446,6 +446,7 @@ namespace PH1_App
             this.button2.Text = "Hồ sơ bệnh án";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.clickMedRec);
             // 
             // toggleSidebarBtn
             // 
@@ -457,13 +458,12 @@ namespace PH1_App
             this.toggleSidebarBtn.Location = new System.Drawing.Point(230, 12);
             this.toggleSidebarBtn.Name = "toggleSidebarBtn";
             this.toggleSidebarBtn.Size = new System.Drawing.Size(48, 45);
-            this.toggleSidebarBtn.TabIndex = 7;
+            this.toggleSidebarBtn.TabIndex = 9;
             this.toggleSidebarBtn.Text = "❮";
             this.toggleSidebarBtn.UseVisualStyleBackColor = false;
             this.toggleSidebarBtn.Click += new System.EventHandler(this.clickToggleSidebar);
-            this.toggleSidebarBtn.Enter += new System.EventHandler(this.clickToggleSidebar);
             // 
-            // listMedicalRecord
+            // listPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -471,9 +471,9 @@ namespace PH1_App
             this.Controls.Add(this.toggleSidebarBtn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.sidebar);
-            this.Name = "listMedicalRecord";
+            this.Name = "listPatient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "medicalRecord";
+            this.Text = "listPatient";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -493,6 +493,22 @@ namespace PH1_App
         #endregion
 
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel sidebar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
@@ -505,22 +521,6 @@ namespace PH1_App
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button toggleSidebarBtn;
     }
 }
