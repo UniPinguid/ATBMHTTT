@@ -50,6 +50,14 @@ namespace PH1_App
             this.Close();
         }
 
+        private void clickAddHF(object sender, EventArgs e)
+        {
+            infoHealthFacility addHF = new infoHealthFacility();
+            infoHealthFacility.is_add_form = true;
+            addHF.Show();
+            this.Close();
+        }
+
         // End of
         // Transitioning
     }

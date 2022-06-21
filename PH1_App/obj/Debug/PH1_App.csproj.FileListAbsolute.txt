@@ -151,3 +151,5 @@ D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.listHealthFacility.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.infoMedicalRecord.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.infoPatient.resources
 D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.listEmployee.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.infoEmployee.resources
+D:\GitHub\ATBM\ATBMHTTT\PH1_App\obj\Debug\PH1_App.infoHealthFacility.resources

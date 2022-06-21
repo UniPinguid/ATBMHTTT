@@ -84,6 +84,7 @@ namespace PH1_App
             this.toggleSidebarBtn.TabIndex = 10;
             this.toggleSidebarBtn.Text = "❮";
             this.toggleSidebarBtn.UseVisualStyleBackColor = false;
+            this.toggleSidebarBtn.Click += new System.EventHandler(this.clickToggleSidebar);
             // 
             // panel2
             // 
@@ -186,6 +187,7 @@ namespace PH1_App
             this.pictureBox3.Size = new System.Drawing.Size(24, 24);
             this.pictureBox3.TabIndex = 56;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.clickAddEmployee);
             // 
             // panel1
             // 
@@ -234,6 +236,7 @@ namespace PH1_App
             this.button11.Text = "Thêm nhân viên";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.clickAddEmployee);
             // 
             // label4
             // 
@@ -316,6 +319,7 @@ namespace PH1_App
             this.button1.Text = "Trang chủ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.clickHomepage);
             // 
             // label3
             // 
@@ -399,6 +403,7 @@ namespace PH1_App
             this.button6.Text = "Cơ sở y tế";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.clickListHF);
             // 
             // button5
             // 
@@ -414,6 +419,7 @@ namespace PH1_App
             this.button5.Text = "Bệnh nhân";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.clickListPatient);
             // 
             // label1
             // 
@@ -440,6 +446,7 @@ namespace PH1_App
             this.button4.Text = "Admin Dashboard";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.clickDashboard);
             // 
             // button2
             // 
@@ -456,6 +463,7 @@ namespace PH1_App
             this.button2.Text = "Hồ sơ bệnh án";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.clickListMedRec);
             // 
             // listEmployee
             // 

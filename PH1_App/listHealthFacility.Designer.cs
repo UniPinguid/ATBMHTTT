@@ -172,6 +172,7 @@ namespace PH1_App
             this.pictureBox3.Size = new System.Drawing.Size(24, 24);
             this.pictureBox3.TabIndex = 56;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.clickAddHF);
             // 
             // panel1
             // 
@@ -220,6 +221,7 @@ namespace PH1_App
             this.button11.Text = "Thêm CSYT";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.clickAddHF);
             // 
             // label4
             // 
