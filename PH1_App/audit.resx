@@ -130,4 +130,27 @@
         TkSuQmCC
 </value>
   </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Audit là một tính năng của hệ quản trị cơ sở dữ liệu dùng để ghi lại hoạt động của người dùng một cách chi tiết. Vận dụng tính năng này, phần mềm có cài đặt audit cho những nhóm người dùng sau.
+
+Các DBA của hệ thống này sẽ được audit trên tất cả các quyền và câu lệnh mà họ sử dụng. Vì DBA là người đứng đầu của database, cho nên mọi hoạt động phải được giám sát. Nếu có xảy ra lỗi thì các người dùng khác có thể retrace những hoạt động và đối tượng mà DBA đã thực hiện lên để có thể đưa ra giải pháp và phương án giải quyết cho hệ thống của mình làm việc một cách an toàn và hiệu quả.
+
+Các nhân viên với cấp bậc là Giám đốc sở, Giám đốc cơ sở y tế cũng nên được cài audit cho những hoạt động mà họ thực thi, điển hình là các stored procedure hoặc function được cài đặt bởi người dùng. Điển hình là các hoạt động như thêm hay xóa nhân viên, phát thông báo, phân quyền, tước quyền, cũng phải được audit.
+
+Đối với các nhân viên bình thường nói riêng, hay mọi loại nhân viên nói chung thì một hoạt động nên được audit đó chính là đăng nhập. Việc ghi lại hoạt động đăng nhập của nhân viên có thể giúp ích cho các cơ sở y tế có chế độ điểm danh hằng ngày hoặc các trường hợp như đăng nhập thất bại do sai mật khẩu hoặc mất dữ liệu.
+
+Để kiểm tra lại các phiên đăng nhập thất bại, ta sử dụng câu truy vấn sau:
+Việc các nhân viên hay bệnh nhân có quyền được chỉnh sửa thông tin cá nhân cũng nên được ghi lại. Có thể sẽ ít người nhớ mã người dùng của mình, nên giả sử có trường hợp một nhân viên hay bệnh nhân thay đổi thông tin quan trọng (ví dụ như họ tên, số điện thoại…) của mình, thì việc audit có thể giúp những người quản lý hệ thống có thể retrace và liên hệ lại với họ.</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Dưới đây là danh sách các từ khóa audit diễn tả các hoạt động cụ thể của người dùng:
+
+     ⦁  ALTER SESSION: Thay đổi một session, thông thường đi kèm với LOGON
+     ⦁  DROP: Xóa một đối tượng nào đó (bảng, user, function...)
+     ⦁  GRANT: Cấp quyền cho ai đó
+     ⦁  LOGON: Đăng nhập vào hệ thống
+     ⦁  REVOKE: Thu hồi quyền từ ai đó
+     ⦁  SELECT: Xem một bảng dữ liệu nào đó
+     ⦁  UPDATE: Cập nhật một dòng hay bảng nào đó</value>
+  </data>
 </root>

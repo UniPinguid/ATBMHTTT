@@ -60,5 +60,12 @@ namespace PH1_App
         {
             return id;
         }
+
+        private void clickUser(object sender, EventArgs e)
+        {
+            listUser user = new listUser();
+            user.Show();
+            this.Close();
+        }
     }
 }

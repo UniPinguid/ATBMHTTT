@@ -44,9 +44,9 @@ namespace PH1_App
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(40, 498);
+            this.button1.Location = new System.Drawing.Point(40, 494);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(419, 44);
+            this.button1.Size = new System.Drawing.Size(419, 48);
             this.button1.TabIndex = 11;
             this.button1.Text = "Đăng nhập";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,6 +60,7 @@ namespace PH1_App
             this.passwordInput.PasswordChar = '*';
             this.passwordInput.Size = new System.Drawing.Size(419, 30);
             this.passwordInput.TabIndex = 10;
+            this.passwordInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnter);
             // 
             // label3
             // 

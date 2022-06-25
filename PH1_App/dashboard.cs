@@ -16,31 +16,6 @@ namespace PH1_App
         {
             InitializeComponent();
         }
-
-        private void clickUser(object sender, DataGridViewCellEventArgs e)
-        {
-            userInfo userInfo = new userInfo();
-            userInfo.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            userInfo userInfo = new userInfo();
-            userInfo.Show();
-        }
-
-        private void clickRole(object sender, EventArgs e)
-        {
-            listRole role = new listRole();
-            role.Show();
-        }
-
-        private void clickUser(object sender, EventArgs e)
-        {
-            listUser user = new listUser();
-            user.Show();
-        }
-
         private void clickToggleSidebar(object sender, EventArgs e)
         {
             if (homepage.toggle_sidebar == true)
@@ -61,12 +36,29 @@ namespace PH1_App
             }
         }
 
-
         private void clickHomepage(object sender, EventArgs e)
         {
-            this.Close();
             homepage homepageForm = new homepage();
             homepageForm.Show();
+            this.Close();
         }
+
+        private void clickUser(object sender, EventArgs e)
+        {
+            listUser user = new listUser();
+            user.Show();
+        }
+        private void clickRole(object sender, EventArgs e)
+        {
+            listRole role = new listRole();
+            role.Show();
+        }
+        private void clickAudit(object sender, EventArgs e)
+        {
+            audit auditForm = new audit();
+            auditForm.Show();
+            this.Close();
+        }
+
     }
 }
