@@ -15,7 +15,7 @@ namespace PH1_App
 {
     public partial class listUser : Form
     {
-        string connectionString = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+        string connectionString = login.connectionString;
         public static string username, userID;
 
         public static DateTime dateCreated;
@@ -24,6 +24,65 @@ namespace PH1_App
         {
             InitializeComponent();
         }
+
+
+        // Start of
+        // Transitioning 
+
+        private void clickToggleSidebar(object sender, EventArgs e)
+        {
+            if (homepage.toggle_sidebar == true)
+            {
+                sidebar.Hide();
+                toggleSidebarBtn.Show();
+                toggleSidebarBtn.BringToFront();
+                toggleSidebarBtn.Location = new Point(toggleSidebarBtn.Location.X - 230, toggleSidebarBtn.Location.Y);
+                toggleSidebarBtn.Text = "❯";
+
+                homepage.toggle_sidebar = false;
+            }
+            else
+            {
+                sidebar.Show();
+                toggleSidebarBtn.Location = new Point(toggleSidebarBtn.Location.X + 230, toggleSidebarBtn.Location.Y);
+                toggleSidebarBtn.Text = "❮";
+                homepage.toggle_sidebar = true;
+            }
+        }
+
+        private void clickHomepage(object sender, EventArgs e)
+        {
+            homepage homepageForm = new homepage();
+            homepageForm.Show();
+            this.Close();
+        }
+        private void clickDashboard(object sender, EventArgs e)
+        {
+            dashboard dashboardForm = new dashboard();
+            dashboardForm.Show();
+            this.Close();
+        }
+
+
+        private void clickUser(object sender, EventArgs e)
+        {
+            listUser user = new listUser();
+            user.Show();
+        }
+        private void clickRole(object sender, EventArgs e)
+        {
+            listRole role = new listRole();
+            role.Show();
+        }
+        private void clickAudit(object sender, EventArgs e)
+        {
+            audit auditForm = new audit();
+            auditForm.Show();
+            this.Close();
+        }
+
+        // End of
+        // Transitioning
 
         private void clickAdd(object sender, EventArgs e)
         {

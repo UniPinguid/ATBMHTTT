@@ -16,6 +16,10 @@ namespace PH1_App
         {
             InitializeComponent();
         }
+
+        // Start of
+        // Transitioning 
+
         private void clickToggleSidebar(object sender, EventArgs e)
         {
             if (homepage.toggle_sidebar == true)
@@ -59,6 +63,9 @@ namespace PH1_App
             auditForm.Show();
             this.Close();
         }
+
+        // End of
+        // Transitioning
 
     }
 }
