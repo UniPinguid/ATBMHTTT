@@ -23,9 +23,6 @@ namespace PH1_App
         public role()
         {
             InitializeComponent();
-
-            btnSubmit.Hide();
-            iconSubmit.Hide();
         }
 
         private void S1_check(object sender, EventArgs e)
@@ -59,50 +56,6 @@ namespace PH1_App
             dgv_privileges.DataSource = dt;
             dgv_privileges.AutoResizeColumns();
             dgv_privileges.AutoResizeRows();
-        }
-
-        private void toggleEditableTextbox(TextBox infoField, bool toggle)
-        {
-            if (toggle == true)
-            {
-                infoField.BorderStyle = BorderStyle.Fixed3D;
-                infoField.ReadOnly = false;
-                infoField.Location = new Point(infoField.Location.X - 3, infoField.Location.Y - 3);
-            }
-            else
-            {
-                infoField.BorderStyle = BorderStyle.None;
-                infoField.ReadOnly = true;
-                infoField.Location = new Point(infoField.Location.X + 3, infoField.Location.Y + 3);
-                infoField.BackColor = Color.White;
-            }
-        }
-        private void clickEdit(object sender, EventArgs e)
-        {
-            btnEdit.Hide();
-            iconEdit.Hide();
-
-            btnSubmit.Show();
-            iconSubmit.Show();
-            btnSubmit.Location = new Point(btnEdit.Location.X, btnEdit.Location.Y);
-            iconSubmit.Location = new Point(iconEdit.Location.X, iconEdit.Location.Y);
-            iconSubmit.BringToFront();
-
-            // Editable fields
-            toggleEditableTextbox(name_textBox, true);
-            toggleEditableTextbox(textBox_description, true);
-        }
-        private void clickSubmit(object sender, EventArgs e)
-        {
-            btnEdit.Show();
-            iconEdit.Show();
-
-            btnSubmit.Hide();
-            iconSubmit.Hide();
-
-            // Uneditable fields
-            toggleEditableTextbox(name_textBox, false);
-            toggleEditableTextbox(textBox_description, false);
         }
 
         private void clickGrantPrivileges(object sender, EventArgs e)

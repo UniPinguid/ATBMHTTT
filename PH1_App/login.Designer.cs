@@ -39,6 +39,8 @@ namespace PH1_App
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.virtualDGV = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.virtualDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -148,11 +150,22 @@ namespace PH1_App
             this.linkLabel2.Text = "Đăng ký";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickRegister);
             // 
+            // virtualDGV
+            // 
+            this.virtualDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.virtualDGV.Location = new System.Drawing.Point(0, -200);
+            this.virtualDGV.Name = "virtualDGV";
+            this.virtualDGV.RowHeadersWidth = 51;
+            this.virtualDGV.RowTemplate.Height = 24;
+            this.virtualDGV.Size = new System.Drawing.Size(240, 150);
+            this.virtualDGV.TabIndex = 16;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 571);
+            this.Controls.Add(this.virtualDGV);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkBox1);
@@ -166,6 +179,7 @@ namespace PH1_App
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            ((System.ComponentModel.ISupportInitialize)(this.virtualDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +197,6 @@ namespace PH1_App
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.DataGridView virtualDGV;
     }
 }

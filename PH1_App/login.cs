@@ -15,6 +15,17 @@ namespace PH1_App
     {
         public static string connectionString = "Data Source = (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)" +
             "(HOST = localhost)(PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = XE)));";
+
+        public static bool is_DBA = false;
+        public static bool is_GiamDocSo = false;
+        public static bool is_GiamDocCSYT = false;
+        public static bool is_ThanhTra = false;
+        public static bool is_CoSoYTe = false;
+        public static bool is_YBacSi = false;
+        public static bool is_NghienCuu = false;
+        public static bool is_NhanVien = false;
+        public static bool is_BenhNhan = false;
+
             
         public login()
         {
@@ -50,6 +61,8 @@ namespace PH1_App
                     con.Open();
                     cmd.ExecuteNonQuery();
 
+                    checkRole(usernameInput.Text);
+
                     this.Hide();
                     homepage homepageForm = new homepage();
                     homepageForm.Show();
@@ -59,6 +72,53 @@ namespace PH1_App
                     MessageBox.Show("Xin vui lòng kiểm tra lại tên đăng nhập hoặc mật khẩu", "Đăng nhập không thành công");
                 }
             }
+        }
+
+        private void checkRole(string input)
+        {
+            OracleConnection con = new OracleConnection(connectionString);
+            con.Open();
+
+            string querry = "Select VAITRO, CAPBAC from \"900001\".NHANVIEN WHERE MANV = '" + input + "'";
+
+            OracleCommand cmd = new OracleCommand(querry, con);
+            cmd.CommandType = CommandType.Text;
+            OracleDataAdapter adapter1 = new OracleDataAdapter(querry, con);
+            DataTable dt = new DataTable();
+            adapter1.Fill(dt);
+
+            virtualDGV.DataSource = dt;
+
+            if (input == "900001" || input == "900002" || input == "900003" || input == "900004")
+            {
+                is_DBA = true;
+                return;
+            }
+
+            else if (virtualDGV.Rows[0].Cells[0].Value.ToString() == "Thanh tra")
+                is_ThanhTra = true;
+            else if (virtualDGV.Rows[0].Cells[0].Value.ToString() == "Nghiên cứu")
+                is_NghienCuu = true;
+            else if (virtualDGV.Rows[0].Cells[0].Value.ToString() == "Cơ sở y tế")
+                is_CoSoYTe = true;
+            else if (virtualDGV.Rows[0].Cells[0].Value.ToString() == "Y/Bác sĩ")
+                is_YBacSi = true;
+            
+            if (virtualDGV.Rows[0].Cells[0].Value.ToString().Length > 0)
+                is_NhanVien = true;
+            
+            if (virtualDGV.RowCount == 0)
+                is_BenhNhan = true;
+
+
+            if (is_BenhNhan == false)
+            {
+                if (virtualDGV.Rows[0].Cells[1].Value.ToString() == "Giám đốc sở")
+                    is_GiamDocSo = true;
+                else if (virtualDGV.Rows[0].Cells[1].Value.ToString() == "Giám đốc cơ sở y tế")
+                    is_GiamDocCSYT = true;
+            }
+            
         }
 
         private void CheckEnter(object sender, KeyPressEventArgs e)

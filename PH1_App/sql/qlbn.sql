@@ -123,4 +123,17 @@ ADD CONSTRAINT CHECK_VAITRO CHECK (VAITRO IN (N'Y sĩ/bác sĩ', N'Nghiên cứu
 ALTER TABLE NHANVIEN
 ADD CONSTRAINT CHECK_CAPBAC CHECK (CAPBAC IN (N'Giám đốc sở', N'Giám đốc cơ sở y tế', N'Y/Bác sĩ'));
 
+--
+INSERT INTO CSYT(MACSYT, TENCSYT, DCCSYT, SDTCSYT, TUYENDT, VUNG)
+    VALUES (927262622, 'Trung tâm An Bình', '90 Mạc Đĩnh Chi, Hà Nội', '0927165821', 'Điều trị chuyên sâu', 'Trung tâm');
+
+INSERT INTO NHANVIEN(MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA, CAPBAC)
+    VALUES (100001, 'Huỳnh Văn Phong', 'Nam', TO_DATE('01/09/1990', 'dd/mm/yyyy'), '3411745902', 'Cao Bằng', '0765268987', 927262622, 'Thanh tra', 'Hồi sức', 'Giám đốc sở')
+
+INSERT INTO THONGBAO(MANV, NOIDUNG, NGAYGIO, DIADIEM) 
+    VALUES (100001, 'Hôm nay là Chủ Nhật', sysdate, 'Hồ Chí Minh');
+    
+INSERT INTO THONGBAO(MANV, NOIDUNG, NGAYGIO, DIADIEM) 
+    VALUES (100001, 'Hôm nay là Thứ Hai, thứ Hai có thưởng', sysdate, 'Hồ Chí Minh');   
+    
 Alter Session Set "_ORACLE_SCRIPT"=false;

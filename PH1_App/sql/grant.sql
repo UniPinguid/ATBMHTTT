@@ -50,17 +50,26 @@ grant all privileges on NHANVIEN to giamdocso1 with grant option;
 
 -- Phan quyền cho cấp bậc Giám đốc CSYT
 grant create session to GIAMDOCCSYT;
-grant insert, update, delete on "900001".NHANVIEN to GIAMDOCSO;
+grant insert, update, delete on "900001".NHANVIEN to GIAMDOCCSYT;
 
 grant NHANVIEN to GIAMDOCCSYT with admin option;
 grant NGHIENCUU to GIAMDOCCSYT with admin option;
 grant YBACSI to GIAMDOCCSYT with admin option;
 grant COSOYTE to GIAMDOCCSYT with admin option;
 grant THANHTRA to GIAMDOCCSYT with admin option;
-grant GIAMDOCCSYT to giamdoccsyt1 with admin option;
 
-select * 
-from role_tab_privs
-where role = 'GIAMDOCSO';
+-- grant GIAMDOCCSYT to giamdoccsyt1 with admin option;
+
+-- Phân quyền cho vai trò Thanh tra
+grant select on "900001".HSBA to THANHTRA;
+grant select on "900001".HSBA_DV to THANHTRA;
+grant select on "900001".CSYT to THANHTRA;
+grant select on "900001".BENHNHAN to THANHTRA;
+grant select on "900001".NHANVIEN to THANHTRA;
+
+-- Phân quyền cho vai trò Cơ sở y tế
+grant insert, delete on "900001".HSBA to COSOYTE;
+grant insert, delete on "900001".HSBA_DV to COSOYTE;
+
 select * from role_tab_privs
-where grantee = 'GIAMDOCSO1';
+where role = 'GIAMDOCCSYT';
