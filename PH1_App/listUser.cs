@@ -128,7 +128,7 @@ namespace PH1_App
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            userInfo info = new userInfo();
+            infoUser info = new infoUser();
             info.Show();
         }
 

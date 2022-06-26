@@ -86,7 +86,8 @@ namespace PH1_App
 
             string querry = "SELECT username, action_name, obj_name, timestamp, obj_privilege, grantee, terminal " +
                             "FROM dba_audit_trail " +
-                            "WHERE username like '%" + username_textBox.Text + "%'";
+                            "WHERE username like '%" + username_textBox.Text + "%' " +
+                            "AND timestamp BETWEEN TO_DATE('" + fromDate.Text + "', 'dd/mm/yyyy') AND TO_DATE('" + toDate.Text + "', 'dd/mm/yyyy')";
             OracleConnection con = new OracleConnection(connectionString);
 
             OracleCommand cmd = new OracleCommand(querry, con);
@@ -99,11 +100,18 @@ namespace PH1_App
             dataGridView1.DataSource = dt;
             dataGridView1.AutoResizeColumns();
             dataGridView1.AutoResizeRows();
+
+            countResults.Text = "Có " + (dataGridView1.RowCount).ToString() + " dữ liệu nhật ký";
         }
 
         private void usernameTextBoxClick(object sender, EventArgs e)
         {
             username_textBox.Text = "";
-        }        
+        }
+
+        private void clickDeleteAll(object sender, EventArgs e)
+        {
+
+        }
     }
 }

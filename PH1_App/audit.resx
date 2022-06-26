@@ -117,19 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        iwAAAIsBRmWzPwAAAUxJREFUSEvdlVGVwjAQRVcCEpCAgyIBCUhAwkpAAhKQgAQkIAEH3Xd7Mj3T8NIC
-        /duP29Mk93WapISfvu9f6LruIK7iKfoEbfoPLueYNBTciZvID22Bt8t5x3iDLPIbP8RJ7BO06Q8Hf7bI
-        cEEqcoROtZhhvPKbRYaLhPs7cgav+ORuzgHEY5Hg7c0D+cxkNovEV4Fwd8ISysWeXN04Qkxzdt1bkCv5
-        pxtHYBD2TliCXDyjHoP/USD24NcJSyh3LvmHG0e4zAlLkCv5ixufTFF8NAv8lLVLHGL8FuBYSw68lLG/
-        ARguEjYiH2Ks66aWkxvrHjQ/kPFGEmdLnEnA5rM/caKyHLTjo8jQZ8+wSUOSe7sWeBSOgrbIpBFI3Are
-        nD+VeABLSJv+bXLro35SZLxZw1yRF/lbWkWs/C2uiBXXUBW5WWktpYg+iO78BwC7gx10RGeXAAAAAElF
-        TkSuQmCC
-</value>
-  </data>
   <data name="textBox1.Text" xml:space="preserve">
     <value>Audit là một tính năng của hệ quản trị cơ sở dữ liệu dùng để ghi lại hoạt động của người dùng một cách chi tiết. Vận dụng tính năng này, phần mềm có cài đặt audit cho những nhóm người dùng sau.
 
@@ -152,5 +139,18 @@ Việc các nhân viên hay bệnh nhân có quyền được chỉnh sửa thô
      ⦁  REVOKE: Thu hồi quyền từ ai đó
      ⦁  SELECT: Xem một bảng dữ liệu nào đó
      ⦁  UPDATE: Cập nhật một dòng hay bảng nào đó</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        iwAAAIsBRmWzPwAAAUxJREFUSEvdlVGVwjAQRVcCEpCAgyIBCUhAwkpAAhKQgAQkIAEH3Xd7Mj3T8NIC
+        /duP29Mk93WapISfvu9f6LruIK7iKfoEbfoPLueYNBTciZvID22Bt8t5x3iDLPIbP8RJ7BO06Q8Hf7bI
+        cEEqcoROtZhhvPKbRYaLhPs7cgav+ORuzgHEY5Hg7c0D+cxkNovEV4Fwd8ISysWeXN04Qkxzdt1bkCv5
+        pxtHYBD2TliCXDyjHoP/USD24NcJSyh3LvmHG0e4zAlLkCv5ixufTFF8NAv8lLVLHGL8FuBYSw68lLG/
+        ARguEjYiH2Ks66aWkxvrHjQ/kPFGEmdLnEnA5rM/caKyHLTjo8jQZ8+wSUOSe7sWeBSOgrbIpBFI3Are
+        nD+VeABLSJv+bXLro35SZLxZw1yRF/lbWkWs/C2uiBXXUBW5WWktpYg+iO78BwC7gx10RGeXAAAAAElF
+        TkSuQmCC
+</value>
   </data>
 </root>

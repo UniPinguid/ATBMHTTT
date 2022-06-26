@@ -14,6 +14,7 @@ namespace PH1_App
     public partial class listRole : Form
     {
         private static string id = null;
+
         OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
         private static bool addBtnClicked = false;
         public listRole()
@@ -47,15 +48,6 @@ namespace PH1_App
             dataGridView1.AutoResizeRows();
         }
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int numrow;
-            numrow = e.RowIndex;
-            id = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
-            // label4.Text = id;
-            role roleedit = new role();
-            roleedit.Show();
-        }
         static public string getid()
         {
             return id;
@@ -67,5 +59,66 @@ namespace PH1_App
             user.Show();
             this.Close();
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            id = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
+            // label4.Text = id;
+            role roleedit = new role();
+            roleedit.Show();
+        }
+
+        //private void clickDeleteRole(object sender, EventArgs e)
+        //{
+        //    OracleConnection con = new OracleConnection(connectionString);
+
+        //    if (button2.Text == "Xoá vai trò")
+        //    {
+        //        rid = listRole.getid();
+
+        //        string querry = "alter session set \"_ORACLE_SCRIPT\" = true";
+
+        //        OracleCommand cmd = new OracleCommand(querry, con);
+        //        con.Open();
+        //        cmd.CommandType = CommandType.Text;
+        //        cmd.ExecuteNonQuery();
+        //        using (OracleConnection connection = con)
+        //        using (OracleCommand command = new OracleCommand("dropRole", connection))
+        //        {
+        //            command.CommandType = CommandType.StoredProcedure;
+        //            command.Parameters.Add("role_name", OracleDbType.Varchar2).Value = rid;
+        //            //connection.Open();
+        //            command.ExecuteNonQuery();
+        //        }
+        //    }
+        //    else
+        //    {
+        //        string querry = "alter session set \"_ORACLE_SCRIPT\" = true";
+
+        //        OracleCommand cmd = new OracleCommand(querry, con);
+        //        /* if (conOpen == false)
+        //         {
+        //             con.Open();
+        //             conOpen = true;
+        //         }*/
+
+        //        con.Open();
+        //        cmd.CommandType = CommandType.Text;
+        //        cmd.ExecuteNonQuery();
+        //        using (OracleConnection connection = con)
+        //        using (OracleCommand command = new OracleCommand("addRole", connection))
+        //        {
+        //            rid = name_textBox.Text;
+        //            command.CommandType = CommandType.StoredProcedure;
+        //            command.Parameters.Add("role_name", OracleDbType.Varchar2).Value = rid;
+        //            //connection.Open();
+        //            MessageBox.Show(command.CommandText);
+        //            //MessageBox.Show(rid);
+        //            //command.ExecuteNonQuery();
+        //        }
+        //    }
+        //}
     }
 }

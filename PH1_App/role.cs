@@ -23,6 +23,9 @@ namespace PH1_App
         public role()
         {
             InitializeComponent();
+
+            btnSubmit.Hide();
+            iconSubmit.Hide();
         }
 
         private void S1_check(object sender, EventArgs e)
@@ -36,54 +39,83 @@ namespace PH1_App
             //code sth here....
             if (listRole.getAddBtn() == true)
             {
-                button2.Text = "Thêm vai trò";
+                // button2.Text = "Thêm vai trò";
             }
             rid = listRole.getid();
 
             name_textBox.Text = rid;
 
+            OracleConnection con = new OracleConnection(connectionString);
+            con.Open();
 
+            string querry = "Select * from ROLE_TAB_PRIVS WHERE ROLE = '" + name_textBox.Text + "'";
+
+            OracleCommand cmd = new OracleCommand(querry, con);
+            cmd.CommandType = CommandType.Text;
+            OracleDataAdapter adapter1 = new OracleDataAdapter(querry, con);
+            DataTable dt = new DataTable();
+            adapter1.Fill(dt);
+
+            dgv_privileges.DataSource = dt;
+            dgv_privileges.AutoResizeColumns();
+            dgv_privileges.AutoResizeRows();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void toggleEditableTextbox(TextBox infoField, bool toggle)
+        {
+            if (toggle == true)
+            {
+                infoField.BorderStyle = BorderStyle.Fixed3D;
+                infoField.ReadOnly = false;
+                infoField.Location = new Point(infoField.Location.X - 3, infoField.Location.Y - 3);
+            }
+            else
+            {
+                infoField.BorderStyle = BorderStyle.None;
+                infoField.ReadOnly = true;
+                infoField.Location = new Point(infoField.Location.X + 3, infoField.Location.Y + 3);
+                infoField.BackColor = Color.White;
+            }
+        }
+        private void clickEdit(object sender, EventArgs e)
+        {
+            btnEdit.Hide();
+            iconEdit.Hide();
+
+            btnSubmit.Show();
+            iconSubmit.Show();
+            btnSubmit.Location = new Point(btnEdit.Location.X, btnEdit.Location.Y);
+            iconSubmit.Location = new Point(iconEdit.Location.X, iconEdit.Location.Y);
+            iconSubmit.BringToFront();
+
+            // Editable fields
+            toggleEditableTextbox(name_textBox, true);
+            toggleEditableTextbox(textBox_description, true);
+        }
+        private void clickSubmit(object sender, EventArgs e)
+        {
+            btnEdit.Show();
+            iconEdit.Show();
+
+            btnSubmit.Hide();
+            iconSubmit.Hide();
+
+            // Uneditable fields
+            toggleEditableTextbox(name_textBox, false);
+            toggleEditableTextbox(textBox_description, false);
+        }
+
+        private void clickGrantPrivileges(object sender, EventArgs e)
         {
             connection = new OracleConnection(connectionString);
             connection.Open();
+            string com = "GRANT " + comboBox_privileges.Text + " ON \"900001\"." + comboBox_table.Text + " TO \"" + name_textBox.Text + "\"";
+
             try
             {
-                string com = "GRANT " + comboBox1.Text + " ON \"900001\"." + label11.Text + " TO " + name_textBox.Text;
-                com += checkBox2.Checked ? "WITH GRANT OPTION":"";
                 OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
                 command.ExecuteNonQuery();
-                MessageBox.Show("Cap Quyen Thanh Cong", "Thong Bao");
-            }
-            catch(OracleException ex)
-            {
-                string errorMessage = "Code: " + ex.ErrorCode  + "\n" +
-                           "Message: " + ex.Message;
-
-                //System.Diagnostics.EventLog log = new System.Diagnostics.EventLog();
-                //log.Source = "Quan ly benh nhan";
-                //log.WriteEntry(errorMessage);
-                MessageBox.Show(errorMessage, "Thong Bao");
-            }
-            connection.Close();
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            connection = new OracleConnection(connectionString);
-            connection.Open();
-            try
-            {
-                string com = "GRANT " + comboBox2.Text + " ON  \"900001\". " + label12.Text + " TO " + name_textBox.Text;
-                com += checkBox2.Checked ? "WITH GRANT OPTION" : "";
-                OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Cap Quyen Thanh Cong", "Thong Bao");
+                MessageBox.Show("Phân quyền thành công.", "Thông báo");
             }
             catch (OracleException ex)
             {
@@ -92,21 +124,19 @@ namespace PH1_App
 
                 MessageBox.Show(errorMessage, "Thong Bao");
             }
+            Role_Load(sender, e);
             connection.Close();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+        } 
+        private void clickRevokePrivileges(object sender, EventArgs e)
         {
             connection = new OracleConnection(connectionString);
             connection.Open();
             try
             {
-                string com = "GRANT " + comboBox3.Text + " ON  \"900001\". " + label13.Text + " TO " + name_textBox.Text;
-                com += checkBox2.Checked ? "WITH GRANT OPTION" : "";
+                string com = "REVOKE " + comboBox_privilegesRevoke.Text + " ON \"900001\"." + comboBox_tableRevoke.Text + " FROM \"" + name_textBox.Text + "\"";
                 OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
                 command.ExecuteNonQuery();
-                MessageBox.Show("Cap Quyen Thanh Cong", "Thong Bao");
+                MessageBox.Show("Tước quyền thành công.", "Thong Bao");
             }
             catch (OracleException ex)
             {
@@ -115,168 +145,13 @@ namespace PH1_App
 
                 MessageBox.Show(errorMessage, "Thong Bao");
             }
+
+            Role_Load(sender, e);
             connection.Close();
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            connection = new OracleConnection(connectionString);
-            connection.Open();
-            try
-            {
-                string com = "GRANT " + comboBox4.Text + " ON  \"900001\". " + label14.Text + " TO " + name_textBox.Text;
-                com += checkBox2.Checked ? "WITH GRANT OPTION" : "";
-                OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Cap Quyen Thanh Cong", "Thong Bao");
-            }
-            catch (OracleException ex)
-            {
-                string errorMessage = "Code: " + ex.ErrorCode + "\n" +
-                           "Message: " + ex.Message;
-
-                MessageBox.Show(errorMessage, "Thong Bao");
-            }
-            connection.Close();
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            connection = new OracleConnection(connectionString);
-            connection.Open();
-            try
-            {
-                string com = "GRANT " + comboBox5.Text + " ON  \"900001\". " + label2.Text + " TO " + name_textBox.Text;
-                com += checkBox2.Checked ? "WITH GRANT OPTION" : "";
-                OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Cap Quyen Thanh Cong", "Thong Bao");
-            }
-            catch (OracleException ex)
-            {
-                string errorMessage = "Code: " + ex.ErrorCode + "\n" +
-                           "Message: " + ex.Message;
-
-                MessageBox.Show(errorMessage, "Thong Bao");
-            }
-            connection.Close();
-        }
-
-        private void updateBtn_Click(object sender, EventArgs e)
-        {
-            connection = new OracleConnection(connectionString);
-            connection.Open();
-            try
-            {
-                string com = "REVOKE " + comboBox1.Text + " ON  \"900001\". " + label11.Text + " FROM " + name_textBox.Text;
-                OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Tuoc Quyen Thanh Cong", "Thong Bao");
-            }
-            catch (OracleException ex)
-            {
-                string errorMessage = "Code: " + ex.ErrorCode + "\n" +
-                           "Message: " + ex.Message;
-
-                //System.Diagnostics.EventLog log = new System.Diagnostics.EventLog();
-                //log.Source = "Quan ly benh nhan";
-                //log.WriteEntry(errorMessage);
-                MessageBox.Show(errorMessage, "Thong Bao");
-            }
-            connection.Close();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            connection = new OracleConnection(connectionString);
-            connection.Open();
-            try
-            {
-                string com = "REVOKE " + comboBox2.Text + " ON  \"900001\". " + label12.Text + " FROM " + name_textBox.Text;
-                OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Tuoc Quyen Thanh Cong", "Thong Bao");
-            }
-            catch (OracleException ex)
-            {
-                string errorMessage = "Code: " + ex.ErrorCode + "\n" +
-                           "Message: " + ex.Message;
-
-                MessageBox.Show(errorMessage, "Thong Bao");
-            }
-            connection.Close();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            connection = new OracleConnection(connectionString);
-            connection.Open();
-            try
-            {
-                string com = "REVOKE " + comboBox3.Text + " ON  \"900001\". " + label13.Text + " FROM " + name_textBox.Text;
-                OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Tuoc Quyen Thanh Cong", "Thong Bao");
-            }
-            catch (OracleException ex)
-            {
-                string errorMessage = "Code: " + ex.ErrorCode + "\n" +
-                           "Message: " + ex.Message;
-
-                MessageBox.Show(errorMessage, "Thong Bao");
-            }
-            connection.Close();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            connection = new OracleConnection(connectionString);
-            connection.Open();
-            try
-            {
-                string com = "REVOKE " + comboBox4.Text + " ON  \"900001\". " + label14.Text + " FROM " + name_textBox.Text;
-                OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType = CommandType.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Tuoc Quyen Thanh Cong", "Thong Bao");
-            }
-            catch (OracleException ex)
-            {
-                string errorMessage = "Code: " + ex.ErrorCode + "\n" +
-                           "Message: " + ex.Message;
-
-                MessageBox.Show(errorMessage, "Thong Bao");
-            }
-            connection.Close();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            connection = new OracleConnection(connectionString);
-            connection.Open();
-            try
-            {
-                string com = "REVOKE " + comboBox5.Text + " ON  \"900001\". " + label2.Text + " FROM " + name_textBox.Text;
-                OracleCommand command = new OracleCommand(com, connection);
-                command.CommandType=CommandType.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Tuoc Quyen Thanh Cong", "Thong Bao");
-            }
-            catch (OracleException ex)
-            {
-                string errorMessage = "Code: " + ex.ErrorCode + "\n" +
-                           "Message: " + ex.Message;
-
-                MessageBox.Show(errorMessage, "Thong Bao");
-            }
-            connection.Close();
-        }
-
+        
+        /*
         private void button2_Click(object sender, EventArgs e)
         {
             OracleConnection con = new OracleConnection(connectionString);
@@ -310,7 +185,7 @@ namespace PH1_App
                      con.Open();
                      conOpen = true;
                  }*/
-                
+                /*
                 con.Open();
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
@@ -327,5 +202,6 @@ namespace PH1_App
                 }
             }
         }
+        */
     }
 }
