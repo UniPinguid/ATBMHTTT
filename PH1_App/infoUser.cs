@@ -31,53 +31,6 @@ namespace PH1_App
 
             dateCreated = listUser.dateCreated;
             dateCreatedPicker.Value = dateCreated;
-
-            btnSubmit.Hide();
-            iconSubmit.Hide();
-        }
-
-        private void toggleEditableTextbox(TextBox infoField, bool toggle)
-        {
-            if (toggle == true)
-            {
-                infoField.BorderStyle = BorderStyle.Fixed3D;
-                infoField.ReadOnly = false;
-                infoField.Location = new Point(infoField.Location.X - 3, infoField.Location.Y - 3);
-            }
-            else
-            {
-                infoField.BorderStyle = BorderStyle.None;
-                infoField.ReadOnly = true;
-                infoField.Location = new Point(infoField.Location.X + 3, infoField.Location.Y + 3);
-                infoField.BackColor = Color.White;
-            }
-        }
-        private void clickEdit(object sender, EventArgs e)
-        {
-            btnEdit.Hide();
-            iconEdit.Hide();
-
-            btnSubmit.Show();
-            iconSubmit.Show();
-            btnSubmit.Location = new Point(btnEdit.Location.X, btnEdit.Location.Y);
-            iconSubmit.Location = new Point(iconEdit.Location.X, iconEdit.Location.Y);
-            iconSubmit.BringToFront();
-
-            // Editable fields
-            toggleEditableTextbox(usernameTextBox, true);
-
-        }
-        private void clickSubmit(object sender, EventArgs e)
-        {
-            btnEdit.Show();
-            iconEdit.Show();
-
-            btnSubmit.Hide();
-            iconSubmit.Hide();
-
-            // Uneditable fields
-            toggleEditableTextbox(usernameTextBox, false);
-
         }
 
         private void clickGrantPrivileges(object sender, EventArgs e)

@@ -75,6 +75,19 @@ namespace PH1_App
             listRole role = new listRole();
             role.Show();
         }
+        private void clickEncryption(object sender, EventArgs e)
+        {
+            encryption encryptionForm = new encryption();
+            encryptionForm.Show();
+            this.Close();
+        }
+
+        private void clickKey(object sender, EventArgs e)
+        {
+            keyManagement keyForm = new keyManagement();
+            keyForm.Show();
+            this.Close();
+        }
 
         // End of
         // Transitioning

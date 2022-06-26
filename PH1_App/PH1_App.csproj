@@ -105,6 +105,12 @@
     <Compile Include="dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="encryption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="encryption.Designer.cs">
+      <DependentUpon>encryption.cs</DependentUpon>
+    </Compile>
     <Compile Include="homepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,12 @@
     </Compile>
     <Compile Include="infoPatient.Designer.cs">
       <DependentUpon>infoPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="keyManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keyManagement.Designer.cs">
+      <DependentUpon>keyManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="listEmployee.cs">
       <SubType>Form</SubType>
@@ -209,6 +221,9 @@
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="encryption.resx">
+      <DependentUpon>encryption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="homepage.resx">
       <DependentUpon>homepage.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="infoPatient.resx">
       <DependentUpon>infoPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="keyManagement.resx">
+      <DependentUpon>keyManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listEmployee.resx">
       <DependentUpon>listEmployee.cs</DependentUpon>

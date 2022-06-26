@@ -1,7 +1,7 @@
 ﻿
 namespace PH1_App
 {
-    partial class dashboard
+    partial class encryption
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,19 @@ namespace PH1_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(encryption));
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabGeneral = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tabEncryption = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox_search = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.dgv_encryption = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,43 +53,158 @@ namespace PH1_App
             this.button3 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.toggleSidebarBtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.sidebar.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabGeneral.SuspendLayout();
+            this.tabEncryption.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_encryption)).BeginInit();
+            this.sidebar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Quản trị cơ sở dữ liệu";
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.tabControl1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(280, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1312, 753);
+            this.panel2.TabIndex = 7;
             // 
-            // button4
+            // tabControl1
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(88, 185);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 71);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Danh sách vai trò";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.clickRole);
+            this.tabControl1.Controls.Add(this.tabGeneral);
+            this.tabControl1.Controls.Add(this.tabEncryption);
+            this.tabControl1.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.ItemSize = new System.Drawing.Size(50, 36);
+            this.tabControl1.Location = new System.Drawing.Point(-4, 6);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.Padding = new System.Drawing.Point(21, 3);
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1072, 748);
+            this.tabControl1.TabIndex = 73;
             // 
-            // button1
+            // tabGeneral
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(318, 185);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 71);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Danh sách người dùng";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.clickUser);
+            this.tabGeneral.AutoScroll = true;
+            this.tabGeneral.Controls.Add(this.textBox1);
+            this.tabGeneral.Location = new System.Drawing.Point(4, 40);
+            this.tabGeneral.Name = "tabGeneral";
+            this.tabGeneral.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGeneral.Size = new System.Drawing.Size(1064, 704);
+            this.tabGeneral.TabIndex = 1;
+            this.tabGeneral.Text = "Chung";
+            this.tabGeneral.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Inter Light", 11F);
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox1.Location = new System.Drawing.Point(27, 24);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(994, 591);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Encryption là một tính năng của hệ quản trị cơ sở dữ liệu giúp mã hóa thông tin v" +
+    "à các dữ liệu nhạy cảm nhằm tránh việc xăm nhập và tấn công vào hệ thống.";
+            // 
+            // tabEncryption
+            // 
+            this.tabEncryption.AutoScroll = true;
+            this.tabEncryption.Controls.Add(this.button1);
+            this.tabEncryption.Controls.Add(this.panel4);
+            this.tabEncryption.Controls.Add(this.panel3);
+            this.tabEncryption.Controls.Add(this.button7);
+            this.tabEncryption.Controls.Add(this.dgv_encryption);
+            this.tabEncryption.Controls.Add(this.label5);
+            this.tabEncryption.Location = new System.Drawing.Point(4, 40);
+            this.tabEncryption.Name = "tabEncryption";
+            this.tabEncryption.Padding = new System.Windows.Forms.Padding(3);
+            this.tabEncryption.Size = new System.Drawing.Size(1064, 704);
+            this.tabEncryption.TabIndex = 0;
+            this.tabEncryption.Text = "Mã hóa";
+            this.tabEncryption.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel4.Location = new System.Drawing.Point(33, 143);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(998, 2);
+            this.panel4.TabIndex = 78;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.textBox_search);
+            this.panel3.Location = new System.Drawing.Point(33, 79);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(318, 43);
+            this.panel3.TabIndex = 77;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox_search
+            // 
+            this.textBox_search.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_search.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_search.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox_search.Location = new System.Drawing.Point(46, 12);
+            this.textBox_search.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.textBox_search.Name = "textBox_search";
+            this.textBox_search.Size = new System.Drawing.Size(265, 22);
+            this.textBox_search.TabIndex = 26;
+            this.textBox_search.Text = "Tìm kiếm...";
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(236)))), ((int)(((byte)(247)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button7.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(350, 79);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(130, 43);
+            this.button7.TabIndex = 75;
+            this.button7.Text = "Tìm kiếm";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.clickSearch);
+            // 
+            // dgv_encryption
+            // 
+            this.dgv_encryption.AllowUserToAddRows = false;
+            this.dgv_encryption.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_encryption.Location = new System.Drawing.Point(33, 168);
+            this.dgv_encryption.Name = "dgv_encryption";
+            this.dgv_encryption.ReadOnly = true;
+            this.dgv_encryption.RowHeadersVisible = false;
+            this.dgv_encryption.RowHeadersWidth = 51;
+            this.dgv_encryption.RowTemplate.Height = 24;
+            this.dgv_encryption.Size = new System.Drawing.Size(998, 518);
+            this.dgv_encryption.TabIndex = 74;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(28, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(185, 29);
+            this.label5.TabIndex = 73;
+            this.label5.Text = "Dữ liệu mã hóa";
             // 
             // sidebar
             // 
@@ -98,7 +223,7 @@ namespace PH1_App
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(280, 753);
-            this.sidebar.TabIndex = 0;
+            this.sidebar.TabIndex = 6;
             // 
             // label3
             // 
@@ -140,6 +265,7 @@ namespace PH1_App
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,11 +277,11 @@ namespace PH1_App
             this.button6.TabIndex = 6;
             this.button6.Text = "Nhật ký người dùng";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.clickAudit);
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,8 +293,7 @@ namespace PH1_App
             this.button5.TabIndex = 5;
             this.button5.Text = "Mã hóa dữ liệu";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.clickEncryption);
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -183,7 +308,7 @@ namespace PH1_App
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -211,7 +336,6 @@ namespace PH1_App
             this.button3.Text = "Vai trò";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.clickRole);
             // 
             // button10
             // 
@@ -227,7 +351,6 @@ namespace PH1_App
             this.button10.Text = "Người dùng";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.clickUser);
             // 
             // button11
             // 
@@ -243,59 +366,62 @@ namespace PH1_App
             this.button11.Text = "Trang chủ";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.clickHomepage);
             // 
-            // toggleSidebarBtn
+            // button1
             // 
-            this.toggleSidebarBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.toggleSidebarBtn.FlatAppearance.BorderSize = 0;
-            this.toggleSidebarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toggleSidebarBtn.Font = new System.Drawing.Font("Inter Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSidebarBtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toggleSidebarBtn.Location = new System.Drawing.Point(230, 12);
-            this.toggleSidebarBtn.Name = "toggleSidebarBtn";
-            this.toggleSidebarBtn.Size = new System.Drawing.Size(48, 45);
-            this.toggleSidebarBtn.TabIndex = 12;
-            this.toggleSidebarBtn.Text = "❮";
-            this.toggleSidebarBtn.UseVisualStyleBackColor = false;
-            this.toggleSidebarBtn.Click += new System.EventHandler(this.clickToggleSidebar);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(236)))), ((int)(((byte)(247)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(845, 79);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(186, 43);
+            this.button1.TabIndex = 79;
+            this.button1.Text = "Quản lý khóa";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.clickKey);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(280, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1312, 753);
-            this.panel2.TabIndex = 3;
-            // 
-            // dashboard
+            // encryption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1342, 753);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.toggleSidebarBtn);
             this.Controls.Add(this.sidebar);
-            this.Name = "dashboard";
+            this.Name = "encryption";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Administrator Dashboard";
+            this.Text = "encryption";
+            this.Load += new System.EventHandler(this.encryption_Load);
+            this.panel2.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabGeneral.ResumeLayout(false);
+            this.tabGeneral.PerformLayout();
+            this.tabEncryption.ResumeLayout(false);
+            this.tabEncryption.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_encryption)).EndInit();
             this.sidebar.ResumeLayout(false);
             this.sidebar.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabGeneral;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TabPage tabEncryption;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox_search;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataGridView dgv_encryption;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel sidebar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -307,8 +433,5 @@ namespace PH1_App
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button toggleSidebarBtn;
-        private System.Windows.Forms.Panel panel2;
     }
 }
-

@@ -1,6 +1,8 @@
 alter session set "_ORACLE_SCRIPT"=true;
 
 -- Phân quyền cho user DBA
+GRANT SYSDBA TO "900001";
+
 GRANT DBA TO "900001";
 GRANT DBA TO "900002";
 GRANT DBA TO "900003";

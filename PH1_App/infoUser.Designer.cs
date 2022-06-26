@@ -49,62 +49,56 @@ namespace PH1_App
             this.label3 = new System.Windows.Forms.Label();
             this.userIDTextBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.iconSubmit = new System.Windows.Forms.PictureBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.iconEdit = new System.Windows.Forms.PictureBox();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.bottom_padding = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox_privileges = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.comboBox_table = new System.Windows.Forms.ComboBox();
-            this.checkBox_withGrantOpt = new System.Windows.Forms.CheckBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgv_roles = new System.Windows.Forms.DataGridView();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dgv_privileges = new System.Windows.Forms.DataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.comboBox_roleRevoke = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.comboBox_tableRevoke = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.comboBox_privilegesRevoke = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.checkBox_withAdminOpt = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox_role = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox_privilegesRevoke = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboBox_tableRevoke = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.comboBox_roleRevoke = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.dgv_privileges = new System.Windows.Forms.DataGridView();
-            this.dgv_roles = new System.Windows.Forms.DataGridView();
-            this.label17 = new System.Windows.Forms.Label();
+            this.bottom_padding = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.checkBox_withGrantOpt = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox_table = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox_privileges = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconSubmit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconEdit)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_roles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_privileges)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_privileges)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_roles)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -269,6 +263,7 @@ namespace PH1_App
             // dateCreatedPicker
             // 
             this.dateCreatedPicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateCreatedPicker.Enabled = false;
             this.dateCreatedPicker.Font = new System.Drawing.Font("Inter Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateCreatedPicker.Location = new System.Drawing.Point(250, 184);
             this.dateCreatedPicker.Name = "dateCreatedPicker";
@@ -299,12 +294,12 @@ namespace PH1_App
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usernameTextBox.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameTextBox.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.usernameTextBox.Location = new System.Drawing.Point(250, 103);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(310, 21);
+            this.usernameTextBox.ReadOnly = true;
+            this.usernameTextBox.Size = new System.Drawing.Size(310, 28);
             this.usernameTextBox.TabIndex = 72;
             // 
             // label2
@@ -352,10 +347,6 @@ namespace PH1_App
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.iconSubmit);
-            this.panel2.Controls.Add(this.btnSubmit);
-            this.panel2.Controls.Add(this.iconEdit);
-            this.panel2.Controls.Add(this.btnEdit);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label1);
@@ -366,233 +357,204 @@ namespace PH1_App
             this.panel2.Size = new System.Drawing.Size(1057, 753);
             this.panel2.TabIndex = 76;
             // 
-            // pictureBox1
+            // dgv_roles
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(30, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 97;
-            this.pictureBox1.TabStop = false;
+            this.dgv_roles.AllowUserToAddRows = false;
+            this.dgv_roles.AllowUserToDeleteRows = false;
+            this.dgv_roles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_roles.Location = new System.Drawing.Point(34, 1421);
+            this.dgv_roles.Name = "dgv_roles";
+            this.dgv_roles.ReadOnly = true;
+            this.dgv_roles.RowHeadersVisible = false;
+            this.dgv_roles.RowHeadersWidth = 51;
+            this.dgv_roles.RowTemplate.Height = 24;
+            this.dgv_roles.Size = new System.Drawing.Size(700, 312);
+            this.dgv_roles.TabIndex = 115;
             // 
-            // label7
+            // label17
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(185, 64);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(24, 29);
-            this.label7.TabIndex = 99;
-            this.label7.Text = "❮";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(29, 1367);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(180, 29);
+            this.label17.TabIndex = 114;
+            this.label17.Text = "Vai trò hiện tại";
             // 
-            // label1
+            // dgv_privileges
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(218, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 29);
-            this.label1.TabIndex = 98;
-            this.label1.Text = "Thông tin chi tiết";
+            this.dgv_privileges.AllowUserToAddRows = false;
+            this.dgv_privileges.AllowUserToDeleteRows = false;
+            this.dgv_privileges.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_privileges.Location = new System.Drawing.Point(34, 976);
+            this.dgv_privileges.Name = "dgv_privileges";
+            this.dgv_privileges.ReadOnly = true;
+            this.dgv_privileges.RowHeadersVisible = false;
+            this.dgv_privileges.RowHeadersWidth = 51;
+            this.dgv_privileges.RowTemplate.Height = 24;
+            this.dgv_privileges.Size = new System.Drawing.Size(700, 359);
+            this.dgv_privileges.TabIndex = 113;
             // 
-            // panel1
+            // panel6
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.dateCreatedPicker);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.userIDTextBox);
-            this.panel1.Controls.Add(this.usernameTextBox);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(34, 171);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(975, 240);
-            this.panel1.TabIndex = 100;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.pictureBox5);
+            this.panel6.Controls.Add(this.button4);
+            this.panel6.Controls.Add(this.comboBox_roleRevoke);
+            this.panel6.Controls.Add(this.label18);
+            this.panel6.Location = new System.Drawing.Point(541, 715);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(468, 186);
+            this.panel6.TabIndex = 112;
             // 
-            // iconSubmit
+            // pictureBox5
             // 
-            this.iconSubmit.BackColor = System.Drawing.Color.White;
-            this.iconSubmit.Image = ((System.Drawing.Image)(resources.GetObject("iconSubmit.Image")));
-            this.iconSubmit.Location = new System.Drawing.Point(880, 69);
-            this.iconSubmit.Name = "iconSubmit";
-            this.iconSubmit.Size = new System.Drawing.Size(24, 24);
-            this.iconSubmit.TabIndex = 104;
-            this.iconSubmit.TabStop = false;
-            this.iconSubmit.Click += new System.EventHandler(this.clickSubmit);
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(293, 135);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox5.TabIndex = 109;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.clickRevokeRole);
             // 
-            // btnSubmit
+            // button4
             // 
-            this.btnSubmit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSubmit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(140)))), ((int)(((byte)(84)))));
-            this.btnSubmit.Location = new System.Drawing.Point(857, 58);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSubmit.Size = new System.Drawing.Size(175, 44);
-            this.btnSubmit.TabIndex = 103;
-            this.btnSubmit.Text = "Hoàn tất";
-            this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.clickSubmit);
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(140)))), ((int)(((byte)(84)))));
+            this.button4.Location = new System.Drawing.Point(270, 124);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(175, 44);
+            this.button4.TabIndex = 108;
+            this.button4.Text = "Xác nhận";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.clickRevokeRole);
             // 
-            // iconEdit
+            // comboBox_roleRevoke
             // 
-            this.iconEdit.BackColor = System.Drawing.Color.White;
-            this.iconEdit.Image = ((System.Drawing.Image)(resources.GetObject("iconEdit.Image")));
-            this.iconEdit.Location = new System.Drawing.Point(880, 120);
-            this.iconEdit.Name = "iconEdit";
-            this.iconEdit.Size = new System.Drawing.Size(24, 24);
-            this.iconEdit.TabIndex = 102;
-            this.iconEdit.TabStop = false;
-            this.iconEdit.Click += new System.EventHandler(this.clickEdit);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(857, 109);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnEdit.Size = new System.Drawing.Size(175, 44);
-            this.btnEdit.TabIndex = 101;
-            this.btnEdit.Text = "Cập nhật";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.clickEdit);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 443);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 29);
-            this.label4.TabIndex = 105;
-            this.label4.Text = "Phân quyền";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.checkBox_withGrantOpt);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.comboBox_table);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.comboBox_privileges);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Location = new System.Drawing.Point(34, 496);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(468, 235);
-            this.panel3.TabIndex = 101;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(29, 962);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(229, 29);
-            this.label8.TabIndex = 106;
-            this.label8.Text = "Các quyền hiện tại";
-            // 
-            // bottom_padding
-            // 
-            this.bottom_padding.Location = new System.Drawing.Point(34, 1794);
-            this.bottom_padding.Name = "bottom_padding";
-            this.bottom_padding.Size = new System.Drawing.Size(913, 50);
-            this.bottom_padding.TabIndex = 107;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(32, 29);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 20);
-            this.label10.TabIndex = 98;
-            this.label10.Text = "Cấp quyền";
-            // 
-            // comboBox_privileges
-            // 
-            this.comboBox_privileges.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_privileges.FormattingEnabled = true;
-            this.comboBox_privileges.Items.AddRange(new object[] {
+            this.comboBox_roleRevoke.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_roleRevoke.FormattingEnabled = true;
+            this.comboBox_roleRevoke.Items.AddRange(new object[] {
             "SELECT",
             "INSERT",
             "UPDATE",
             "DELETE"});
-            this.comboBox_privileges.Location = new System.Drawing.Point(151, 26);
-            this.comboBox_privileges.Name = "comboBox_privileges";
-            this.comboBox_privileges.Size = new System.Drawing.Size(114, 28);
-            this.comboBox_privileges.TabIndex = 99;
+            this.comboBox_roleRevoke.Location = new System.Drawing.Point(151, 26);
+            this.comboBox_roleRevoke.Name = "comboBox_roleRevoke";
+            this.comboBox_roleRevoke.Size = new System.Drawing.Size(114, 28);
+            this.comboBox_roleRevoke.TabIndex = 99;
             // 
-            // label11
+            // label18
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(32, 76);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 20);
-            this.label11.TabIndex = 100;
-            this.label11.Text = "trên bảng";
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label18.Location = new System.Drawing.Point(32, 29);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(107, 20);
+            this.label18.TabIndex = 98;
+            this.label18.Text = "Tước vai trò";
             // 
-            // comboBox_table
+            // panel5
             // 
-            this.comboBox_table.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_table.FormattingEnabled = true;
-            this.comboBox_table.Items.AddRange(new object[] {
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.comboBox_tableRevoke);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.pictureBox4);
+            this.panel5.Controls.Add(this.button3);
+            this.panel5.Controls.Add(this.comboBox_privilegesRevoke);
+            this.panel5.Controls.Add(this.label16);
+            this.panel5.Location = new System.Drawing.Point(34, 715);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(468, 186);
+            this.panel5.TabIndex = 110;
+            // 
+            // comboBox_tableRevoke
+            // 
+            this.comboBox_tableRevoke.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_tableRevoke.FormattingEnabled = true;
+            this.comboBox_tableRevoke.Items.AddRange(new object[] {
             "HSBA",
             "HSBA_DV",
             "BENHNHAN",
             "CSYT",
             "NHANVIEN",
             "THONGBAO"});
-            this.comboBox_table.Location = new System.Drawing.Point(151, 72);
-            this.comboBox_table.Name = "comboBox_table";
-            this.comboBox_table.Size = new System.Drawing.Size(114, 28);
-            this.comboBox_table.TabIndex = 101;
+            this.comboBox_tableRevoke.Location = new System.Drawing.Point(151, 70);
+            this.comboBox_tableRevoke.Name = "comboBox_tableRevoke";
+            this.comboBox_tableRevoke.Size = new System.Drawing.Size(114, 28);
+            this.comboBox_tableRevoke.TabIndex = 111;
             // 
-            // checkBox_withGrantOpt
+            // label14
             // 
-            this.checkBox_withGrantOpt.AutoSize = true;
-            this.checkBox_withGrantOpt.Font = new System.Drawing.Font("Inter Light", 8.5F);
-            this.checkBox_withGrantOpt.Location = new System.Drawing.Point(49, 122);
-            this.checkBox_withGrantOpt.Name = "checkBox_withGrantOpt";
-            this.checkBox_withGrantOpt.Size = new System.Drawing.Size(307, 23);
-            this.checkBox_withGrantOpt.TabIndex = 102;
-            this.checkBox_withGrantOpt.Text = "Cho phép phân quyền người dùng khác";
-            this.checkBox_withGrantOpt.UseVisualStyleBackColor = true;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Location = new System.Drawing.Point(33, 74);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 20);
+            this.label14.TabIndex = 110;
+            this.label14.Text = "trên bảng";
             // 
-            // pictureBox2
+            // pictureBox4
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(293, 185);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 109;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.clickGrantPrivileges);
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(293, 135);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.TabIndex = 109;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.clickRevokePrivileges);
             // 
-            // button1
+            // button3
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(140)))), ((int)(((byte)(84)))));
-            this.button1.Location = new System.Drawing.Point(270, 174);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(175, 44);
-            this.button1.TabIndex = 108;
-            this.button1.Text = "Hoàn tất";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.clickGrantPrivileges);
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(140)))), ((int)(((byte)(84)))));
+            this.button3.Location = new System.Drawing.Point(270, 124);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(175, 44);
+            this.button3.TabIndex = 108;
+            this.button3.Text = "Xác nhận";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.clickRevokePrivileges);
+            // 
+            // comboBox_privilegesRevoke
+            // 
+            this.comboBox_privilegesRevoke.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_privilegesRevoke.FormattingEnabled = true;
+            this.comboBox_privilegesRevoke.Items.AddRange(new object[] {
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "DELETE"});
+            this.comboBox_privilegesRevoke.Location = new System.Drawing.Point(151, 26);
+            this.comboBox_privilegesRevoke.Name = "comboBox_privilegesRevoke";
+            this.comboBox_privilegesRevoke.Size = new System.Drawing.Size(114, 28);
+            this.comboBox_privilegesRevoke.TabIndex = 99;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label16.Location = new System.Drawing.Point(32, 29);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(106, 20);
+            this.label16.TabIndex = 98;
+            this.label16.Text = "Tước quyền";
             // 
             // panel4
             // 
@@ -602,7 +564,7 @@ namespace PH1_App
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.comboBox_role);
             this.panel4.Controls.Add(this.label15);
-            this.panel4.Location = new System.Drawing.Point(541, 496);
+            this.panel4.Location = new System.Drawing.Point(541, 456);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(468, 235);
             this.panel4.TabIndex = 110;
@@ -610,6 +572,7 @@ namespace PH1_App
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(293, 185);
             this.pictureBox3.Name = "pictureBox3";
@@ -632,6 +595,7 @@ namespace PH1_App
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -641,7 +605,7 @@ namespace PH1_App
             this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(175, 44);
             this.button2.TabIndex = 108;
-            this.button2.Text = "Hoàn tất";
+            this.button2.Text = "Xác nhận";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.clickGrantRole);
             // 
@@ -674,209 +638,194 @@ namespace PH1_App
             this.label15.TabIndex = 98;
             this.label15.Text = "Cấp vai trò";
             // 
-            // panel5
+            // bottom_padding
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.comboBox_tableRevoke);
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Controls.Add(this.comboBox_privilegesRevoke);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Location = new System.Drawing.Point(34, 755);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(468, 186);
-            this.panel5.TabIndex = 110;
+            this.bottom_padding.Location = new System.Drawing.Point(34, 1754);
+            this.bottom_padding.Name = "bottom_padding";
+            this.bottom_padding.Size = new System.Drawing.Size(913, 50);
+            this.bottom_padding.TabIndex = 107;
             // 
-            // pictureBox4
+            // label8
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(293, 135);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 109;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.clickRevokePrivileges);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(29, 922);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(229, 29);
+            this.label8.TabIndex = 106;
+            this.label8.Text = "Các quyền hiện tại";
             // 
-            // button3
+            // panel3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(140)))), ((int)(((byte)(84)))));
-            this.button3.Location = new System.Drawing.Point(270, 124);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(175, 44);
-            this.button3.TabIndex = 108;
-            this.button3.Text = "Hoàn tất";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.clickRevokePrivileges);
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.checkBox_withGrantOpt);
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.comboBox_table);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.comboBox_privileges);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Location = new System.Drawing.Point(34, 456);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(468, 235);
+            this.panel3.TabIndex = 101;
             // 
-            // comboBox_privilegesRevoke
+            // pictureBox2
             // 
-            this.comboBox_privilegesRevoke.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_privilegesRevoke.FormattingEnabled = true;
-            this.comboBox_privilegesRevoke.Items.AddRange(new object[] {
-            "SELECT",
-            "INSERT",
-            "UPDATE",
-            "DELETE"});
-            this.comboBox_privilegesRevoke.Location = new System.Drawing.Point(151, 26);
-            this.comboBox_privilegesRevoke.Name = "comboBox_privilegesRevoke";
-            this.comboBox_privilegesRevoke.Size = new System.Drawing.Size(114, 28);
-            this.comboBox_privilegesRevoke.TabIndex = 99;
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(293, 185);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 109;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.clickGrantPrivileges);
             // 
-            // label16
+            // checkBox_withGrantOpt
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(32, 29);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(106, 20);
-            this.label16.TabIndex = 98;
-            this.label16.Text = "Tước quyền";
+            this.checkBox_withGrantOpt.AutoSize = true;
+            this.checkBox_withGrantOpt.Font = new System.Drawing.Font("Inter Light", 8.5F);
+            this.checkBox_withGrantOpt.Location = new System.Drawing.Point(49, 122);
+            this.checkBox_withGrantOpt.Name = "checkBox_withGrantOpt";
+            this.checkBox_withGrantOpt.Size = new System.Drawing.Size(307, 23);
+            this.checkBox_withGrantOpt.TabIndex = 102;
+            this.checkBox_withGrantOpt.Text = "Cho phép phân quyền người dùng khác";
+            this.checkBox_withGrantOpt.UseVisualStyleBackColor = true;
             // 
-            // comboBox_tableRevoke
+            // button1
             // 
-            this.comboBox_tableRevoke.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_tableRevoke.FormattingEnabled = true;
-            this.comboBox_tableRevoke.Items.AddRange(new object[] {
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(140)))), ((int)(((byte)(84)))));
+            this.button1.Location = new System.Drawing.Point(270, 174);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(175, 44);
+            this.button1.TabIndex = 108;
+            this.button1.Text = "Xác nhận";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.clickGrantPrivileges);
+            // 
+            // comboBox_table
+            // 
+            this.comboBox_table.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_table.FormattingEnabled = true;
+            this.comboBox_table.Items.AddRange(new object[] {
             "HSBA",
             "HSBA_DV",
             "BENHNHAN",
             "CSYT",
             "NHANVIEN",
             "THONGBAO"});
-            this.comboBox_tableRevoke.Location = new System.Drawing.Point(151, 70);
-            this.comboBox_tableRevoke.Name = "comboBox_tableRevoke";
-            this.comboBox_tableRevoke.Size = new System.Drawing.Size(114, 28);
-            this.comboBox_tableRevoke.TabIndex = 111;
+            this.comboBox_table.Location = new System.Drawing.Point(151, 72);
+            this.comboBox_table.Name = "comboBox_table";
+            this.comboBox_table.Size = new System.Drawing.Size(114, 28);
+            this.comboBox_table.TabIndex = 101;
             // 
-            // label14
+            // label11
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(33, 74);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 20);
-            this.label14.TabIndex = 110;
-            this.label14.Text = "trên bảng";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.Location = new System.Drawing.Point(32, 76);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(89, 20);
+            this.label11.TabIndex = 100;
+            this.label11.Text = "trên bảng";
             // 
-            // panel6
+            // comboBox_privileges
             // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.comboBox_roleRevoke);
-            this.panel6.Controls.Add(this.label18);
-            this.panel6.Location = new System.Drawing.Point(541, 755);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(468, 186);
-            this.panel6.TabIndex = 112;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(293, 135);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.TabIndex = 109;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.clickRevokeRole);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(140)))), ((int)(((byte)(84)))));
-            this.button4.Location = new System.Drawing.Point(270, 124);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(175, 44);
-            this.button4.TabIndex = 108;
-            this.button4.Text = "Hoàn tất";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.clickRevokeRole);
-            // 
-            // comboBox_roleRevoke
-            // 
-            this.comboBox_roleRevoke.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_roleRevoke.FormattingEnabled = true;
-            this.comboBox_roleRevoke.Items.AddRange(new object[] {
+            this.comboBox_privileges.Font = new System.Drawing.Font("Inter", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_privileges.FormattingEnabled = true;
+            this.comboBox_privileges.Items.AddRange(new object[] {
             "SELECT",
             "INSERT",
             "UPDATE",
             "DELETE"});
-            this.comboBox_roleRevoke.Location = new System.Drawing.Point(151, 26);
-            this.comboBox_roleRevoke.Name = "comboBox_roleRevoke";
-            this.comboBox_roleRevoke.Size = new System.Drawing.Size(114, 28);
-            this.comboBox_roleRevoke.TabIndex = 99;
+            this.comboBox_privileges.Location = new System.Drawing.Point(151, 26);
+            this.comboBox_privileges.Name = "comboBox_privileges";
+            this.comboBox_privileges.Size = new System.Drawing.Size(114, 28);
+            this.comboBox_privileges.TabIndex = 99;
             // 
-            // label18
+            // label10
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(32, 29);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(107, 20);
-            this.label18.TabIndex = 98;
-            this.label18.Text = "Tước vai trò";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Inter Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(32, 29);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(99, 20);
+            this.label10.TabIndex = 98;
+            this.label10.Text = "Cấp quyền";
             // 
-            // dgv_privileges
+            // label4
             // 
-            this.dgv_privileges.AllowUserToAddRows = false;
-            this.dgv_privileges.AllowUserToDeleteRows = false;
-            this.dgv_privileges.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_privileges.Location = new System.Drawing.Point(34, 1016);
-            this.dgv_privileges.Name = "dgv_privileges";
-            this.dgv_privileges.ReadOnly = true;
-            this.dgv_privileges.RowHeadersVisible = false;
-            this.dgv_privileges.RowHeadersWidth = 51;
-            this.dgv_privileges.RowTemplate.Height = 24;
-            this.dgv_privileges.Size = new System.Drawing.Size(700, 359);
-            this.dgv_privileges.TabIndex = 113;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(29, 403);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 29);
+            this.label4.TabIndex = 105;
+            this.label4.Text = "Phân quyền";
             // 
-            // dgv_roles
+            // panel1
             // 
-            this.dgv_roles.AllowUserToAddRows = false;
-            this.dgv_roles.AllowUserToDeleteRows = false;
-            this.dgv_roles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_roles.Location = new System.Drawing.Point(34, 1461);
-            this.dgv_roles.Name = "dgv_roles";
-            this.dgv_roles.ReadOnly = true;
-            this.dgv_roles.RowHeadersVisible = false;
-            this.dgv_roles.RowHeadersWidth = 51;
-            this.dgv_roles.RowTemplate.Height = 24;
-            this.dgv_roles.Size = new System.Drawing.Size(700, 312);
-            this.dgv_roles.TabIndex = 115;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.dateCreatedPicker);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.userIDTextBox);
+            this.panel1.Controls.Add(this.usernameTextBox);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(34, 131);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(975, 240);
+            this.panel1.TabIndex = 100;
             // 
-            // label17
+            // pictureBox1
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(29, 1407);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(180, 29);
-            this.label17.TabIndex = 114;
-            this.label17.Text = "Vai trò hiện tại";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(30, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 97;
+            this.pictureBox1.TabStop = false;
             // 
-            // userInfo
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(185, 64);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(24, 29);
+            this.label7.TabIndex = 99;
+            this.label7.Text = "❮";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(218, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 29);
+            this.label1.TabIndex = 98;
+            this.label1.Text = "Thông tin chi tiết";
+            // 
+            // infoUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1342, 753);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.sidebar);
-            this.Name = "userInfo";
+            this.Name = "infoUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin người dùng";
             this.Load += new System.EventHandler(this.userInfo_Load);
@@ -884,25 +833,23 @@ namespace PH1_App
             this.sidebar.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconSubmit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconEdit)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_roles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_privileges)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_privileges)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_roles)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -931,10 +878,6 @@ namespace PH1_App
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox iconSubmit;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.PictureBox iconEdit;
-        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PH1_App
 {
-    public partial class dashboard : Form
+    public partial class keyManagement : Form
     {
-        public dashboard()
+        public keyManagement()
         {
             InitializeComponent();
         }
@@ -44,6 +44,12 @@ namespace PH1_App
         {
             homepage homepageForm = new homepage();
             homepageForm.Show();
+            this.Close();
+        }
+        private void clickDashboard(object sender, EventArgs e)
+        {
+            dashboard dashboardForm = new dashboard();
+            dashboardForm.Show();
             this.Close();
         }
 
@@ -78,8 +84,9 @@ namespace PH1_App
         }
 
 
+
+
         // End of
         // Transitioning
-
     }
 }

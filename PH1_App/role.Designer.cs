@@ -49,11 +49,8 @@ namespace PH1_App
             this.comboBox_privileges = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.iconSubmit = new System.Windows.Forms.PictureBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.iconEdit = new System.Windows.Forms.PictureBox();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox_description = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -72,15 +69,12 @@ namespace PH1_App
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.textBox_description = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_privileges)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconSubmit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconEdit)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
@@ -96,10 +90,6 @@ namespace PH1_App
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.iconSubmit);
-            this.panel2.Controls.Add(this.btnSubmit);
-            this.panel2.Controls.Add(this.iconEdit);
-            this.panel2.Controls.Add(this.btnEdit);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label23);
@@ -115,7 +105,7 @@ namespace PH1_App
             this.dgv_privileges.AllowUserToAddRows = false;
             this.dgv_privileges.AllowUserToDeleteRows = false;
             this.dgv_privileges.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_privileges.Location = new System.Drawing.Point(34, 787);
+            this.dgv_privileges.Location = new System.Drawing.Point(34, 726);
             this.dgv_privileges.Name = "dgv_privileges";
             this.dgv_privileges.ReadOnly = true;
             this.dgv_privileges.RowHeadersVisible = false;
@@ -133,7 +123,7 @@ namespace PH1_App
             this.panel5.Controls.Add(this.button13);
             this.panel5.Controls.Add(this.comboBox_privilegesRevoke);
             this.panel5.Controls.Add(this.label16);
-            this.panel5.Location = new System.Drawing.Point(526, 496);
+            this.panel5.Location = new System.Drawing.Point(526, 456);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(468, 186);
             this.panel5.TabIndex = 110;
@@ -168,6 +158,7 @@ namespace PH1_App
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(293, 135);
             this.pictureBox4.Name = "pictureBox4";
@@ -179,6 +170,7 @@ namespace PH1_App
             // button13
             // 
             this.button13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,7 +180,7 @@ namespace PH1_App
             this.button13.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button13.Size = new System.Drawing.Size(175, 44);
             this.button13.TabIndex = 108;
-            this.button13.Text = "Hoàn tất";
+            this.button13.Text = "Xác nhận";
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.clickRevokePrivileges);
             // 
@@ -219,7 +211,7 @@ namespace PH1_App
             // 
             // bottom_padding
             // 
-            this.bottom_padding.Location = new System.Drawing.Point(34, 1167);
+            this.bottom_padding.Location = new System.Drawing.Point(34, 1095);
             this.bottom_padding.Name = "bottom_padding";
             this.bottom_padding.Size = new System.Drawing.Size(913, 50);
             this.bottom_padding.TabIndex = 107;
@@ -228,7 +220,7 @@ namespace PH1_App
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(29, 719);
+            this.label8.Location = new System.Drawing.Point(29, 679);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(229, 29);
             this.label8.TabIndex = 106;
@@ -243,7 +235,7 @@ namespace PH1_App
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.comboBox_privileges);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Location = new System.Drawing.Point(34, 496);
+            this.panel3.Location = new System.Drawing.Point(34, 456);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(468, 186);
             this.panel3.TabIndex = 101;
@@ -251,6 +243,7 @@ namespace PH1_App
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(296, 135);
             this.pictureBox2.Name = "pictureBox2";
@@ -262,6 +255,7 @@ namespace PH1_App
             // button15
             // 
             this.button15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -271,7 +265,7 @@ namespace PH1_App
             this.button15.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button15.Size = new System.Drawing.Size(175, 44);
             this.button15.TabIndex = 108;
-            this.button15.Text = "Hoàn tất";
+            this.button15.Text = "Xác nhận";
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.clickGrantPrivileges);
             // 
@@ -331,61 +325,11 @@ namespace PH1_App
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(29, 443);
+            this.label9.Location = new System.Drawing.Point(29, 403);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(151, 29);
             this.label9.TabIndex = 105;
             this.label9.Text = "Phân quyền";
-            // 
-            // iconSubmit
-            // 
-            this.iconSubmit.BackColor = System.Drawing.Color.White;
-            this.iconSubmit.Image = ((System.Drawing.Image)(resources.GetObject("iconSubmit.Image")));
-            this.iconSubmit.Location = new System.Drawing.Point(880, 69);
-            this.iconSubmit.Name = "iconSubmit";
-            this.iconSubmit.Size = new System.Drawing.Size(24, 24);
-            this.iconSubmit.TabIndex = 104;
-            this.iconSubmit.TabStop = false;
-            this.iconSubmit.Click += new System.EventHandler(this.clickSubmit);
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSubmit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(207)))), ((int)(((byte)(114)))));
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(140)))), ((int)(((byte)(84)))));
-            this.btnSubmit.Location = new System.Drawing.Point(857, 58);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSubmit.Size = new System.Drawing.Size(175, 44);
-            this.btnSubmit.TabIndex = 103;
-            this.btnSubmit.Text = "Hoàn tất";
-            this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.clickSubmit);
-            // 
-            // iconEdit
-            // 
-            this.iconEdit.BackColor = System.Drawing.Color.White;
-            this.iconEdit.Image = ((System.Drawing.Image)(resources.GetObject("iconEdit.Image")));
-            this.iconEdit.Location = new System.Drawing.Point(880, 120);
-            this.iconEdit.Name = "iconEdit";
-            this.iconEdit.Size = new System.Drawing.Size(24, 24);
-            this.iconEdit.TabIndex = 102;
-            this.iconEdit.TabStop = false;
-            this.iconEdit.Click += new System.EventHandler(this.clickEdit);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(857, 109);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnEdit.Size = new System.Drawing.Size(175, 44);
-            this.btnEdit.TabIndex = 101;
-            this.btnEdit.Text = "Cập nhật";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.clickEdit);
             // 
             // panel1
             // 
@@ -395,10 +339,20 @@ namespace PH1_App
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.name_textBox);
-            this.panel1.Location = new System.Drawing.Point(34, 171);
+            this.panel1.Location = new System.Drawing.Point(34, 131);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(975, 240);
             this.panel1.TabIndex = 100;
+            // 
+            // textBox_description
+            // 
+            this.textBox_description.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_description.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox_description.Location = new System.Drawing.Point(249, 145);
+            this.textBox_description.Name = "textBox_description";
+            this.textBox_description.ReadOnly = true;
+            this.textBox_description.Size = new System.Drawing.Size(688, 28);
+            this.textBox_description.TabIndex = 98;
             // 
             // pictureBox1
             // 
@@ -434,12 +388,12 @@ namespace PH1_App
             // 
             // name_textBox
             // 
-            this.name_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.name_textBox.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_textBox.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.name_textBox.Location = new System.Drawing.Point(250, 63);
             this.name_textBox.Name = "name_textBox";
-            this.name_textBox.Size = new System.Drawing.Size(310, 21);
+            this.name_textBox.ReadOnly = true;
+            this.name_textBox.Size = new System.Drawing.Size(310, 28);
             this.name_textBox.TabIndex = 72;
             // 
             // label22
@@ -633,16 +587,6 @@ namespace PH1_App
             this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button22.UseVisualStyleBackColor = true;
             // 
-            // textBox_description
-            // 
-            this.textBox_description.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_description.Font = new System.Drawing.Font("Inter Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_description.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox_description.Location = new System.Drawing.Point(249, 145);
-            this.textBox_description.Name = "textBox_description";
-            this.textBox_description.Size = new System.Drawing.Size(688, 21);
-            this.textBox_description.TabIndex = 98;
-            // 
             // role
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -664,8 +608,6 @@ namespace PH1_App
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconSubmit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconEdit)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -696,10 +638,6 @@ namespace PH1_App
         private System.Windows.Forms.ComboBox comboBox_privileges;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox iconSubmit;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.PictureBox iconEdit;
-        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox_description;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -40,6 +40,12 @@ namespace PH1_App
             this.tabGuide = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabAudit = new System.Windows.Forms.TabPage();
+            this.countResults = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.toDate = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.fromDate = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -62,12 +68,6 @@ namespace PH1_App
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.toggleSidebarBtn = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.fromDate = new System.Windows.Forms.DateTimePicker();
-            this.toDate = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.countResults = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabGeneral.SuspendLayout();
@@ -125,11 +125,11 @@ namespace PH1_App
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Inter Light", 11F);
             this.textBox3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3.Location = new System.Drawing.Point(27, 582);
+            this.textBox3.Location = new System.Drawing.Point(27, 721);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(991, 361);
+            this.textBox3.Size = new System.Drawing.Size(991, 254);
             this.textBox3.TabIndex = 3;
             this.textBox3.Text = "Kịch bản 1\r\n\r\nKịch bản 2\r\n\r\nKịch bản 3\r\n\r\nKịch bản 4";
             // 
@@ -138,7 +138,7 @@ namespace PH1_App
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Inter", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label7.Location = new System.Drawing.Point(23, 537);
+            this.label7.Location = new System.Drawing.Point(23, 683);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(268, 23);
             this.label7.TabIndex = 2;
@@ -165,7 +165,7 @@ namespace PH1_App
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(994, 458);
+            this.textBox1.Size = new System.Drawing.Size(994, 591);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
@@ -216,6 +216,70 @@ namespace PH1_App
             this.tabAudit.TabIndex = 0;
             this.tabAudit.Text = "Nhật ký";
             this.tabAudit.UseVisualStyleBackColor = true;
+            // 
+            // countResults
+            // 
+            this.countResults.Font = new System.Drawing.Font("Inter Light", 10F);
+            this.countResults.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.countResults.Location = new System.Drawing.Point(687, 173);
+            this.countResults.Name = "countResults";
+            this.countResults.Size = new System.Drawing.Size(204, 20);
+            this.countResults.TabIndex = 86;
+            this.countResults.Text = "Có 0 dữ liệu nhật ký";
+            this.countResults.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Inter Light", 10F);
+            this.button1.Location = new System.Drawing.Point(905, 162);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 40);
+            this.button1.TabIndex = 85;
+            this.button1.Text = "Xóa tất cả";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.clickDeleteAll);
+            // 
+            // toDate
+            // 
+            this.toDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.toDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.toDate.Location = new System.Drawing.Point(439, 165);
+            this.toDate.Name = "toDate";
+            this.toDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toDate.Size = new System.Drawing.Size(165, 29);
+            this.toDate.TabIndex = 84;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(332, 170);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(92, 20);
+            this.label9.TabIndex = 83;
+            this.label9.Text = "Đến ngày:";
+            // 
+            // fromDate
+            // 
+            this.fromDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.fromDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fromDate.Location = new System.Drawing.Point(119, 165);
+            this.fromDate.Name = "fromDate";
+            this.fromDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fromDate.Size = new System.Drawing.Size(165, 29);
+            this.fromDate.TabIndex = 82;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label8.Location = new System.Drawing.Point(31, 170);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 20);
+            this.label8.TabIndex = 81;
+            this.label8.Text = "Từ ngày:";
             // 
             // label1
             // 
@@ -381,6 +445,7 @@ namespace PH1_App
             this.button8.Text = "Khóa";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.clickKey);
             // 
             // button6
             // 
@@ -412,6 +477,7 @@ namespace PH1_App
             this.button5.Text = "Mã hóa dữ liệu";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.clickEncryption);
             // 
             // label4
             // 
@@ -503,70 +569,6 @@ namespace PH1_App
             this.toggleSidebarBtn.Text = "❮";
             this.toggleSidebarBtn.UseVisualStyleBackColor = false;
             this.toggleSidebarBtn.Click += new System.EventHandler(this.clickToggleSidebar);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(31, 170);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 20);
-            this.label8.TabIndex = 81;
-            this.label8.Text = "Từ ngày:";
-            // 
-            // fromDate
-            // 
-            this.fromDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.fromDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fromDate.Location = new System.Drawing.Point(119, 165);
-            this.fromDate.Name = "fromDate";
-            this.fromDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fromDate.Size = new System.Drawing.Size(165, 29);
-            this.fromDate.TabIndex = 82;
-            // 
-            // toDate
-            // 
-            this.toDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.toDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.toDate.Location = new System.Drawing.Point(439, 165);
-            this.toDate.Name = "toDate";
-            this.toDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toDate.Size = new System.Drawing.Size(165, 29);
-            this.toDate.TabIndex = 84;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(332, 170);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 20);
-            this.label9.TabIndex = 83;
-            this.label9.Text = "Đến ngày:";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Inter Light", 10F);
-            this.button1.Location = new System.Drawing.Point(905, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 40);
-            this.button1.TabIndex = 85;
-            this.button1.Text = "Xóa tất cả";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.clickDeleteAll);
-            // 
-            // countResults
-            // 
-            this.countResults.Font = new System.Drawing.Font("Inter Light", 10F);
-            this.countResults.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.countResults.Location = new System.Drawing.Point(687, 173);
-            this.countResults.Name = "countResults";
-            this.countResults.Size = new System.Drawing.Size(204, 20);
-            this.countResults.TabIndex = 86;
-            this.countResults.Text = "Có 0 dữ liệu nhật ký";
-            this.countResults.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // audit
             // 
