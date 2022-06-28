@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA448F52-1C06-E47A-42A0-05101D550804" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="HSBA">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>HSBA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:46 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MAHSBA" id="4C998B2F-73C2-8C6E-4663-409D8DD9159C">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA</sourceObjSchema>
+<sourceObjName>MAHSBA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MABN" id="4FEE6180-2DC7-4565-C6D1-2A6B939A4913">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA</sourceObjSchema>
+<sourceObjName>MABN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95BD864D-D041-E033-44D5-EFE7CFFB04F5" referredColumn="53F7D8AC-AC4D-F802-5785-AEB5B7969A12"/>
+</associations>
+</Column>
+<Column name="NGAY" id="891A4572-0723-D266-52AA-BFE94F1599E7">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA</sourceObjSchema>
+<sourceObjName>NGAY</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANDOAN" id="7A58229E-6F43-E092-4BD3-6A96DCCAEB87">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA</sourceObjSchema>
+<sourceObjName>CHANDOAN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MABS" id="F9ED361C-470D-219F-546E-3839A4966794">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA</sourceObjSchema>
+<sourceObjName>MABS</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC1CFE99-3D23-4A9D-DC4D-1426231C811A" referredColumn="7D28B6DF-A712-F7DE-AE0B-B8BF12465722"/>
+</associations>
+</Column>
+<Column name="MAKHOA" id="5AE927B7-C8B1-94FE-718C-687B0E463D6E">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA</sourceObjSchema>
+<sourceObjName>MAKHOA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MACSYT" id="6407235E-E184-0AD4-C423-8D9EAA074484">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA</sourceObjSchema>
+<sourceObjName>MACSYT</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D828747C-DC2D-0F0F-775B-843F93DB6E84" referredColumn="0B081324-0CDD-2954-261F-3791CBDF2B41"/>
+</associations>
+</Column>
+<Column name="KETLUAN" id="1EF0D2DA-E416-F941-ADA1-14E0B4AA5A91">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA</sourceObjSchema>
+<sourceObjName>KETLUAN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DE963F1-8710-7D1A-A3A9-DE94E75AEDA6" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="HSBA_PK">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>SYS_C008364</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C998B2F-73C2-8C6E-4663-409D8DD9159C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E55B38A0-671F-8820-CDCB-16A34659FD7A" name="FK_MABN_MABN">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FEE6180-2DC7-4565-C6D1-2A6B939A4913"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1F02021-5886-F4D3-F117-9AC7B3753D75" name="FK_MABS_MANV">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9ED361C-470D-219F-546E-3839A4966794"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="040AA852-0A18-9C89-54A6-0F39E4C29C94" name="HSBA_CSYT_FK">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-28 13:37:03 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6407235E-E184-0AD4-C423-8D9EAA074484"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

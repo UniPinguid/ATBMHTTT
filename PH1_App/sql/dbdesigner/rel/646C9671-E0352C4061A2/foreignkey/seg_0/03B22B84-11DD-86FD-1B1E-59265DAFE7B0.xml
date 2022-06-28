@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="03B22B84-11DD-86FD-1B1E-59265DAFE7B0" containerWithKeyObject="644E99A5-225E-1277-861D-7B6B5E7C8B74" localFKIndex="E581AD05-97C3-11ED-CAB0-2635974694EB" name="FK_MAKTV_MANV">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>FK_MAKTV_MANV</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<referredTableLongName>900001.NHANVIEN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>90732B96-E33E-E69E-821C-A8531C9F00BC</referredTableID>
+<keyObject>8AF28461-A353-FD87-AF15-614B7724AB29</keyObject>
+<referredKeyID>8AF28461-A353-FD87-AF15-614B7724AB29</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>MANV</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

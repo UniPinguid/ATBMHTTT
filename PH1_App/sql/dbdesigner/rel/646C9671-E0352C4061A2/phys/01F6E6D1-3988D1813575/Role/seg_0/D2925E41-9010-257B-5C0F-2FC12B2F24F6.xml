@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="GIAMDOCSO" directorySegmentName="seg_0" id="D2925E41-9010-257B-5C0F-2FC12B2F24F6">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjName>GIAMDOCSO</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions16" id="84A83130-67EC-CD86-422A-EBE077EA53E1">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>DELETE, INSERT, UPDATE</privileges>
+<table>DB77A3BA-3D3D-0480-8F3E-4F2DB0F2F294</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions17" id="86C47849-05CB-56D8-1055-7DF53E7D5F3F">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>DELETE, INSERT, UPDATE</privileges>
+<table>90732B96-E33E-E69E-821C-A8531C9F00BC</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions18" id="3EACF0F1-9D71-6430-501F-C69CB7D1F478">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT</privileges>
+<table>AC3DD7BB-66F9-97A1-2E1B-DB7FEEE4706C</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

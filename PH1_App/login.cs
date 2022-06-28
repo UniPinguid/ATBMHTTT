@@ -26,11 +26,14 @@ namespace PH1_App
         public static bool is_NhanVien = false;
         public static bool is_BenhNhan = false;
 
-            
+        public static string username = "";
+
+           
         public login()
         {
             InitializeComponent();
         }
+
 
         private void clickRegister(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -56,8 +59,8 @@ namespace PH1_App
             }
             else
             {
-                try
-                {
+                //try
+                //{
                     con.Open();
                     cmd.ExecuteNonQuery();
 
@@ -66,11 +69,13 @@ namespace PH1_App
                     this.Hide();
                     homepage homepageForm = new homepage();
                     homepageForm.Show();
-                }
-                catch
-                {
-                    MessageBox.Show("Xin vui lòng kiểm tra lại tên đăng nhập hoặc mật khẩu", "Đăng nhập không thành công");
-                }
+
+                    username = usernameInput.Text;
+                //}
+                //catch
+                //{
+                //    MessageBox.Show("Xin vui lòng kiểm tra lại tên đăng nhập hoặc mật khẩu", "Đăng nhập không thành công");
+                //}
             }
         }
 

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="78539CB5-522F-5052-7AC9-D17562A356B0" containerWithKeyObject="90732B96-E33E-E69E-821C-A8531C9F00BC" localFKIndex="6E4FB698-023A-A73B-F354-E7C7DEEB81D3" name="FK_CSYT_MACSYT">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>FK_CSYT_MACSYT</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<referredTableLongName>900001.CSYT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DB77A3BA-3D3D-0480-8F3E-4F2DB0F2F294</referredTableID>
+<keyObject>4887DD0E-6C51-89B9-8629-410A981D394C</keyObject>
+<referredKeyID>4887DD0E-6C51-89B9-8629-410A981D394C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>MACSYT</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

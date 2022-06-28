@@ -1,0 +1,219 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ECBC1EBD-0F89-AC78-7D28-5ACE927C2A5D" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="BENHNHAN">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>BENHNHAN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:46 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MABN" id="53F7D8AC-AC4D-F802-5785-AEB5B7969A12">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>MABN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MACSYT" id="5A52F5C8-C38F-CA5C-D10B-E6778CD7433B">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>MACSYT</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0981FDC0-A551-8475-4C1C-4298E374C890" referredColumn="0B081324-0CDD-2954-261F-3791CBDF2B41"/>
+</associations>
+</Column>
+<Column name="TENBN" id="9D344135-D19E-66EF-3368-E2123A1D6E7B">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>TENBN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CMND" id="D13857C8-E3B5-7142-C021-9E06B1796CF8">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>CMND</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NGAYSINH" id="F95B6F82-3958-4F69-B78E-0A358A139698">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>NGAYSINH</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SONHA" id="73ADD70F-FBEE-0005-EE8F-A1C04E785C30">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>SONHA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TENDUONG" id="DD68C7E2-ADB1-AF40-2D7A-3331E60677F3">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>TENDUONG</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANHUYEN" id="783A4165-DD41-AA18-7050-FBA26F765945">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>QUANHUYEN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TINHTP" id="F02E2273-641F-DC22-A75D-9EC2D6A12B51">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>TINHTP</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIENSUBENH" id="59A1318C-A571-A73A-5274-AD1E79C1DB22">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>TIENSUBENH</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIENSUBENHGD" id="052CCA5D-D693-BAD0-4952-45AA4DA1CCEA">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>TIENSUBENHGD</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIUNGTHUOC" id="4A259EBE-6D53-5F9D-CC9C-C8B7ADB1028C">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>BENHNHAN</sourceObjSchema>
+<sourceObjName>DIUNGTHUOC</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC93C698-245F-8B11-412E-0FC85E76D4A5" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="BENHNHAN_PK">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>SYS_C008369</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53F7D8AC-AC4D-F802-5785-AEB5B7969A12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B65C63CE-6BD2-BF70-36EE-827E228213F6" name="FK_MACSYT_MACSYT">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A52F5C8-C38F-CA5C-D10B-E6778CD7433B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

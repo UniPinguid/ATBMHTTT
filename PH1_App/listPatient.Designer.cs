@@ -372,6 +372,7 @@ namespace PH1_App
             this.button7.Text = "Nhân viên";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.clickListEmployee);
             // 
             // button6
             // 
@@ -387,6 +388,7 @@ namespace PH1_App
             this.button6.Text = "Cơ sở y tế";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.clickListHF);
             // 
             // button5
             // 
@@ -446,7 +448,7 @@ namespace PH1_App
             this.button2.Text = "Hồ sơ bệnh án";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.clickMedRec);
+            this.button2.Click += new System.EventHandler(this.clickListMedRec);
             // 
             // toggleSidebarBtn
             // 

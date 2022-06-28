@@ -372,6 +372,7 @@ namespace PH1_App
             this.button7.Text = "Nhân viên";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.clickListEmployee);
             // 
             // button6
             // 
@@ -403,7 +404,7 @@ namespace PH1_App
             this.button5.Text = "Bệnh nhân";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.clickPatient);
+            this.button5.Click += new System.EventHandler(this.clickListPatient);
             // 
             // label1
             // 

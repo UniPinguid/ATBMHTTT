@@ -462,6 +462,7 @@ namespace PH1_App
             this.label6.Size = new System.Drawing.Size(127, 29);
             this.label6.TabIndex = 40;
             this.label6.Text = "Nhân viên";
+            this.label6.Click += new System.EventHandler(this.clickListEmployee);
             // 
             // label5
             // 

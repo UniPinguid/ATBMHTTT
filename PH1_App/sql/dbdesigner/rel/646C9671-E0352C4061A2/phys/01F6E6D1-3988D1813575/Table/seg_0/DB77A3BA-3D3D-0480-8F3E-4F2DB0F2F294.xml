@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CSYT" directorySegmentName="seg_0" id="DB77A3BA-3D3D-0480-8F3E-4F2DB0F2F294">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:46 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<schemaObject>4E4F2A91-39BE-1C86-E7D5-3605B0E84488</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>EED15592-92C5-25FC-6553-94A6B4455A37</segment>
+<tableSpace>AAAA8E34-3C5E-AFF6-D791-2FBCD5C4FE74</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MACSYT" id="0B081324-0CDD-2954-261F-3791CBDF2B41">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TENCSYT" id="12F25916-FF88-0FD2-9172-C764E43A185C">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VUNG" id="642FF4A8-4365-CA9C-B1F7-16FAB12881C8">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SDTCSYT" id="8436CBD4-E203-B70A-829F-D0CDE5DCD581">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DCCSYT" id="8D4C8AC4-6EC8-5D7A-A1B3-B189249442C4">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TUYENDT" id="C8C22F48-2014-EBEE-6B5B-26C93FC46247">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CSYT_PK" id="4887DD0E-6C51-89B9-8629-410A981D394C">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<schemaObject>4E4F2A91-39BE-1C86-E7D5-3605B0E84488</schemaObject>
+<segment>A1166B35-1762-E6C0-E643-5F2E14940C7F</segment>
+<tableSpace>AAAA8E34-3C5E-AFF6-D791-2FBCD5C4FE74</tableSpace>
+<indexSegment>A1166B35-1762-E6C0-E643-5F2E14940C7F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

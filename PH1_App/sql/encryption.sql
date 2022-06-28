@@ -10,7 +10,9 @@ administer key management use key 'AZ3CHpMZoE+vvwyzuwsivJwAAAAAAAAAAAAAAAAAAAAAA
 select key_id,activation_time from v$encryption_keys
 
 SELECT * FROM V$ENCRYPTION_WALLET
-*/
 
 select *
   from dba_encrypted_columns
+  
+  
+*/

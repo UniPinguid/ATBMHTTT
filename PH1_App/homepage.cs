@@ -121,8 +121,6 @@ namespace PH1_App
             }
         }
 
-
-
         // End of
         // Transitioning
 
@@ -227,6 +225,27 @@ namespace PH1_App
 
             ThoiGianDiaDiem.Text = dataThongBao.Rows[i].Cells[2].Value.ToString() + ", " + dataThongBao.Rows[i].Cells[3].Value.ToString();
             noidungTB.Text = dataThongBao.Rows[i].Cells[1].Value.ToString();
+
+            if (login.is_NhanVien)
+            {
+                panel_NV.Show();
+                panel_BN.Hide();
+            }
+            else if (login.is_BenhNhan)
+            {
+                panel_BN.Show();
+                panel_BN.Location = new Point(29, 455);
+                panel_NV.Hide();
+            }
+            else if (login.is_DBA)
+            {
+                panel_BN.Hide();
+                panel_NV.Hide();
+                label5.Hide();
+
+                btnEdit.Hide();
+                iconEdit.Hide();
+            }
         }
 
         private void clickTBCu(object sender, EventArgs e)
@@ -248,6 +267,32 @@ namespace PH1_App
             {
                 i--;
                 homepage_Load(sender, e);
+            }
+        }
+
+        private void clickLogout(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc là muốn đăng xuất không?", "Đăng xuất", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                OracleConnection con = new OracleConnection(connectionString);
+                con.Open();
+
+                string querry = "select 'alter system kill session ''' || sid || ',' || serial# || ''';' from v$session where username = '" + login.username + "'";
+                OracleCommand cmd = new OracleCommand(querry, con);
+                cmd.ExecuteNonQuery();
+
+                this.Close();
+
+                var formToShow = Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is login);
+                if (formToShow != null)
+                {
+                    formToShow.Show();
+                }
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
             }
         }
     }
