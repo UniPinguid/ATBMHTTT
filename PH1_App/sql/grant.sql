@@ -1,3 +1,9 @@
+/*
+    grant.sql
+    
+    Cấp quyền cho người dùng
+*/
+
 alter session set "_ORACLE_SCRIPT"=true;
 
 -- Phân quyền cho user DBA
@@ -94,6 +100,8 @@ grant select, update on "900001".BENHNHAN to BENHNHAN;
 -- Phân quyền cho người dùng
 grant create session to "100001";
 grant NHANVIEN to "100001";
+grant THANHTRA to "100001";
+grant GIAMDOCSO to "100001";
 
 grant create session to "100002";
 grant NHANVIEN to "100002";
@@ -102,5 +110,3 @@ grant NGHIENCUU to "100002";
 grant create session to "100003";
 grant NHANVIEN to "100003";
 grant COSOYTE to "100003";
-
-select * from role_tab_privs where role = 'COSOYTE';

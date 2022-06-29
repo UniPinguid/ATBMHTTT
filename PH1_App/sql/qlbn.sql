@@ -125,35 +125,5 @@ ADD CONSTRAINT CHECK_CAPBAC CHECK (CAPBAC IN (N'Giám đốc sở', N'Giám đ�
 
 ALTER TABLE THONGBAO
 ADD CONSTRAINT FK_THONGBAO_MANV FOREIGN KEY (MANV) REFERENCES NHANVIEN(MANV);
-
---
-INSERT INTO CSYT(MACSYT, TENCSYT, DCCSYT, SDTCSYT, TUYENDT, VUNG)
-    VALUES (927262622, 'Trung tâm An Bình', '90 Mạc Đĩnh Chi, Hà Nội', '0927165821', 'Điều trị chuyên sâu', 'Trung tâm');
---
-
-INSERT INTO BENHNHAN(MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC)
-    VALUES (82719202, 927262622, N'Huỳnh Thúc Hoa', '3419258828', TO_DATE('03/09/1992', 'dd/mm/yyyy'), 25, N'Mãn Nghi', N'Quận 8', N'TP Hồ Chí Minh', N'Không', N'Viêm phổi', N'Không');
-    
---
-INSERT INTO HSBA(MAHSBA, MABN, NGAY, CHANDOAN, MABS, MAKHOA, MACSYT, KETLUAN)
-    VALUES(900129582, 82719202, TO_DATE('21/09/2020', 'dd/mm/yyyy'), 'Có khối u lành tính tại thực quản', 100001, 9282155, 92762622, 'Phẫu thuật');
-
---
-INSERT INTO NHANVIEN(MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA, CAPBAC)
-    VALUES (100001, N'Huỳnh Văn Phong', 'Nam', TO_DATE('01/09/1990', 'dd/mm/yyyy'), '3411745902', N'Cao Bằng', '0765268987', 927262622, 'Thanh tra', 9282155, 'Giám đốc sở');
-
-INSERT INTO NHANVIEN(MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA, CAPBAC)
-    VALUES (100002, N'Lê Văn Mẫn', 'Nam', TO_DATE('21/02/1991', 'dd/mm/yyyy'), '3911523982', N'Đà Nẵng', '0234255512', 927262622, 'Nghiên cứu', 9282155, 'Y/Bác sĩ');
-
-INSERT INTO NHANVIEN(MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA, CAPBAC)
-    VALUES (100003, N'Nguyễn Thị Lê', 'Nữ', TO_DATE('11/04/1989', 'dd/mm/yyyy'), '3289123577', N'Đồng Tháp', '0247881235', 927262622, 'Cơ sở y tế', 9282155, 'Y/Bác sĩ');
-
---
-INSERT INTO THONGBAO(MANV, NOIDUNG, NGAYGIO, DIADIEM) 
-    VALUES (100001, 'Hôm nay là Chủ Nhật', sysdate, 'Hồ Chí Minh');
-    
-INSERT INTO THONGBAO(MANV, NOIDUNG, NGAYGIO, DIADIEM) 
-    VALUES (100001, 'Hôm nay là Thứ Hai, thứ Hai có thưởng', sysdate, 'Hồ Chí Minh');  
---
     
 Alter Session Set "_ORACLE_SCRIPT"=false;

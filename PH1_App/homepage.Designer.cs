@@ -44,6 +44,7 @@ namespace PH1_App
             this.button2 = new System.Windows.Forms.Button();
             this.toggleSidebarBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.dataThongBao = new System.Windows.Forms.DataGridView();
@@ -107,7 +108,9 @@ namespace PH1_App
             this.label16 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.dataUserInfo = new System.Windows.Forms.DataGridView();
+            this.textBox_capBac = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataThongBao)).BeginInit();
@@ -118,6 +121,7 @@ namespace PH1_App
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_NV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataUserInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -318,6 +322,7 @@ namespace PH1_App
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.dataUserInfo);
             this.panel2.Controls.Add(this.label29);
             this.panel2.Controls.Add(this.label28);
             this.panel2.Controls.Add(this.label27);
@@ -338,6 +343,19 @@ namespace PH1_App
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1057, 753);
             this.panel2.TabIndex = 3;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label29.Font = new System.Drawing.Font("Inter", 10F);
+            this.label29.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label29.Location = new System.Drawing.Point(923, 28);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(91, 20);
+            this.label29.TabIndex = 86;
+            this.label29.Text = "Đăng xuất";
+            this.label29.Click += new System.EventHandler(this.clickLogout);
             // 
             // label28
             // 
@@ -787,6 +805,8 @@ namespace PH1_App
             // 
             this.panel_NV.BackColor = System.Drawing.Color.White;
             this.panel_NV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_NV.Controls.Add(this.textBox_capBac);
+            this.panel_NV.Controls.Add(this.label30);
             this.panel_NV.Controls.Add(this.textBox_chuyenKhoa);
             this.panel_NV.Controls.Add(this.label10);
             this.panel_NV.Controls.Add(this.textBox_vaiTro);
@@ -819,7 +839,7 @@ namespace PH1_App
             this.textBox_chuyenKhoa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_chuyenKhoa.Font = new System.Drawing.Font("Inter Light", 10F);
             this.textBox_chuyenKhoa.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox_chuyenKhoa.Location = new System.Drawing.Point(195, 413);
+            this.textBox_chuyenKhoa.Location = new System.Drawing.Point(195, 404);
             this.textBox_chuyenKhoa.Name = "textBox_chuyenKhoa";
             this.textBox_chuyenKhoa.Size = new System.Drawing.Size(177, 21);
             this.textBox_chuyenKhoa.TabIndex = 117;
@@ -830,7 +850,7 @@ namespace PH1_App
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Inter Medium", 10.5F);
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(60, 413);
+            this.label10.Location = new System.Drawing.Point(60, 404);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(129, 21);
             this.label10.TabIndex = 116;
@@ -841,7 +861,7 @@ namespace PH1_App
             this.textBox_vaiTro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_vaiTro.Font = new System.Drawing.Font("Inter Light", 10F);
             this.textBox_vaiTro.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox_vaiTro.Location = new System.Drawing.Point(138, 368);
+            this.textBox_vaiTro.Location = new System.Drawing.Point(138, 363);
             this.textBox_vaiTro.Name = "textBox_vaiTro";
             this.textBox_vaiTro.Size = new System.Drawing.Size(177, 21);
             this.textBox_vaiTro.TabIndex = 115;
@@ -852,7 +872,7 @@ namespace PH1_App
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Inter Medium", 10.5F);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(61, 368);
+            this.label8.Location = new System.Drawing.Point(61, 363);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 21);
             this.label8.TabIndex = 114;
@@ -1078,18 +1098,37 @@ namespace PH1_App
             this.label5.TabIndex = 75;
             this.label5.Text = "Thông tin cá nhân";
             // 
-            // label29
+            // dataUserInfo
             // 
-            this.label29.AutoSize = true;
-            this.label29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label29.Font = new System.Drawing.Font("Inter", 10F);
-            this.label29.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label29.Location = new System.Drawing.Point(923, 28);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(91, 20);
-            this.label29.TabIndex = 86;
-            this.label29.Text = "Đăng xuất";
-            this.label29.Click += new System.EventHandler(this.clickLogout);
+            this.dataUserInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataUserInfo.Location = new System.Drawing.Point(287, -200);
+            this.dataUserInfo.Name = "dataUserInfo";
+            this.dataUserInfo.RowHeadersWidth = 51;
+            this.dataUserInfo.RowTemplate.Height = 24;
+            this.dataUserInfo.Size = new System.Drawing.Size(240, 150);
+            this.dataUserInfo.TabIndex = 87;
+            // 
+            // textBox_capBac
+            // 
+            this.textBox_capBac.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_capBac.Font = new System.Drawing.Font("Inter Light", 10F);
+            this.textBox_capBac.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox_capBac.Location = new System.Drawing.Point(451, 363);
+            this.textBox_capBac.Name = "textBox_capBac";
+            this.textBox_capBac.Size = new System.Drawing.Size(177, 21);
+            this.textBox_capBac.TabIndex = 119;
+            this.textBox_capBac.Text = "capbac";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Inter Medium", 10.5F);
+            this.label30.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label30.Location = new System.Drawing.Point(360, 363);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(85, 21);
+            this.label30.TabIndex = 118;
+            this.label30.Text = "Cấp bậc:";
             // 
             // homepage
             // 
@@ -1118,6 +1157,7 @@ namespace PH1_App
             this.panel_NV.ResumeLayout(false);
             this.panel_NV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataUserInfo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1202,5 +1242,8 @@ namespace PH1_App
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.DataGridView dataUserInfo;
+        private System.Windows.Forms.TextBox textBox_capBac;
+        private System.Windows.Forms.Label label30;
     }
 }

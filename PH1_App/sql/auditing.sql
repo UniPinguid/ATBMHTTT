@@ -1,3 +1,9 @@
+/*
+    auditing.sql
+    
+    Cài đặt audit và FGA
+*/
+
 -- **************
 -- Standard audit
 -- **************

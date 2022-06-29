@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace PH1_App
 {
     public partial class listMedicalRecord : Form
     {
+        string connectionString = login.connectionString;
+
         public listMedicalRecord()
         {
             InitializeComponent();
@@ -117,5 +120,36 @@ namespace PH1_App
             this.Close();
         }
 
+        private void listMedicalRecord_Load(object sender, EventArgs e)
+        {
+            OracleConnection con = new OracleConnection(connectionString);
+            con.Open();
+
+            string querry = "Select * from \"900001\".HSBA";
+
+            OracleCommand cmd = new OracleCommand(querry, con);
+            cmd.CommandType = CommandType.Text;
+            OracleDataAdapter adapter1 = new OracleDataAdapter(querry, con);
+            DataTable dt = new DataTable();
+            adapter1.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+        }
+
+        private void clickSearch(object sender, EventArgs e)
+        {
+            OracleConnection con = new OracleConnection(connectionString);
+            con.Open();
+
+            string querry = "Select * from \"900001\".HSBA where MAHSBA =" + textBox_search.Text;
+
+            OracleCommand cmd = new OracleCommand(querry, con);
+            cmd.CommandType = CommandType.Text;
+            OracleDataAdapter adapter1 = new OracleDataAdapter(querry, con);
+            DataTable dt = new DataTable();
+            adapter1.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+        }
     }
 }

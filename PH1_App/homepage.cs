@@ -208,6 +208,61 @@ namespace PH1_App
             toggleEditableTextbox(textBox_diUng, false);
         }
 
+        private void getUserInfo()
+        {
+            OracleConnection con = new OracleConnection(connectionString);
+            con.Open();
+            if (login.is_NhanVien)
+            {
+                string querry = "select * from \"900001\".NHANVIEN where manv = " + login.username + "";
+
+                OracleCommand cmd = new OracleCommand(querry, con);
+                cmd.CommandType = CommandType.Text;
+                OracleDataAdapter adapter1 = new OracleDataAdapter(querry, con);
+                DataTable dt = new DataTable();
+                adapter1.Fill(dt);
+
+                dataUserInfo.DataSource = dt;
+
+                textBox_maNV.Text = dataUserInfo.Rows[0].Cells[0].Value.ToString();
+                textBox_hoTen.Text = dataUserInfo.Rows[0].Cells[1].Value.ToString();
+                comboBox1.Text = dataUserInfo.Rows[0].Cells[2].Value.ToString();
+                textBox_ngaySinh.Text = dataUserInfo.Rows[0].Cells[3].Value.ToString();
+                textBox_cmnd.Text = dataUserInfo.Rows[0].Cells[4].Value.ToString();
+                textBox_queQuan.Text = dataUserInfo.Rows[0].Cells[5].Value.ToString();
+                textBox_sdt.Text = dataUserInfo.Rows[0].Cells[6].Value.ToString();
+                textBox_maCSYT.Text = dataUserInfo.Rows[0].Cells[7].Value.ToString();
+                textBox_vaiTro.Text = dataUserInfo.Rows[0].Cells[8].Value.ToString();
+                textBox_chuyenKhoa.Text = dataUserInfo.Rows[0].Cells[9].Value.ToString();
+                textBox_capBac.Text = dataUserInfo.Rows[0].Cells[10].Value.ToString();
+            }
+            else if (login.is_BenhNhan)
+            {
+                string querry = "select * from \"900001\".BENHNHAN where MABN = " + login.username + "";
+
+                OracleCommand cmd = new OracleCommand(querry, con);
+                cmd.CommandType = CommandType.Text;
+                OracleDataAdapter adapter1 = new OracleDataAdapter(querry, con);
+                DataTable dt = new DataTable();
+                adapter1.Fill(dt);
+
+                dataUserInfo.DataSource = dt;
+
+                textBox_maBN.Text = dataUserInfo.Rows[0].Cells[0].Value.ToString();
+                textBox_maCSYTBN.Text = dataUserInfo.Rows[0].Cells[1].Value.ToString();
+                textBox_hoTenBN.Text = dataUserInfo.Rows[0].Cells[2].Value.ToString();
+                textBox_cmndBN.Text = dataUserInfo.Rows[0].Cells[3].Value.ToString();
+                textBox_ngaySinhBN.Text = dataUserInfo.Rows[0].Cells[4].Value.ToString();
+                textBox_soNha.Text = dataUserInfo.Rows[0].Cells[5].Value.ToString();
+                textBox_tenDuong.Text = dataUserInfo.Rows[0].Cells[6].Value.ToString();
+                textBox_quanHuyen.Text = dataUserInfo.Rows[0].Cells[7].Value.ToString();
+                textBox_tinhThanh.Text = dataUserInfo.Rows[0].Cells[8].Value.ToString();
+                textBox_tiensu.Text = dataUserInfo.Rows[0].Cells[9].Value.ToString();
+                textBox_tiensuGD.Text = dataUserInfo.Rows[0].Cells[10].Value.ToString();
+                textBox_diUng.Text = dataUserInfo.Rows[0].Cells[11].Value.ToString();
+            }
+        }
+
         private void homepage_Load(object sender, EventArgs e)
         {
             OracleConnection con = new OracleConnection(connectionString);
@@ -246,6 +301,8 @@ namespace PH1_App
                 btnEdit.Hide();
                 iconEdit.Hide();
             }
+
+            getUserInfo();
         }
 
         private void clickTBCu(object sender, EventArgs e)

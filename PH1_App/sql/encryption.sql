@@ -1,3 +1,9 @@
+/*
+    encryption.sql
+    
+    Tạo wallet, tạo key và mở wallet sử dụng cho mã hóa dữ liệu
+*/
+
 -- Chạy file này bằng SYSDBA
 
 administer key management set keystore close;

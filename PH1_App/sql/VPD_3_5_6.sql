@@ -139,9 +139,14 @@ DBMS_RLS.DROP_POLICY(
 );
 END;
 /
-disconnect
+
+disconnect;
+connect "100001"/"3411745902";
+select * from "900001".HSBA;
+
+disconnect;
 connect "100002"/"3911523982";
-select * from "900001".THONGBAO;
+select * from "900001".HSBA;
 */
 
 
@@ -174,6 +179,21 @@ DBMS_RLS.ADD_POLICY(
 );
 END;
 /
+
+/*
+BEGIN
+DBMS_RLS.DROP_POLICY(
+    object_schema => '"900001"',
+    object_name => 'HSBA_DV',
+    policy_name => 'TC52'
+);
+END;
+
+disconnect;
+connect "100002"/"3911523982";
+select * from "900001".HSBA_DV;
+/
+*/
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --TC#6:
