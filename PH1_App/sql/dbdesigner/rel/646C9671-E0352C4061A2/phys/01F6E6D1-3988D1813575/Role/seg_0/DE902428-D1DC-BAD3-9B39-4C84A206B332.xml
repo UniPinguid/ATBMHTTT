@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="YBACSI" directorySegmentName="seg_0" id="DE902428-D1DC-BAD3-9B39-4C84A206B332">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjName>YBACSI</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions10" id="CD18830C-D479-92E5-AF5A-51177863BBA4">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>INSERT, SELECT</privileges>
+<table>ECBC1EBD-0F89-AC78-7D28-5ACE927C2A5D</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions11" id="F7EDFC6B-CD14-B65C-F43D-FAEFCC66D351">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>EA448F52-1C06-E47A-42A0-05101D550804</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions12" id="C8FD7F7E-8874-C965-B993-5CA218CB1A23">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>644E99A5-225E-1277-861D-7B6B5E7C8B74</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

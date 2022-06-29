@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="HSBA" directorySegmentName="seg_0" id="EA448F52-1C06-E47A-42A0-05101D550804">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:46 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<schemaObject>4E4F2A91-39BE-1C86-E7D5-3605B0E84488</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>16E68935-D3DA-1CEB-3CFB-1A0103C6848C</segment>
+<tableSpace>AAAA8E34-3C5E-AFF6-D791-2FBCD5C4FE74</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="KETLUAN" id="1EF0D2DA-E416-F941-ADA1-14E0B4AA5A91">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<encrypt>YES</encrypt>
+<encryptionAlgorithm>AES192</encryptionAlgorithm>
+<integrityAlgorithm>SHA-1</integrityAlgorithm>
+<useSalt>YES</useSalt>
+</ColumnProxy>
+<ColumnProxy name="MAHSBA" id="4C998B2F-73C2-8C6E-4663-409D8DD9159C">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MABN" id="4FEE6180-2DC7-4565-C6D1-2A6B939A4913">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MAKHOA" id="5AE927B7-C8B1-94FE-718C-687B0E463D6E">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MACSYT" id="6407235E-E184-0AD4-C423-8D9EAA074484">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CHANDOAN" id="7A58229E-6F43-E092-4BD3-6A96DCCAEB87">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<encrypt>YES</encrypt>
+<encryptionAlgorithm>AES192</encryptionAlgorithm>
+<integrityAlgorithm>SHA-1</integrityAlgorithm>
+<useSalt>YES</useSalt>
+</ColumnProxy>
+<ColumnProxy name="NGAY" id="891A4572-0723-D266-52AA-BFE94F1599E7">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MABS" id="F9ED361C-470D-219F-546E-3839A4966794">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MABS_MANV" id="C1F02021-5886-F4D3-F117-9AC7B3753D75">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MABN_MABN" id="E55B38A0-671F-8820-CDCB-16A34659FD7A">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="HSBA_PK" id="5DE963F1-8710-7D1A-A3A9-DE94E75AEDA6">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<schemaObject>4E4F2A91-39BE-1C86-E7D5-3605B0E84488</schemaObject>
+<segment>B05B77D6-81C7-31B8-50C4-A69965AB52B8</segment>
+<tableSpace>AAAA8E34-3C5E-AFF6-D791-2FBCD5C4FE74</tableSpace>
+<indexSegment>B05B77D6-81C7-31B8-50C4-A69965AB52B8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

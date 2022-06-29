@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC3DD7BB-66F9-97A1-2E1B-DB7FEEE4706C" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="THONGBAO">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>THONGBAO</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:46 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MANV" id="F8DBF6CE-3B52-0D6F-158D-44CF3AE63912">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>THONGBAO</sourceObjSchema>
+<sourceObjName>MANV</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EBA1814-7600-3BC2-9103-96D9E7465FE2" referredColumn="7D28B6DF-A712-F7DE-AE0B-B8BF12465722"/>
+</associations>
+</Column>
+<Column name="NOIDUNG" id="CF2D5DAD-D44B-94CA-AD6B-332FE5E81092">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>THONGBAO</sourceObjSchema>
+<sourceObjName>NOIDUNG</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NGAYGIO" id="07F9157A-A283-27D4-D947-982295E62583">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>THONGBAO</sourceObjSchema>
+<sourceObjName>NGAYGIO</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIADIEM" id="FFFC7CBF-3DA2-ADCC-55CD-BEF8E3806960">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>THONGBAO</sourceObjSchema>
+<sourceObjName>DIADIEM</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E383009A-6B1A-438A-CDB8-A33347E40A01" name="THONGBAO_NHANVIEN_FK">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-28 13:37:03 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8DBF6CE-3B52-0D6F-158D-44CF3AE63912"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

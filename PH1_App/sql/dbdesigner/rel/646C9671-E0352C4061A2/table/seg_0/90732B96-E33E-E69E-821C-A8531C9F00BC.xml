@@ -1,0 +1,218 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90732B96-E33E-E69E-821C-A8531C9F00BC" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="NHANVIEN">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>NHANVIEN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:46 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MANV" id="7D28B6DF-A712-F7DE-AE0B-B8BF12465722">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>MANV</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOTEN" id="E5A637DD-0AC5-2858-AFB0-0995446F352B">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>HOTEN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHAI" id="3CA8153A-53E8-21EA-8CC0-3F6F74F241A1">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>PHAI</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NGAYSINH" id="17255C19-AD05-32DD-088D-C9400659AAFE">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>NGAYSINH</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CMND" id="22A3470F-96EC-44D9-6520-9823D0E38E13">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>CMND</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUEQUAN" id="A214F859-D50E-F45A-B562-2CDD697A5A7C">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>QUEQUAN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SODT" id="FBA63A2B-53AB-2DA3-77AB-E096EDD64753">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>SODT</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CSYT" id="9637871F-FAE4-3C67-046A-BE94CC8E8E93">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>CSYT</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78539CB5-522F-5052-7AC9-D17562A356B0" referredColumn="0B081324-0CDD-2954-261F-3791CBDF2B41"/>
+</associations>
+</Column>
+<Column name="VAITRO" id="C6BE4BD5-28F6-8614-6C8B-8169B13AA888">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>VAITRO</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<constraintName>CHECK_VAITRO</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="u&apos;C\01a1 s\1edf y t\1ebf&apos;" description=""/>
+<valueDef value="u&apos;Nghi\00ean c\1ee9u&apos;" description=""/>
+<valueDef value="u&apos;Thanh tra&apos;" description=""/>
+<valueDef value="u&apos;Y s\0129/b\00e1c s\0129&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHUYENKHOA" id="C08C8565-36BB-B493-249F-C35432F93884">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>CHUYENKHOA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAPBAC" id="2D031871-1D57-202D-74D0-AD9A3E255DBA">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>NHANVIEN</sourceObjSchema>
+<sourceObjName>CAPBAC</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<constraintName>CHECK_CAPBAC</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="u&apos;Gi\00e1m \0111\1ed1c c\01a1 s\1edf y t\1ebf&apos;" description=""/>
+<valueDef value="u&apos;Gi\00e1m \0111\1ed1c s\1edf&apos;" description=""/>
+<valueDef value="u&apos;Y/B\00e1c s\0129&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8AF28461-A353-FD87-AF15-614B7724AB29" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="NHANVIEN_PK">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>SYS_C008373</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D28B6DF-A712-F7DE-AE0B-B8BF12465722"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E4FB698-023A-A73B-F354-E7C7DEEB81D3" name="FK_CSYT_MACSYT">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9637871F-FAE4-3C67-046A-BE94CC8E8E93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

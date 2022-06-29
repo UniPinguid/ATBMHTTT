@@ -26,11 +26,14 @@ namespace PH1_App
         public static bool is_NhanVien = false;
         public static bool is_BenhNhan = false;
 
-            
+        public static string username = "";
+
+           
         public login()
         {
             InitializeComponent();
         }
+
 
         private void clickRegister(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -40,6 +43,8 @@ namespace PH1_App
 
         private void clickLogin(object sender, EventArgs e)
         {
+            username = usernameInput.Text;
+
             connectionString += "User ID = " + usernameInput.Text + "; Password = " + passwordInput.Text + ";";
             OracleConnection con = new OracleConnection(connectionString);
 
@@ -56,8 +61,8 @@ namespace PH1_App
             }
             else
             {
-                try
-                {
+                //try
+                //{
                     con.Open();
                     cmd.ExecuteNonQuery();
 
@@ -66,11 +71,12 @@ namespace PH1_App
                     this.Hide();
                     homepage homepageForm = new homepage();
                     homepageForm.Show();
-                }
-                catch
-                {
-                    MessageBox.Show("Xin vui lòng kiểm tra lại tên đăng nhập hoặc mật khẩu", "Đăng nhập không thành công");
-                }
+
+                //}
+                //catch
+                //{
+                //    MessageBox.Show("Xin vui lòng kiểm tra lại tên đăng nhập hoặc mật khẩu", "Đăng nhập không thành công");
+                //}
             }
         }
 

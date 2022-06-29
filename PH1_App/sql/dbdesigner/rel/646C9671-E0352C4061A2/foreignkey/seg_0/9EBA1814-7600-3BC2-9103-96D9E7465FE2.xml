@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9EBA1814-7600-3BC2-9103-96D9E7465FE2" containerWithKeyObject="AC3DD7BB-66F9-97A1-2E1B-DB7FEEE4706C" localFKIndex="E383009A-6B1A-438A-CDB8-A33347E40A01" name="THONGBAO_NHANVIEN_FK">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-28 13:37:03 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<referredTableLongName>900001.NHANVIEN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>90732B96-E33E-E69E-821C-A8531C9F00BC</referredTableID>
+<keyObject>8AF28461-A353-FD87-AF15-614B7724AB29</keyObject>
+<referredKeyID>8AF28461-A353-FD87-AF15-614B7724AB29</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MANV</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+<propertyMap>
+<property name="createdByFKDiscoverer" value="true"/>
+</propertyMap>
+</FKIndexAssociation>

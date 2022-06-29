@@ -37,7 +37,7 @@ namespace PH1_App
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_search = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -136,7 +136,7 @@ namespace PH1_App
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.textBox_search);
             this.panel3.Location = new System.Drawing.Point(34, 112);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(596, 43);
@@ -151,17 +151,17 @@ namespace PH1_App
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // textBox_search
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.Location = new System.Drawing.Point(46, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(408, 22);
-            this.textBox1.TabIndex = 26;
-            this.textBox1.Text = "Tìm kiếm hồ sơ...";
+            this.textBox_search.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_search.Font = new System.Drawing.Font("Inter Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_search.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox_search.Location = new System.Drawing.Point(46, 12);
+            this.textBox_search.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.textBox_search.Name = "textBox_search";
+            this.textBox_search.Size = new System.Drawing.Size(544, 22);
+            this.textBox_search.TabIndex = 26;
+            this.textBox_search.Text = "Tìm kiếm hồ sơ...";
             // 
             // pictureBox3
             // 
@@ -245,6 +245,7 @@ namespace PH1_App
             this.button10.TabIndex = 36;
             this.button10.Text = "Tìm kiếm";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.clickSearch);
             // 
             // dataGridView1
             // 
@@ -388,6 +389,7 @@ namespace PH1_App
             this.button6.Text = "Cơ sở y tế";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.clickListHF);
             // 
             // button5
             // 
@@ -403,6 +405,7 @@ namespace PH1_App
             this.button5.Text = "Bệnh nhân";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.clickListPatient);
             // 
             // label1
             // 
@@ -474,6 +477,7 @@ namespace PH1_App
             this.Name = "listMedicalRecord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "medicalRecord";
+            this.Load += new System.EventHandler(this.listMedicalRecord_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -506,7 +510,7 @@ namespace PH1_App
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_search;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;

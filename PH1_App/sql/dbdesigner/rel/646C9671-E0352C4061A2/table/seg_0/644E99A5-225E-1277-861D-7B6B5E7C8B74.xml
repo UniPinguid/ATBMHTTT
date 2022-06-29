@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="644E99A5-225E-1277-861D-7B6B5E7C8B74" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="HSBA_DV">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>HSBA_DV</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:46 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MAHSBA" id="188CD32C-7ADA-0025-34A2-5396B3414F6F">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA_DV</sourceObjSchema>
+<sourceObjName>MAHSBA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4F6D371-BD78-CCF5-358F-34038C8A796C" referredColumn="4C998B2F-73C2-8C6E-4663-409D8DD9159C"/>
+</associations>
+</Column>
+<Column name="MADV" id="B4DAF4FB-4224-D601-5BD1-4372E2B0368D">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA_DV</sourceObjSchema>
+<sourceObjName>MADV</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NGAY" id="861EAA9B-45EA-336F-BDC8-48C13247537D">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA_DV</sourceObjSchema>
+<sourceObjName>NGAY</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAKTV" id="948DDC12-DD1F-E521-74DA-165B1BAAC944">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA_DV</sourceObjSchema>
+<sourceObjName>MAKTV</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03B22B84-11DD-86FD-1B1E-59265DAFE7B0" referredColumn="7D28B6DF-A712-F7DE-AE0B-B8BF12465722"/>
+</associations>
+</Column>
+<Column name="KETQUA" id="3B919CFB-C5A2-454A-4565-4E84953B06D5">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>HSBA_DV</sourceObjSchema>
+<sourceObjName>KETQUA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1C1DB40-9DA9-1560-D571-43B56D5E6AB1" name="PK_MAHS_MADV_NGAY">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>PK_MAHS_MADV_NGAY</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="188CD32C-7ADA-0025-34A2-5396B3414F6F"/>
+<colUsage columnID="B4DAF4FB-4224-D601-5BD1-4372E2B0368D"/>
+<colUsage columnID="861EAA9B-45EA-336F-BDC8-48C13247537D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0ABD7E37-5DA4-295A-DEBC-426F7217FD38" schemaObject="4E4F2A91-39BE-1C86-E7D5-3605B0E84488" name="PK_MAHS_MADV_NGAY">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>PK_MAHS_MADV_NGAY</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="188CD32C-7ADA-0025-34A2-5396B3414F6F"/>
+<colUsage columnID="B4DAF4FB-4224-D601-5BD1-4372E2B0368D"/>
+<colUsage columnID="861EAA9B-45EA-336F-BDC8-48C13247537D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC6B0AF2-89D0-099C-096F-0F5EE0F77003" name="FK_HSBA_HSBA">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="188CD32C-7ADA-0025-34A2-5396B3414F6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E581AD05-97C3-11ED-CAB0-2635974694EB" name="FK_MAKTV_MANV">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="948DDC12-DD1F-E521-74DA-165B1BAAC944"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

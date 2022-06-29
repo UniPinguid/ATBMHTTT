@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="BENHNHAN" directorySegmentName="seg_0" id="ECBC1EBD-0F89-AC78-7D28-5ACE927C2A5D">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:46 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<schemaObject>4E4F2A91-39BE-1C86-E7D5-3605B0E84488</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>16E68935-D3DA-1CEB-3CFB-1A0103C6848C</segment>
+<tableSpace>AAAA8E34-3C5E-AFF6-D791-2FBCD5C4FE74</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TIENSUBENHGD" id="052CCA5D-D693-BAD0-4952-45AA4DA1CCEA">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIUNGTHUOC" id="4A259EBE-6D53-5F9D-CC9C-C8B7ADB1028C">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MABN" id="53F7D8AC-AC4D-F802-5785-AEB5B7969A12">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIENSUBENH" id="59A1318C-A571-A73A-5274-AD1E79C1DB22">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MACSYT" id="5A52F5C8-C38F-CA5C-D10B-E6778CD7433B">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SONHA" id="73ADD70F-FBEE-0005-EE8F-A1C04E785C30">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QUANHUYEN" id="783A4165-DD41-AA18-7050-FBA26F765945">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TENBN" id="9D344135-D19E-66EF-3368-E2123A1D6E7B">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CMND" id="D13857C8-E3B5-7142-C021-9E06B1796CF8">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TENDUONG" id="DD68C7E2-ADB1-AF40-2D7A-3331E60677F3">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TINHTP" id="F02E2273-641F-DC22-A75D-9EC2D6A12B51">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NGAYSINH" id="F95B6F82-3958-4F69-B78E-0A358A139698">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MACSYT_MACSYT" id="B65C63CE-6BD2-BF70-36EE-827E228213F6">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BENHNHAN_PK" id="BC93C698-245F-8B11-412E-0FC85E76D4A5">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:47 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<schemaObject>4E4F2A91-39BE-1C86-E7D5-3605B0E84488</schemaObject>
+<segment>B05B77D6-81C7-31B8-50C4-A69965AB52B8</segment>
+<tableSpace>AAAA8E34-3C5E-AFF6-D791-2FBCD5C4FE74</tableSpace>
+<indexSegment>B05B77D6-81C7-31B8-50C4-A69965AB52B8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

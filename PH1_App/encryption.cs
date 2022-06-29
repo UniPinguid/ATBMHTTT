@@ -35,7 +35,7 @@ namespace PH1_App
 
         private void encryption_Load(object sender, EventArgs e)
         {
-            string querry = "SELECT * DBA_ENCRYPTED_COLUMNS";
+            string querry = "SELECT * FROM DBA_ENCRYPTED_COLUMNS";
             OracleConnection con = new OracleConnection(connectionString);
 
             OracleCommand cmd = new OracleCommand(querry, con);

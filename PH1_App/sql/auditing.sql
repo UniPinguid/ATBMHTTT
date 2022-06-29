@@ -1,3 +1,13 @@
+/*
+    auditing.sql
+    
+    Cài đặt audit và FGA
+*/
+
+-- **************
+-- Standard audit
+-- **************
+
 alter system set audit_trail=DB scope=spfile;
 
 -- alter system set audit_file_dest='C:/app/MyPC/product/21c/audit/xe' scope=spfile;
@@ -26,7 +36,22 @@ audit system grant by giamdoccsyt1;
 audit insert, update, delete on "900001".NHANVIEN by access;
 
 
+-- ****************
+--       FGA
+-- ****************
 
+BEGIN
+    DBMS_FGA.ADD_POLICY (
+    object_schema => '900001',
+    object_name => 'NHANVIEN',
+    policy_name => 'FGA_NHANVIEN_GIAMDOCSO',
+    audit_condition => 'CAPBAC IN (''Giám đốc sở'', ''Giám đốc cơ sở y tế'') ',
+    audit_column => 'CAPBAC',
+    enable => TRUE,
+    statement_types => 'INSERT, UPDATE, DELETE',
+    audit_trail => DBMS_FGA.DB + DBMS_FGA.EXTENDED);
+END;
+/
 
 
 

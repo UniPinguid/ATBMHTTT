@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E4F6D371-BD78-CCF5-358F-34038C8A796C" containerWithKeyObject="644E99A5-225E-1277-861D-7B6B5E7C8B74" localFKIndex="EC6B0AF2-89D0-099C-096F-0F5EE0F77003" name="FK_HSBA_HSBA">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>FK_HSBA_HSBA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<referredTableLongName>900001.HSBA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EA448F52-1C06-E47A-42A0-05101D550804</referredTableID>
+<keyObject>5DE963F1-8710-7D1A-A3A9-DE94E75AEDA6</keyObject>
+<referredKeyID>5DE963F1-8710-7D1A-A3A9-DE94E75AEDA6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MAHSBA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

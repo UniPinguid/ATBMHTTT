@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="THANHTRA" directorySegmentName="seg_0" id="22516C90-1968-CA0D-2B7F-5B3A917E5F36">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjName>THANHTRA</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions3" id="C171CE1F-5004-FF0B-650B-E5804EB84775">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>ECBC1EBD-0F89-AC78-7D28-5ACE927C2A5D</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions4" id="C159D5A2-5812-4EC9-D877-B3691E9AEC0D">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>DB77A3BA-3D3D-0480-8F3E-4F2DB0F2F294</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions5" id="A7644DE4-492B-97E5-EB22-64E4208938DC">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>EA448F52-1C06-E47A-42A0-05101D550804</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions6" id="4869166B-CB6C-AC3E-51CE-9BA95A75DCEF">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>644E99A5-225E-1277-861D-7B6B5E7C8B74</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions7" id="AF884F74-E945-D56D-1A2C-B847394BE05A">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>90732B96-E33E-E69E-821C-A8531C9F00BC</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

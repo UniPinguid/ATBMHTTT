@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="95BD864D-D041-E033-44D5-EFE7CFFB04F5" containerWithKeyObject="EA448F52-1C06-E47A-42A0-05101D550804" localFKIndex="E55B38A0-671F-8820-CDCB-16A34659FD7A" name="FK_MABN_MABN">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjSchema>900001</sourceObjSchema>
+<sourceObjName>FK_MABN_MABN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<referredTableLongName>900001.BENHNHAN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ECBC1EBD-0F89-AC78-7D28-5ACE927C2A5D</referredTableID>
+<keyObject>BC93C698-245F-8B11-412E-0FC85E76D4A5</keyObject>
+<referredKeyID>BC93C698-245F-8B11-412E-0FC85E76D4A5</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>MABN</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="NHANVIEN" directorySegmentName="seg_0" id="35ECF5E1-0B6D-ECD0-841A-C76A8BFE475D">
+<sourceConnName>CSYT</sourceConnName>
+<sourceObjName>NHANVIEN</sourceObjName>
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions15" id="62EB55C3-7EB4-A228-1C7C-57A33DF2A290">
+<createdBy>My PC</createdBy>
+<createdTime>2022-06-27 15:50:48 UTC</createdTime>
+<ownerDesignName>dbdesigner</ownerDesignName>
+<privileges>SELECT, UPDATE</privileges>
+<table>90732B96-E33E-E69E-821C-A8531C9F00BC</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>
